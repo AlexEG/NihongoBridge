@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+div#titlebar {
+  -webkit-app-region: drag;
+}
+
+:root {
+  --main-dark: hsl(218, 80%, 2%);
+  --accent: hsl(212, 12%, 21%);
+  --accent-dark: hsl(216, 28%, 7%);
+
+  --text-light: hsla(218, 12%, 75%, 0.9);
+  --text-dark: hsla(218, 12%, 20%, 0.9);
+}
+
+body {
+  min-height: 100vh;
+}
+
+nav {
+  background-color: var(--accent-dark);
+  position: fixed;
+  top: 31px;
+  left: 0;
+  bottom: 0;
+  width: 47px;
+  border-right: solid 1px var(--accent);
+  display: flex;
+  flex-direction: column;
+}

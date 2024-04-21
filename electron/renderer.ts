@@ -26,8 +26,16 @@
  * ```
  */
 
-import "/app/index.css";
-
+import "../src/index.css";
+import TitleBar from "../src/components/TitleBar";
+import NavigationSidebar from "../src/components/NavigationSidebar";
+import WordsList from "../src/components/WordsList";
 console.log(
   '👋 This message is being logged by "renderer.ts", included via Vite'
 );
+
+const ROOT = document.querySelector("div#root");
+
+ROOT.append(TitleBar());
+ROOT.append(NavigationSidebar());
+ROOT.append(WordsList());
