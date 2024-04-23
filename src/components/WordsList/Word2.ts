@@ -1,18 +1,7 @@
-type word = {
-  kanji: string;
-  hiragana: string;
-  english: string;
-  discription: string;
-  soundFile: string;
-  example: {
-    japanese: string;
-    english: string;
-  };
-};
-export default function Word(word: word) {
-  console.log("word:", word);
+export default function Word() {
   // The main container it's just a border to contan everything else
   const container = document.createElement("div");
+  container.setAttribute("id", "word-1");
   const className0 =
     "h-16 border border-[hsl(212,12%,21%)] mb-4 grid grid-cols-[64px,64px,128px,128px,256px,256px] gap-x-1";
   container.setAttribute("class", className0);
@@ -55,7 +44,7 @@ export default function Word(word: word) {
   const kanji = document.createElement("span");
   const className4 = "text-white";
   kanji.setAttribute("class", className4);
-  kanji.innerText = word.kanji;
+  kanji.innerText = "東京";
 
   kanjiContainer.append(kanji);
   container.append(kanjiContainer);
@@ -68,7 +57,7 @@ export default function Word(word: word) {
   const hiragana = document.createElement("span");
   const classNam6 = "text-white";
   hiragana.setAttribute("class", classNam6);
-  hiragana.innerText = word.hiragana;
+  hiragana.innerText = "とうきょう";
 
   hiraganaContainer.append(hiragana);
   container.append(hiraganaContainer);
@@ -81,23 +70,24 @@ export default function Word(word: word) {
   const english = document.createElement("span");
   const classNam8 = "text-white";
   english.setAttribute("class", classNam8);
-  english.innerText = word.english;
+  english.innerText = "Tokyo";
 
   englishContainer.append(english);
   container.append(englishContainer);
 
-  // **********[discription]********** //
-  const discriptionContainer = document.createElement("div");
+  // **********[Meaning]********** //
+  const meaningContainer = document.createElement("div");
   const className9 = "w-full h-full flex justify-center items-center";
-  discriptionContainer.setAttribute("class", className9);
+  meaningContainer.setAttribute("class", className9);
 
-  const discription = document.createElement("span");
+  const meaning = document.createElement("span");
   const className10 = "text-white truncate-2-lines text-xs";
-  discription.setAttribute("class", className10);
-  discription.innerText = word.discription;
+  meaning.setAttribute("class", className10);
+  meaning.innerText =
+    "Tokyo, officially the Tokyo Metropolis, is the capital of Japan and one of the most populous cities in the world with a population of over 14 million residents as of 2023";
 
-  discriptionContainer.append(discription);
-  container.append(discriptionContainer);
+  meaningContainer.append(meaning);
+  container.append(meaningContainer);
 
   // **********[Example]********** //
   const exampleContainer = document.createElement("div");
@@ -107,12 +97,12 @@ export default function Word(word: word) {
   const exampleEnglish = document.createElement("span");
   const className12 = "text-white/50 truncate text-xs text-center";
   exampleEnglish.setAttribute("class", className12);
-  exampleEnglish.innerText = word.example.english;
+  exampleEnglish.innerText = "I am going to travel to Tokyo next week";
 
   const exampleJapanese = document.createElement("span");
   const className13 = "text-white truncate text-sm text-center";
   exampleJapanese.setAttribute("class", className13);
-  exampleJapanese.innerText = word.example.japanese;
+  exampleJapanese.innerText = "私は来週、東京に旅行に行きます。";
 
   exampleContainer.append(exampleEnglish, exampleJapanese);
   container.append(exampleContainer);

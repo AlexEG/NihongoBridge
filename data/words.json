@@ -1,0 +1,57 @@
+[
+  {
+    "kanji": "東京",
+    "hiragana": "とうきょう",
+    "english": "Tokyo",
+    "discription": "Tokyo is the capital of Japan and one of the most populous cities in the world. It’s located at the head of Tokyo Bay on the Pacific coast of central Honshu, which is Japan’s largest island",
+    "soundFile": "path/to/soundfile1.mp3",
+    "example": {
+      "japanese": "私は来週、東京に旅行に行きます。",
+      "english": "I am going to travel to Tokyo next week."
+    }
+  },
+  {
+    "kanji": "学生",
+    "hiragana": "がくせい",
+    "english": "student",
+    "discription": "A student is a person who is studying at a school, college, or university. They can also be someone who is learning anything, at any stage in their life",
+    "soundFile": "path/to/soundfile2.mp3",
+    "example": {
+      "japanese": "私は学生です。",
+      "english": "I am a student."
+    }
+  },
+  {
+    "kanji": "先生",
+    "hiragana": "せんせい",
+    "english": "teacher",
+    "discription": "A teacher is a professional who teaches students based on national curriculum guidelines within their specialist subject areas. Their duties include assigning homework, grading tests, documenting progress, and keeping up with parent communication",
+    "soundFile": "path/to/soundfile3.mp3",
+    "example": {
+      "japanese": "彼は先生です。",
+      "english": "He is a teacher."
+    }
+  },
+  {
+    "kanji": "友達",
+    "hiragana": "ともだち",
+    "english": "friend",
+    "discription": "A friend is a person attached to another by feelings of affection or personal regard. They can provide assistance, support, and companionship",
+    "soundFile": "path/to/soundfile4.mp3",
+    "example": {
+      "japanese": "彼女は私の友達です。",
+      "english": "She is my friend."
+    }
+  },
+  {
+    "kanji": "家族",
+    "hiragana": "かぞく",
+    "english": "family",
+    "discription": "A family is a group of people related by the ties of marriage, blood, or adoption. Members of a family usually live in a single household and interact with each other in their respective social positions, usually those of spouses, parents, children, and siblings",
+    "soundFile": "path/to/soundfile5.mp3",
+    "example": {
+      "japanese": "私の家族は大切です。",
+      "english": "My family is important."
+    }
+  }
+]
