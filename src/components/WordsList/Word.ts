@@ -10,11 +10,11 @@ type word = {
   };
 };
 export default function Word(word: word) {
-  console.log("word:", word);
+  // console.log("word:", word);
   // The main container it's just a border to contan everything else
   const container = document.createElement("div");
   const className0 =
-    "h-16 border border-[hsl(212,12%,21%)] mb-4 grid grid-cols-[64px,64px,128px,128px,256px,256px] gap-x-1";
+    "h-16 border border-[hsl(212,12%,21%)] mb-4 grid grid-cols-[64px,64px,128px,128px,256px,256px] gap-x-1 w-fit mx-auto";
   container.setAttribute("class", className0);
 
   // **********[Sound Button]********** //
