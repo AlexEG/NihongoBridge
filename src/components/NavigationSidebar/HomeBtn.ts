@@ -1,3 +1,5 @@
+import { renderWords } from "../../../electron/modules/renderWords";
+import WordsList from "../WordsList";
 import SidebarNavigationBtn from "./SidebarNavigationBtn";
 
 export default function HomeBtn() {
@@ -17,6 +19,14 @@ export default function HomeBtn() {
   );
 
   svg.append(path);
+  const button = SidebarNavigationBtn(svg, "International Phonetic Alphabet");
+  button.addEventListener("click", switchToHome);
 
-  return SidebarNavigationBtn(svg, "Home");
+  function switchToHome() {
+    const root = document.querySelector("#root");
+    root.querySelector("main").remove();
+    root.append(WordsList());
+    renderWords();
+  }
+  return button;
 }

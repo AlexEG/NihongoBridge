@@ -63,3 +63,16 @@ button .tooltiptext {
   position: absolute;
   z-index: 1;
 }
+
+/* ------  */
+main::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+main::-webkit-scrollbar-thumb {
+  background: #30363d;
+  /* border-radius: 5px; */
+}
+main::-webkit-scrollbar-track {
+  margin-top: 1px;
+}

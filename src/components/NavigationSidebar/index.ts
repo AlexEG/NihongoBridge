@@ -7,6 +7,7 @@ import CalendarBtn from "./CalendarBtn";
 import NotificationBtn from "./NotificationBtn";
 import StatisticBtn from "./StatisticBtn";
 import LeaderboardsBtn from "./LeaderboardsBtn";
+import IPABtn from "./IPABtn";
 
 export default function NavigationSidebar() {
   const container = document.createElement("nav");
@@ -20,6 +21,7 @@ export default function NavigationSidebar() {
 
   container.append(
     HomeBtn(),
+    IPABtn(),
     StatisticBtn(),
     CalendarBtn(),
     HiraganaBtn(),

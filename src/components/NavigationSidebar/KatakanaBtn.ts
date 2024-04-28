@@ -8,7 +8,7 @@ export default function KatakanaBtn() {
   svg.setAttribute("viewBox", "0 0 512.000000 512.000000");
 
   // Create the group for the SVG
-  let g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+  const g = document.createElementNS("http://www.w3.org/2000/svg", "g");
   g.setAttribute(
     "transform",
     "translate(0.000000,512.000000) scale(0.100000,-0.100000)"
@@ -17,7 +17,7 @@ export default function KatakanaBtn() {
   g.setAttribute("stroke", "none");
   g.style.strokeWidth = "0.5";
   // Create the path for the SVG
-  let path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+  const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
 
   path.setAttribute(
     "d",
