@@ -3,8 +3,8 @@
     "kanji": "東京",
     "hiragana": "とうきょう",
     "english": "Tokyo",
-    "discription": "Tokyo is the capital of Japan and one of the most populous cities in the world. It’s located at the head of Tokyo Bay on the Pacific coast of central Honshu, which is Japan’s largest island",
-    "soundFile": "path/to/soundfile1.mp3",
+    "description": "Tokyo is the capital of Japan and one of the most populous cities in the world. It’s located at the head of Tokyo Bay on the Pacific coast of central Honshu, which is Japan’s largest island",
+    "soundFile": "/data/sound/nosound.mp3",
     "example": {
       "japanese": "私は来週、東京に旅行に行きます。",
       "english": "I am going to travel to Tokyo next week."
@@ -14,8 +14,8 @@
     "kanji": "学生",
     "hiragana": "がくせい",
     "english": "student",
-    "discription": "A student is a person who is studying at a school, college, or university. They can also be someone who is learning anything, at any stage in their life",
-    "soundFile": "path/to/soundfile2.mp3",
+    "description": "A student is a person who is studying at a school, college, or university. They can also be someone who is learning anything, at any stage in their life",
+    "soundFile": "/data/sound/nosound.mp3",
     "example": {
       "japanese": "私は学生です。",
       "english": "I am a student."
@@ -25,8 +25,8 @@
     "kanji": "先生",
     "hiragana": "せんせい",
     "english": "teacher",
-    "discription": "A teacher is a professional who teaches students based on national curriculum guidelines within their specialist subject areas. Their duties include assigning homework, grading tests, documenting progress, and keeping up with parent communication",
-    "soundFile": "path/to/soundfile3.mp3",
+    "description": "A teacher is a professional who teaches students based on national curriculum guidelines within their specialist subject areas. Their duties include assigning homework, grading tests, documenting progress, and keeping up with parent communication",
+    "soundFile": "/data/sound/nosound.mp3",
     "example": {
       "japanese": "彼は先生です。",
       "english": "He is a teacher."
@@ -36,8 +36,8 @@
     "kanji": "友達",
     "hiragana": "ともだち",
     "english": "friend",
-    "discription": "A friend is a person attached to another by feelings of affection or personal regard. They can provide assistance, support, and companionship",
-    "soundFile": "path/to/soundfile4.mp3",
+    "description": "A friend is a person attached to another by feelings of affection or personal regard. They can provide assistance, support, and companionship",
+    "soundFile": "/data/sound/nosound.mp3",
     "example": {
       "japanese": "彼女は私の友達です。",
       "english": "She is my friend."
@@ -47,11 +47,132 @@
     "kanji": "家族",
     "hiragana": "かぞく",
     "english": "family",
-    "discription": "A family is a group of people related by the ties of marriage, blood, or adoption. Members of a family usually live in a single household and interact with each other in their respective social positions, usually those of spouses, parents, children, and siblings",
-    "soundFile": "path/to/soundfile5.mp3",
+    "description": "A family is a group of people related by the ties of marriage, blood, or adoption. Members of a family usually live in a single household and interact with each other in their respective social positions, usually those of spouses, parents, children, and siblings",
+    "soundFile": "/data/sound/nosound.mp3",
     "example": {
       "japanese": "私の家族は大切です。",
       "english": "My family is important."
+    }
+  },
+  {
+    "kanji": "水",
+    "hiragana": "みず",
+    "english": "water",
+    "description": "Water is a transparent, tasteless, odorless, and nearly colorless chemical substance, which is the main constituent of Earth's hydrosphere and the fluids of all known living organisms.",
+    "soundFile": "/data/sound/nosound.mp3",
+    "example": {
+      "japanese": "私は水を飲みます。",
+      "english": "I drink water."
+    }
+  },
+  {
+    "kanji": "火",
+    "hiragana": "ひ",
+    "english": "fire",
+    "description": "Fire is the rapid oxidation of a material in the exothermic chemical process of combustion, releasing heat, light, and various reaction products.",
+    "soundFile": "/data/sound/nosound.mp3",
+    "example": {
+      "japanese": "火は熱いです。",
+      "english": "Fire is hot."
+    }
+  },
+  {
+    "kanji": "猫",
+    "hiragana": "ねこ",
+    "english": "cat",
+    "description": "A small domesticated carnivorous mammal with soft fur, a short snout, and retractile claws. It is widely kept as a pet or for catching mice, and many breeds have been developed.",
+    "soundFile": "/data/sound/nosound.mp3",
+    "example": {
+      "japanese": "猫が好きです。",
+      "english": "I like cats."
+    }
+  },
+  {
+    "kanji": "水",
+    "hiragana": "みず",
+    "english": "water",
+    "description": "A clear, colorless, odorless, and tasteless liquid, essential for most plant and animal life and the most widely used of all solvents.",
+    "soundFile": "/data/sound/nosound.mp3",
+    "example": {
+      "japanese": "水を飲みます。",
+      "english": "I drink water."
+    }
+  },
+  {
+    "kanji": "山",
+    "hiragana": "やま",
+    "english": "mountain",
+    "description": "A large natural elevation of the earth's surface rising abruptly from the surrounding level; a large steep hill.",
+    "soundFile": "/data/sound/nosound.mp3",
+    "example": {
+      "japanese": "山に登ります。",
+      "english": "I climb the mountain."
+    }
+  },
+  {
+    "kanji": "太陽",
+    "hiragana": "たいよう",
+    "english": "sun",
+    "description": "The star at the center of our solar system, which is a nearly perfect sphere of hot plasma, radiating energy mainly as light and heat.",
+    "soundFile": "/data/sound/nosound.mp3",
+    "example": {
+      "japanese": "太陽が輝いています。",
+      "english": "The sun is shining."
+    }
+  },
+  {
+    "kanji": "花",
+    "hiragana": "はな",
+    "english": "flower",
+    "description": "The seed-bearing part of a plant, consisting of reproductive organs that are typically surrounded by a brightly colored corolla and a green calyx.",
+    "soundFile": "/data/sound/nosound.mp3",
+    "example": {
+      "japanese": "花がきれいです。",
+      "english": "The flower is beautiful."
+    }
+  },
+  {
+    "kanji": "星",
+    "hiragana": "ほし",
+    "english": "star",
+    "description": "A fixed luminous point in the night sky which is a large, remote incandescent body like the sun.",
+    "soundFile": "/data/sound/nosound.mp3",
+    "example": {
+      "japanese": "星が輝いています。",
+      "english": "The stars are twinkling."
+    }
+  },
+  {
+    "kanji": "海",
+    "hiragana": "うみ",
+    "english": "sea",
+    "description": "A large body of salt water that is often connected to an ocean and may be partially or completely enclosed by land.",
+    "soundFile": "/data/sound/nosound.mp3",
+    "example": {
+      "japanese": "海は青くて広いです。",
+      "english": "The sea is blue and vast."
+    }
+  },
+  {
+    "kanji": "猫",
+    "hiragana": "ねこ",
+    "english": "cat",
+    "description": "A small domesticated carnivorous mammal with soft fur, a short snout, and retractile claws.",
+    "soundFile": "/data/sound/nosound.mp3",
+    "example": {
+      "japanese": "猫が窓辺で寝ています。",
+      "english": "The cat is sleeping by the window."
+    }
+  },
+  {
+    "kanji": "星",
+    "hiragana": "ほし",
+    "english": "star",
+    "description": "A fixed luminous point in the night sky which is a large, remote incandescent body like the sun.",
+    "soundFile": "/data/sound/japanese/examples/hoshi example.mp3",
+    "example": {
+      "japanese": "夜空に星が輝いています。",
+      "english": "Stars are shining in the night sky."
     }
   }
 ]

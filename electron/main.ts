@@ -11,6 +11,7 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     // transparent: true,
     // frame: false,
+    icon: "nihongobridgeicon2.png",
     titleBarStyle: "hidden",
     titleBarOverlay: {
       color: "#00000000",

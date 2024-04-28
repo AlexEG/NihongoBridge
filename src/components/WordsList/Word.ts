@@ -2,7 +2,7 @@ type word = {
   kanji: string;
   hiragana: string;
   english: string;
-  discription: string;
+  description: string;
   soundFile: string;
   example: {
     japanese: string;
@@ -26,6 +26,10 @@ export default function Word(word: word) {
   const soundBtn = document.createElement("button");
   const className2 = "bg-[hsl(216,28%,7%)] p-3 rounded-lg";
   soundBtn.setAttribute("class", className2);
+  soundBtn.addEventListener("click", () => {
+    const audio = new Audio(word.soundFile);
+    audio.play();
+  });
 
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.setAttribute("fill", "none");
@@ -86,18 +90,18 @@ export default function Word(word: word) {
   englishContainer.append(english);
   container.append(englishContainer);
 
-  // **********[discription]********** //
-  const discriptionContainer = document.createElement("div");
+  // **********[description]********** //
+  const descriptionContainer = document.createElement("div");
   const className9 = "w-full h-full flex justify-center items-center";
-  discriptionContainer.setAttribute("class", className9);
+  descriptionContainer.setAttribute("class", className9);
 
-  const discription = document.createElement("span");
+  const description = document.createElement("span");
   const className10 = "text-white truncate-2-lines text-xs";
-  discription.setAttribute("class", className10);
-  discription.innerText = word.discription;
+  description.setAttribute("class", className10);
+  description.innerText = word.description;
 
-  discriptionContainer.append(discription);
-  container.append(discriptionContainer);
+  descriptionContainer.append(description);
+  container.append(descriptionContainer);
 
   // **********[Example]********** //
   const exampleContainer = document.createElement("div");
