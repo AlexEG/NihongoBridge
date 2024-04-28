@@ -32,6 +32,7 @@ import NavigationSidebar from "../src/components/NavigationSidebar";
 import WordsList from "../src/components/WordsList";
 import Word from "../src/components/WordsList/Word";
 import { renderWords } from "./modules/renderWords";
+import IPA from "../src/IPA";
 
 console.log(
   '👋 This message is being logged by "renderer.ts", included via Vite'
@@ -41,28 +42,7 @@ const ROOT = document.querySelector("div#root");
 
 ROOT.append(TitleBar());
 ROOT.append(NavigationSidebar());
-ROOT.append(WordsList());
-
-// window.api
-//   .readJsonFile("data/words.json")
-//   .then((data) => {
-//     console.log(data);
-//   })
-//   .catch((err) => {
-//     console.error(err);
-//   });
-
-// async function renderWords() {
-//   const wordslist = document.querySelector("main#wordslist");
-//   try {
-//     const data = await window.api.readJsonFile("data/words.json");
-//     for (const word of data) {
-//       wordslist.append(Word(word));
-//       // console.log(key);
-//     }
-//   } catch (err) {
-//     console.error(err);
-//   }
-// }
+// ROOT.append(WordsList());
+ROOT.append(IPA());
 
 renderWords();
