@@ -42,7 +42,7 @@ const ROOT = document.querySelector("div#root");
 
 ROOT.append(TitleBar());
 ROOT.append(NavigationSidebar());
-// ROOT.append(WordsList());
-ROOT.append(IPA());
+ROOT.append(WordsList());
+// ROOT.append(IPA());
 
 renderWords();
