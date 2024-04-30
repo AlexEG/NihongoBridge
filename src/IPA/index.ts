@@ -1,4 +1,5 @@
 import DuolingoEnglishIPA from "./DuolingoEnglishIPA";
+import Sources from "./Sources";
 
 export default function IPA() {
   const IPA_MAIN = document.createElement("main");
@@ -11,7 +12,7 @@ export default function IPA() {
   const className2 = "";
   sectionsContainer.setAttribute("class", className2);
   sectionsContainer.setAttribute("id", "sections-container");
-  sectionsContainer.append(DuolingoEnglishIPA());
+  sectionsContainer.append(Sources());
 
   IPA_MAIN.append(localNav(), sectionsContainer);
   return IPA_MAIN;
@@ -32,15 +33,11 @@ function localNav() {
   const className = "border0 mx-auto pt-4 pb-6 flex justify-center gap-x-2";
   nav.setAttribute("class", className);
 
-  const duolingoEnglishIPABtn = navBtn(
-    "Duolingo ENG",
-    DuolingoEnglishIPA(),
-    true
-  );
-  const ipachartBtn = navBtn("IPA Chart");
-  const sourcesBtn = navBtn("Sources");
+  const duolingoEnglishIPABtn = navBtn("Duolingo ENG", DuolingoEnglishIPA());
+  // const ipachartBtn = navBtn("IPA Chart");
+  const sourcesBtn = navBtn("Sources", Sources(), true);
 
-  nav.append(duolingoEnglishIPABtn, ipachartBtn, sourcesBtn);
+  nav.append(duolingoEnglishIPABtn, sourcesBtn);
 
   //* click functionality
 
@@ -79,7 +76,7 @@ function navBtn(
     const sectionsContainer = btn.parentElement.parentElement.querySelector(
       "div#sections-container"
     );
-    console.log("sectionsContainer", sectionsContainer);
+    // console.log("sectionsContainer", sectionsContainer);
     if (sectionsContainer.firstElementChild)
       sectionsContainer.firstElementChild.remove();
     sectionsContainer.append(associatedSection);
