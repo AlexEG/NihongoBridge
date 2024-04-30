@@ -38,9 +38,6 @@ function localNav() {
   const sourcesBtn = navBtn("Sources", Sources(), true);
 
   nav.append(duolingoEnglishIPABtn, sourcesBtn);
-
-  //* click functionality
-
   return nav;
 }
 
