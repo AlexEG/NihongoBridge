@@ -1,0 +1,247 @@
+{
+  "metadate": { "number_of_words": 3 },
+  "words": [
+    {
+      "soundFile": "/data/sound/nosound.mp3",
+      "word": "meticulous",
+      "definition": "showing great attention to detail; very careful and precise.",
+      "ipa_us": "[məˈtɪkjələs]",
+      "ipa_uk": "[mɪˈtɪkjʊləs]",
+      "example": "She was meticulous in her work, ensuring every detail was perfect.",
+      "similar_words": ["thorough", "careful", "diligent"],
+      "syllable_division": "me·tic·u·lous",
+      "difficultyLevel": 70
+    },
+    {
+      "soundFile": "/data/sound/nosound.mp3",
+      "word": "quintessential",
+      "definition": "representing the most perfect or typical example of a quality or class.",
+      "ipa_us": "[ˌkwɪntəˈsenʃəl]",
+      "ipa_uk": "[ˌkwɪn.tɪˈsen.ʃəl]",
+      "example": "He was the quintessential gentleman, polite and gracious to everyone he met.",
+      "similar_words": ["prototypical", "archetypal", "typical"],
+      "syllable_division": "quin·tes·sen·tial",
+      "difficultyLevel": 65
+    },
+    {
+      "soundFile": "/data/sound/nosound.mp3",
+      "word": "ubiquitous",
+      "definition": "present, appearing, or found everywhere.",
+      "ipa_us": "[juːˈbɪkwɪtəs]",
+      "ipa_uk": "[juːˈbɪkwɪtəs]",
+      "example": "Smartphones are ubiquitous these days, with almost everyone using one.",
+      "similar_words": ["omnipresent", "pervasive", "universal"],
+      "syllable_division": "u·biq·ui·tous",
+      "difficultyLevel": 60
+    },
+    {
+      "soundFile": "/data/sound/nosound.mp3",
+      "word": "breeze",
+      "definition": "A gentle wind or current of air.",
+      "ipa_us": "[briːz]",
+      "ipa_uk": "[briːz]",
+      "example": "The breeze rustled the leaves on the trees.",
+      "similar_words": ["wind", "zephyr", "gust"],
+      "syllable_division": "Breeze (one syllable)",
+      "difficultyLevel": 10
+    },
+    {
+      "soundFile": "/data/sound/nosound.mp3",
+      "word": "dusk",
+      "definition": "The time of day immediately following sunset.",
+      "ipa_us": "[dʌsk]",
+      "ipa_uk": "[dʌsk]",
+      "example": "The sky turned shades of orange and purple during dusk.",
+      "similar_words": ["twilight", "evening", "gloaming"],
+      "syllable_division": "Dusk (one syllable)",
+      "difficultyLevel": 15
+    },
+    {
+      "soundFile": "/data/sound/nosound.mp3",
+      "word": "mirth",
+      "definition": "Great joy, amusement, or happiness.",
+      "ipa_us": "[mɝːθ]",
+      "ipa_uk": "[mɜːθ]",
+      "example": "Their laughter filled the room with mirth.",
+      "similar_words": ["merriment", "glee", "cheerfulness"],
+      "syllable_division": "Mirth (one syllable)",
+      "difficultyLevel": 18
+    },
+    {
+      "soundFile": "/data/sound/nosound.mp3",
+      "word": "serendipity",
+      "definition": "The occurrence of events by chance in a happy or beneficial way.",
+      "ipa_us": "[ˌserənˈdɪpəti]",
+      "ipa_uk": "[ˌserənˈdɪpɪti]",
+      "example": "Finding a hundred-dollar bill on the ground was pure serendipity.",
+      "similar_words": ["fluke", "chance", "fortune"],
+      "syllable_division": "ser·en·dip·i·ty",
+      "difficultyLevel": 40
+    },
+    {
+      "soundFile": "/data/sound/nosound.mp3",
+      "word": "ephemeral",
+      "definition": "Lasting for a very short time.",
+      "ipa_us": "[ɪˈfemərəl]",
+      "ipa_uk": "[ɪˈfɛmərəl]",
+      "example": "The beauty of the sunset was ephemeral, gone within moments.",
+      "similar_words": ["transitory", "fleeting", "momentary"],
+      "syllable_division": "e·phem·er·al",
+      "difficultyLevel": 45
+    },
+    {
+      "soundFile": "/data/sound/nosound.mp3",
+      "word": "quintessential",
+      "definition": "Representing the most perfect or typical example of a quality or class.",
+      "ipa_us": "[ˌkwɪntɪˈsenʃəl]",
+      "ipa_uk": "[ˌkwɪntɪˈsɛnʃəl]",
+      "example": "She is the quintessential romantic heroine.",
+      "similar_words": ["prototypical", "archetypal", "classic"],
+      "syllable_division": "quin·tes·sen·tial",
+      "difficultyLevel": 50
+    },
+    {
+      "soundFile": "/data/sound/nosound.mp3",
+      "word": "acquiesce",
+      "definition": "Accept something reluctantly but without protest.",
+      "ipa_us": "[ˌækwiˈes]",
+      "ipa_uk": "[ˌækwiˈes]",
+      "example": "She seemed to acquiesce to the decision, albeit unwillingly.",
+      "similar_words": ["consent", "agree", "comply"],
+      "syllable_division": "ac·qui·esce",
+      "difficultyLevel": 55
+    },
+    {
+      "soundFile": "/data/sound/nosound.mp3",
+      "word": "idiosyncrasy",
+      "definition": "A mode of behavior or way of thought peculiar to an individual.",
+      "ipa_us": "[ˌɪdiəˈsɪŋkrəsi]",
+      "ipa_uk": "[ˌɪdiəˈsɪŋkrəsi]",
+      "example": "One of his idiosyncrasies is always wearing mismatched socks.",
+      "similar_words": ["quirk", "peculiarity", "eccentricity"],
+      "syllable_division": "id·i·o·syn·cra·sy",
+      "difficultyLevel": 65
+    },
+    {
+      "soundFile": "/data/sound/nosound.mp3",
+      "word": "languid",
+      "definition": "Displaying or having a disinclination for physical exertion or effort; slow and relaxed.",
+      "ipa_us": "[ˈlæŋɡwɪd]",
+      "ipa_uk": "[ˈlæŋɡwɪd]",
+      "example": "On a hot summer day, the cat lay languid in the shade.",
+      "similar_words": ["lethargic", "sluggish", "listless"],
+      "syllable_division": "lan·guid",
+      "difficultyLevel": 35
+    },
+    {
+      "soundFile": "/data/sound/nosound.mp3",
+      "word": "halcyon",
+      "definition": "Denoting a period of time in the past that was idyllically happy and peaceful.",
+      "ipa_us": "[ˈhælsiən]",
+      "ipa_uk": "[ˈhælsiən]",
+      "example": "She recalled the halcyon days of her youth with fondness.",
+      "similar_words": ["peaceful", "carefree", "blissful"],
+      "syllable_division": "hal·cy·on",
+      "difficultyLevel": 42
+    },
+    {
+      "soundFile": "/data/sound/nosound.mp3",
+      "word": "penumbra",
+      "definition": "The partially shaded outer region of the shadow cast by an opaque object.",
+      "ipa_us": "[pɪˈnʌmbrə]",
+      "ipa_uk": "[pɪˈnʌmbrə]",
+      "example": "The moon's penumbra caused a subtle eclipse, noticeable to those who knew where to look.",
+      "similar_words": ["shadow", "shade", "umbra"],
+      "syllable_division": "pe·num·bra",
+      "difficultyLevel": 48
+    },
+    {
+      "soundFile": "/data/sound/nosound.mp3",
+      "word": "sycophant",
+      "definition": "A person who acts obsequiously toward someone important in order to gain advantage.",
+      "ipa_us": "[ˈsɪkəfænt]",
+      "ipa_uk": "[ˈsɪkəfænt]",
+      "example": "The CEO was surrounded by sycophants who agreed with every word he said.",
+      "similar_words": ["flatterer", "toady", "yes-man"],
+      "syllable_division": "sy·co·phant",
+      "difficultyLevel": 53
+    },
+    {
+      "soundFile": "/data/sound/nosound.mp3",
+      "word": "verisimilitude",
+      "definition": "The appearance of being true or real.",
+      "ipa_us": "[ˌvɛrɪsɪˈmɪlɪˌtud]",
+      "ipa_uk": "[ˌvɛrɪsɪˈmɪlɪˌtjuːd]",
+      "example": "The novel's attention to detail gave it a sense of verisimilitude.",
+      "similar_words": ["realism", "plausibility", "authenticity"],
+      "syllable_division": "ver·i·si·mil·i·tude",
+      "difficultyLevel": 70
+    },
+    {
+      "soundFile": "/data/sound/nosound.mp3",
+      "word": "ephemeron",
+      "definition": "Something short-lived or transient.",
+      "ipa_us": "[ɪˈfɛmərɒn]",
+      "ipa_uk": "[ɪˈfɛmərɒn]",
+      "example": "The mayfly is an ephemeron, with a lifespan of just a single day.",
+      "similar_words": ["transitory", "fleeting", "temporary"],
+      "syllable_division": "e·phem·er·on",
+      "difficultyLevel": 45
+    },
+    {
+      "soundFile": "/data/sound/nosound.mp3",
+      "word": "quixotic",
+      "definition": "Exceedingly idealistic; unrealistic and impractical.",
+      "ipa_us": "[kwɪkˈsɑtɪk]",
+      "ipa_uk": "[kwɪkˈsɒtɪk]",
+      "example": "His quixotic plan to build a city on the moon was met with skepticism.",
+      "similar_words": ["idealistic", "unrealistic", "impractical"],
+      "syllable_division": "quix·ot·ic",
+      "difficultyLevel": 55
+    },
+    {
+      "soundFile": "/data/sound/nosound.mp3",
+      "word": "demure",
+      "definition": "Reserved, modest, and shy.",
+      "ipa_us": "[dɪˈmjʊr]",
+      "ipa_uk": "[dɪˈmjʊə]",
+      "example": "She gave a demure smile in response to the compliment.",
+      "similar_words": ["modest", "shy", "coy"],
+      "syllable_division": "de·mure",
+      "difficultyLevel": 25
+    },
+    {
+      "soundFile": "/data/sound/nosound.mp3",
+      "word": "panacea",
+      "definition": "A solution or remedy for all difficulties or diseases.",
+      "ipa_us": "[ˌpænəˈsiːə]",
+      "ipa_uk": "[ˌpanəˈsiːə]",
+      "example": "The new policy was not a panacea for the economy's problems.",
+      "similar_words": ["cure-all", "remedy", "universal cure"],
+      "syllable_division": "pan·a·cea",
+      "difficultyLevel": 50
+    },
+    {
+      "soundFile": "/data/sound/nosound.mp3",
+      "word": "gossamer",
+      "definition": "Something very light, thin, and insubstantial or delicate.",
+      "ipa_us": "[ˈɡɑsəmər]",
+      "ipa_uk": "[ˈɡɒsəmə]",
+      "example": "A gossamer veil of mist hung over the landscape.",
+      "similar_words": ["delicate", "diaphanous", "light"],
+      "syllable_division": "gos·sa·mer",
+      "difficultyLevel": 40
+    },
+    {
+      "soundFile": "/data/sound/nosound.mp3",
+      "word": "zephyr",
+      "definition": "A soft gentle breeze.",
+      "ipa_us": "[ˈzɛfər]",
+      "ipa_uk": "[ˈzɛfə]",
+      "example": "The zephyr made the day feel cooler than it actually was.",
+      "similar_words": ["breeze", "draft", "air"],
+      "syllable_division": "zeph·yr",
+      "difficultyLevel": 20
+    }
+  ]
+}

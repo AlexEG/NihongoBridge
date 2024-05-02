@@ -72,6 +72,8 @@ import { readJsonFile } from "./modules/jsonReader";
 
 ipcMain.handle("read-json-file", async (event, fileName) => {
   try {
+    // console.count("readJsonFile from main");
+
     const data = await readJsonFile(fileName);
     return data;
   } catch (err) {

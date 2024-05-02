@@ -1,6 +1,10 @@
 import LocalNav from "../../../src/common/LocalNav/_LocalNav";
-import DuolingoEnglishIPA from "../IPA/DuolingoEnglishIPA";
-import Sources from "../IPA/Sources";
+import English from "./English";
+import Japanese from "./Japanese";
+
+// so they just run one time
+const ENGLISH = English();
+const JAPANESE = Japanese();
 
 export default function VocabularyBank() {
   const MAIN = document.createElement("main");
@@ -9,18 +13,22 @@ export default function VocabularyBank() {
     "bg-[hsl(218,80%,2%)] w-[calc(100%-47px)] h-[calc(100vh-31px)] ml-auto overflow-auto relative";
   MAIN.setAttribute("class", className);
 
+  const naveBtns = [
+    { text: "English", HTMLpageToRender: ENGLISH, isOpenByDefault: true },
+    { text: "日本語", HTMLpageToRender: JAPANESE },
+  ];
+
+  MAIN.append(LocalNav(sectionsContainer(), naveBtns), sectionsContainer());
+  return MAIN;
+}
+
+function sectionsContainer() {
   const sectionsContainer = document.createElement("div");
   const className2 = "";
   sectionsContainer.setAttribute("class", className2);
   sectionsContainer.setAttribute("id", "sections-container");
 
-  sectionsContainer.append(Sources());
+  sectionsContainer.append(ENGLISH);
 
-  const naveBtns = [
-    { text: "btn 1", HTMLpageToRender: DuolingoEnglishIPA() },
-    { text: "btn 2", HTMLpageToRender: Sources(), isOpenByDefault: true },
-  ];
-
-  MAIN.append(LocalNav(sectionsContainer, naveBtns), sectionsContainer);
-  return MAIN;
+  return sectionsContainer;
 }
