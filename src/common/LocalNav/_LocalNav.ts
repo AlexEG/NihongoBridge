@@ -1,43 +1,23 @@
-import DuolingoEnglishIPA from "./DuolingoEnglishIPA";
-import Sources from "./Sources";
+type navBtns = {
+  text: string;
+  HTMLpageToRender: HTMLElement;
+  isOpenByDefault?: boolean;
+}[];
 
-export default function IPA() {
-  const IPA_MAIN = document.createElement("main");
-  IPA_MAIN.setAttribute("id", "ipa");
-  const className1 =
-    "bg-[hsl(218,80%,2%)] w-[calc(100%-47px)] h-[calc(100vh-31px)] ml-auto overflow-auto relative";
-  IPA_MAIN.setAttribute("class", className1);
-
-  const sectionsContainer = document.createElement("div");
-  const className2 = "";
-  sectionsContainer.setAttribute("class", className2);
-  sectionsContainer.setAttribute("id", "sections-container");
-  sectionsContainer.append(Sources());
-
-  IPA_MAIN.append(localNav(), sectionsContainer);
-  return IPA_MAIN;
-}
-
-function duolingoDisclosure() {
-  const disclosure = document.createElement("p");
-  const className = "text-white/30 text-xs ";
-
-  disclosure.setAttribute("class", className);
-  disclosure.innerText =
-    "The sound and design elements used in this application are sourced from Duolingo. All related rights and trademarks are owned by Duolingo Inc.";
-  return disclosure;
-}
-
-function localNav() {
+export default function LocalNav(
+  targetToRenderTo: HTMLElement,
+  navBtns: navBtns
+) {
   const nav = document.createElement("div");
   const className = "border0 mx-auto pt-4 pb-6 flex justify-center gap-x-2";
   nav.setAttribute("class", className);
 
-  const duolingoEnglishIPABtn = navBtn("Duolingo ENG", DuolingoEnglishIPA());
-  // const ipachartBtn = navBtn("IPA Chart");
-  const sourcesBtn = navBtn("Sources", Sources(), true);
+  for (const [_, { text, HTMLpageToRender, isOpenByDefault }] of Object.entries(
+    navBtns
+  )) {
+    nav.append(navBtn(text, HTMLpageToRender, isOpenByDefault));
+  }
 
-  nav.append(duolingoEnglishIPABtn, sourcesBtn);
   return nav;
 }
 

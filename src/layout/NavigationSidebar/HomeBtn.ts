@@ -1,5 +1,5 @@
 import { renderWords } from "../../../electron/modules/renderWords";
-import WordsList from "../WordsList";
+import WordsList from "../../components/WordsList";
 import SidebarNavigationBtn from "./SidebarNavigationBtn";
 
 export default function HomeBtn() {

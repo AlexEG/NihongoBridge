@@ -8,6 +8,7 @@ import NotificationBtn from "./NotificationBtn";
 import StatisticBtn from "./StatisticBtn";
 import LeaderboardsBtn from "./LeaderboardsBtn";
 import IPABtn from "./IPABtn";
+import VocabularyBankBtn from "./VocabularyBankBtn";
 
 export default function NavigationSidebar() {
   const container = document.createElement("nav");
@@ -15,7 +16,7 @@ export default function NavigationSidebar() {
   container.setAttribute("class", "pl-1");
 
   const div = document.createElement("div");
-  div.setAttribute("class", "mt-auto");
+  div.setAttribute("class", "mt-auto ");
 
   div.append(NotificationBtn(), SettingsBtn());
 
@@ -28,6 +29,7 @@ export default function NavigationSidebar() {
     // KatakanaBtn(),
     PracticeBtn(),
     LeaderboardsBtn(),
+    VocabularyBankBtn(),
     div
   );
 

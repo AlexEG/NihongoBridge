@@ -27,12 +27,13 @@
  */
 
 import "../src/index.css";
-import TitleBar from "../src/components/TitleBar";
-import NavigationSidebar from "../src/components/NavigationSidebar";
+import TitleBar from "../src/layout/TitleBar/TitleBar";
+import NavigationSidebar from "../src/layout/NavigationSidebar/_NavigationSidebar";
 import WordsList from "../src/components/WordsList";
 import Word from "../src/components/WordsList/Word";
 import { renderWords } from "./modules/renderWords";
-import IPA from "../src/IPA";
+import IPA from "../src/pages/IPA/_IPA";
+import VocabularyBank from "../src/pages/VocabularyBank/_VocabularyBank";
 
 console.log(
   '👋 This message is being logged by "renderer.ts", included via Vite'
@@ -43,6 +44,7 @@ const ROOT = document.querySelector("div#root");
 ROOT.append(TitleBar());
 ROOT.append(NavigationSidebar());
 // ROOT.append(WordsList());
-ROOT.append(IPA());
+// ROOT.append(IPA());
+ROOT.append(VocabularyBank());
 
 renderWords();

@@ -10,18 +10,18 @@ export default function Sources() {
   postsContainer.setAttribute("class", className2);
 
   postsContainer.append(
-    blogPost(),
-    blogPost(),
-    blogPost(),
-    blogPost(),
-    blogPost()
+    blogPost(
+      "https://healthy-workplaces.osha.europa.eu/sites/hwc/files/styles/large/public/2022-06/Wikipedia-logo.png?itok=sQJn3LHK",
+      "International Phonetic Alphabet - Wikipedia",
+      "https://en.wikipedia.org/wiki/International_Phonetic_Alphabet"
+    )
   );
 
   SOURCES.append(postsContainer);
   return SOURCES;
 }
 
-function blogPost() {
+function blogPost(coverURL: string, text: string, link: string) {
   const blogPost = document.createElement("div");
   const className =
     "border0 h-56 w-64 opacity-80 hover:opacity-100 transition-opacity cursor-pointer ";
@@ -31,8 +31,7 @@ function blogPost() {
   const className2 = "w-full h-40 relative";
 
   cover.setAttribute("class", className2);
-  cover.style.backgroundImage =
-    "url('https://healthy-workplaces.osha.europa.eu/sites/hwc/files/styles/large/public/2022-06/Wikipedia-logo.png?itok=sQJn3LHK')";
+  cover.style.backgroundImage = `url('${coverURL}')`;
   cover.style.backgroundSize = "cover";
 
   const overlay = document.createElement("div");
@@ -45,7 +44,7 @@ function blogPost() {
   const titleText = document.createElement("p");
   const className4 = "text-white p-1 truncate-2-lines text-sm";
   titleText.setAttribute("class", className4);
-  titleText.innerText = "International Phonetic Alphabet - Wikipedia";
+  titleText.innerText = text;
   blogPost.append(cover, titleText);
 
   blogPost.addEventListener("click", clickHandler);
@@ -55,8 +54,7 @@ function blogPost() {
     postsContainer.style.display = "none";
 
     const webview = document.createElement("webview");
-    webview.src =
-      "https://en.wikipedia.org/wiki/International_Phonetic_Alphabet";
+    webview.src = link;
     const className5 = "w-full h-[calc(100vh-145px)]"; // 31px(titlebar) + 82px(localNav) + 32px (SOURCES padding up and down)
     webview.setAttribute("class", className5);
 
