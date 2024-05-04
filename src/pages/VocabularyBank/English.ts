@@ -1,5 +1,22 @@
 import WordENG from "./WordENG";
-import { VocabularyData, WordInfo } from "./_types";
+
+interface VocabularyData {
+  metadate: { number_of_words: number };
+  words: WordInfo[];
+}
+
+interface WordInfo {
+  soundFile: string;
+  word: string;
+  definition: string;
+  ipa_us: string;
+  ipa_uk: string;
+  example: string;
+  similar_words: string[];
+  syllable_division: string;
+  tags: string[];
+  difficultyLevel: number;
+}
 
 export default function English() {
   const English = document.createElement("div");
@@ -9,18 +26,20 @@ export default function English() {
   // Read the JSON file and log the 'words' data
   const dataPromise = window.api.readJsonFile("vocabulary-bank/English.json");
 
-  const wordsList: string[] = [];
+  // const wordsList: string[] = [];
 
   dataPromise
     .then((data: VocabularyData) => {
       const wordsInfo: WordInfo[] = data.words;
 
       for (const wordInfo of wordsInfo) {
-        wordsList.push(wordInfo.word);
-        console.count("word");
+        // wordsList.push(wordInfo.word);
         English.append(WordENG(wordInfo));
       }
-      console.log("wordsList:", wordsList);
+      // console.log(
+      //   `wordsList (${wordsList.length}):`,
+      //   JSON.stringify(wordsList)
+      // );
     })
     .catch((error: Error) => {
       console.error("Failed to read the JSON file:", error);

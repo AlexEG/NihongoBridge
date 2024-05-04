@@ -1,11 +1,22 @@
-import { WordInfo } from "./_types";
+interface WordInfo {
+  soundFile: string;
+  word: string;
+  definition: string;
+  ipa_us: string;
+  ipa_uk: string;
+  example: string;
+  similar_words: string[];
+  syllable_division: string;
+  tags: string[];
+  difficultyLevel: number;
+}
 
 export default function WordENG(wordInfo: WordInfo) {
   // console.log("word:", word);
   // The main container it's just a border to contan everything else
   const WordENG = document.createElement("div");
   const className0 =
-    "h-16 border border-[hsl(212,12%,21%)] mb-4 grid grid-cols-[64px,128px,128px,256px,256px,128px] gap-x-1 w-fit mx-auto";
+    "h-16 border border-[hsl(212,12%,21%)] mb-4 grid grid-cols-[64px,128px,128px,256px,256px,128px,128px,64px] gap-x-1 w-fit mx-auto";
   WordENG.setAttribute("class", className0);
 
   // **********[Sound Button]********** //
@@ -44,7 +55,7 @@ export default function WordENG(wordInfo: WordInfo) {
   // **********[word]********** //
 
   const wordContainer = document.createElement("div");
-  const className3 = "w-full h-full flex  items-center";
+  const className3 = "w-full h-full flex items-center truncate";
   wordContainer.setAttribute("class", className3);
 
   const word = document.createElement("span");
@@ -57,7 +68,7 @@ export default function WordENG(wordInfo: WordInfo) {
 
   // **********[syllable_division & ipa_us]********** //
   const syllableDivisionAndIpaUSContainer = document.createElement("div");
-  const className5 = "w-full h-full flex flex-col justify-center";
+  const className5 = "w-full h-full flex flex-col justify-center truncate";
   syllableDivisionAndIpaUSContainer.setAttribute("class", className5);
 
   const syllableDivision = document.createElement("span");
@@ -104,22 +115,61 @@ export default function WordENG(wordInfo: WordInfo) {
   const className12 = "w-full h-full flex flex-col justify-center items-center";
   similarWordsContainer.setAttribute("class", className12);
 
-  const className = "text-white/50 truncate text-xs text-center ";
+  const className13 = "text-white/50 truncate text-xs text-center ";
 
   const word1 = document.createElement("span");
-  word1.setAttribute("class", className);
+  word1.setAttribute("class", className13);
   word1.innerText = wordInfo.similar_words[0];
 
   const word2 = document.createElement("span");
-  word2.setAttribute("class", className);
+  word2.setAttribute("class", className13);
   word2.innerText = wordInfo.similar_words[1];
 
   const word3 = document.createElement("span");
-  word3.setAttribute("class", className);
+  word3.setAttribute("class", className13);
   word3.innerText = wordInfo.similar_words[2];
 
   similarWordsContainer.append(word1, word2, word3);
   WordENG.append(similarWordsContainer);
+
+  // **********[tags]********** //
+  const tagsContainer = document.createElement("div");
+  const className14 = "w-full h-full flex flex-col justify-center items-center";
+  tagsContainer.setAttribute("class", className14);
+
+  const className = "text-white/50 truncate text-xs text-center ";
+
+  if (wordInfo.tags) {
+    const tag1 = document.createElement("span");
+    tag1.setAttribute("class", className);
+    tag1.innerText = wordInfo.tags[0];
+
+    const tag2 = document.createElement("span");
+    tag2.setAttribute("class", className);
+    tag2.innerText = wordInfo.tags[1];
+
+    const tag3 = document.createElement("span");
+    tag3.setAttribute("class", className);
+    tag3.innerText = wordInfo.tags[2];
+
+    tagsContainer.append(tag1, tag2, tag3);
+  }
+  WordENG.append(tagsContainer);
+
+  // **********[difficultyLevel]********** //
+  if (wordInfo.difficultyLevel) {
+    const difficultyLevelContainer = document.createElement("div");
+    const className15 = "w-full h-full flex items-center justify-center";
+    difficultyLevelContainer.setAttribute("class", className15);
+
+    const number = document.createElement("p");
+    const className16 = "text-white";
+    number.setAttribute("class", className16);
+    number.innerText = String(wordInfo.difficultyLevel);
+
+    difficultyLevelContainer.append(number);
+    WordENG.append(difficultyLevelContainer);
+  }
 
   return WordENG;
 }
