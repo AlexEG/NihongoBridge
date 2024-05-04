@@ -1,3 +1,4 @@
+import Practice from "../../pages/Practice/_Practice";
 import SidebarNavigationBtn from "./SidebarNavigationBtn";
 
 export default function PracticeBtn() {
@@ -18,5 +19,13 @@ export default function PracticeBtn() {
 
   svg.append(path0);
 
-  return SidebarNavigationBtn(svg, "Practice");
+  const button = SidebarNavigationBtn(svg, "Practice");
+  button.addEventListener("click", switchToIPA);
+
+  function switchToIPA() {
+    const root = document.querySelector("#root");
+    root.querySelector("main").remove();
+    root.append(Practice());
+  }
+  return button;
 }

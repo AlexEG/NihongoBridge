@@ -34,6 +34,7 @@ import Word from "../src/components/WordsList/Word";
 import { renderWords } from "./modules/renderWords";
 import IPA from "../src/pages/IPA/_IPA";
 import VocabularyBank from "../src/pages/VocabularyBank/_VocabularyBank";
+import Practice from "../src/pages/Practice/_Practice";
 
 console.log(
   '👋 This message is being logged by "renderer.ts", included via Vite'
@@ -45,6 +46,7 @@ ROOT.append(TitleBar());
 ROOT.append(NavigationSidebar());
 // ROOT.append(WordsList());
 // ROOT.append(IPA());
-ROOT.append(VocabularyBank());
+// ROOT.append(VocabularyBank());
+ROOT.append(Practice());
 
 renderWords();
