@@ -1,4 +1,5 @@
 import LocalNav from "../../../src/common/LocalNav/_LocalNav";
+import LexiconTypist from "./ENG/LexiconTypist/_LexiconTypist";
 import English from "./ENG/_English";
 import Japanese from "./JP/_Japanese";
 
@@ -29,6 +30,7 @@ function sectionsContainer() {
   sectionsContainer.setAttribute("id", "sections-container");
 
   sectionsContainer.append(ENGLISH);
+  // sectionsContainer.append(LexiconTypist());
 
   return sectionsContainer;
 }

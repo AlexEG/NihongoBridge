@@ -1,4 +1,21 @@
-import LexiconTypist from "./LexiconTypist";
+import LexiconTypist from "./LexiconTypist/_LexiconTypist";
+interface VocabularyData {
+  metadate: { number_of_words: number };
+  words: WordInfo[];
+}
+
+interface WordInfo {
+  soundFile: string;
+  word: string;
+  definition: string;
+  ipa_us: string;
+  ipa_uk: string;
+  example: string;
+  similar_words: string[];
+  syllable_division: string;
+  tags: string[];
+  difficultyLevel: number;
+}
 
 export default function English() {
   const English = document.createElement("div");
@@ -6,25 +23,49 @@ export default function English() {
     "relative grid grid-cols-[256px,256px,256px] place-content-center pt-20 gap-6";
   English.setAttribute("class", className);
 
-  const precisionOfMeaning = ipcc(
-    "Precision of Meaning",
-    "is a focused exercise where you’ll encounter precise definitions and challenge yourself to identify the correct term from five options"
-  );
+  // const precisionOfMeaning = ipcc(
+  //   "vocabulary (definition -> multiple choices)",
+  //   "is a focused exercise where you’ll encounter precise definitions and challenge yourself to identify the correct term from five options",
+  //   LexiconTypist()
+  // );
 
-  const lexiconTypist = ipcc(
-    "Lexicon Typist",
-    "sharpens your spelling skills by typing the correct word from its definition. Quick, precise, and effective"
-  );
-  const auditoryLexicon = ipcc(
-    "Auditory Lexicon",
-    "Enhance your listening accuracy by typing words you hear. Swift, exact, and practical."
-  );
-  English.append(precisionOfMeaning, lexiconTypist, auditoryLexicon);
+  // const lexiconTypist = ipcc(
+  //   "spelling (definition -> typing)",
+  //   "sharpens your spelling skills by typing the correct word from its definition. Quick, precise, and effective",
+  //   LexiconTypist()
+  // );
+  // const auditoryLexicon = ipcc(
+  //   "spelling (voice -> typing)",
+  //   "Enhance your listening accuracy by typing words you hear. Swift, exact, and practical.",
+  //   LexiconTypist()
+  // );
+
+  window.api
+    .readJsonFile("vocabulary-bank/English.json")
+    .then((data: VocabularyData) => {
+      English.append(
+        ipcc(
+          "vocabulary (definition -> multiple choices)",
+          "is a focused exercise where you’ll encounter precise definitions and challenge yourself to identify the correct term from five options",
+          LexiconTypist(data.words)
+        )
+      );
+    })
+    .catch((error: Error) => {
+      console.error("Failed to read the JSON file:", error);
+    });
+  // English.append(precisionOfMeaning, lexiconTypist, auditoryLexicon);
+
   return English;
 }
 
 // ipcc = Interactive Practice Card Container
-function ipcc(titleText: string, descriptionText: string) {
+
+function ipcc(
+  titleText: string,
+  descriptionText: string,
+  HTMLpageToRender: HTMLElement
+) {
   const ipcc = document.createElement("div");
   const className2 =
     "group border border-[hsl(212,12%,21%)] w-full h-80 cursor-pointer p-4";
@@ -70,7 +111,7 @@ function ipcc(titleText: string, descriptionText: string) {
   ipcc.addEventListener("click", clickHandler);
 
   function clickHandler() {
-    ipcc.parentElement.parentElement.append(LexiconTypist());
+    ipcc.parentElement.parentElement.append(HTMLpageToRender);
     ipcc.parentElement.remove();
   }
   return ipcc;

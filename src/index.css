@@ -67,7 +67,7 @@ button .tooltiptext {
 /* ------  */
 main::-webkit-scrollbar {
   width: 6px;
-  height: 6px;
+  height: 10px;
 }
 main::-webkit-scrollbar-thumb {
   background: #30363d;
