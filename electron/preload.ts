@@ -6,17 +6,6 @@ import { contextBridge, ipcRenderer } from "electron";
 contextBridge.exposeInMainWorld("api", {
   readJsonFile: (fileName: string) =>
     ipcRenderer.invoke("read-json-file", fileName),
-  updateVocabStats: (
-    word: string,
-    wordXP: number,
-    newLostXP: number,
-    attemptPassed: boolean
-  ) =>
-    ipcRenderer.invoke(
-      "update-vocab-stats",
-      word,
-      wordXP,
-      newLostXP,
-      attemptPassed
-    ),
+  updateVocabStats: (word: string, wordXP: number, attemptPassed: boolean) =>
+    ipcRenderer.invoke("update-vocab-stats", word, wordXP, attemptPassed),
 });
