@@ -20,7 +20,7 @@ interface WordInfo {
 
 export default function LexiconTypist(wordsArr: WordInfo[]) {
   const LexiconTypist = document.createElement("div");
-  const className = "relative flex flex-col justify-evenly border";
+  const className = "relative flex flex-col justify-evenly border0";
   LexiconTypist.setAttribute("class", className);
   LexiconTypist.setAttribute("id", "eng--lexicon-typist");
   LexiconTypist.dataset.correctAnswer = "";
@@ -28,6 +28,7 @@ export default function LexiconTypist(wordsArr: WordInfo[]) {
   const questionOrderType = "random";
   const firstQuestion = getNextQuestion(questionOrderType, wordsArr);
   LexiconTypist.dataset.correctAnswer = firstQuestion.word;
+  LexiconTypist.dataset.difficultyLevel = `${firstQuestion.difficultyLevel}`;
   // console.log(firstQuestion);
 
   const input = Input();

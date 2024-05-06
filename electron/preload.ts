@@ -6,13 +6,17 @@ import { contextBridge, ipcRenderer } from "electron";
 contextBridge.exposeInMainWorld("api", {
   readJsonFile: (fileName: string) =>
     ipcRenderer.invoke("read-json-file", fileName),
+  updateVocabStats: (
+    word: string,
+    wordXP: number,
+    newLostXP: number,
+    attemptPassed: boolean
+  ) =>
+    ipcRenderer.invoke(
+      "update-vocab-stats",
+      word,
+      wordXP,
+      newLostXP,
+      attemptPassed
+    ),
 });
-
-// import { readJsonFile } from "./modules/jsonReader";
-// readJsonFile("data/words.json")
-//   .then((jsonData) => {
-//     console.log(jsonData);
-//   })
-//   .catch((err) => {
-//     console.error("An error occurred:", err);
-//   });

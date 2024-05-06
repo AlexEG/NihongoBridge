@@ -21,9 +21,11 @@ export default function submitAndValidationClickHandler(
     "#eng--lexicon-typist"
   ) as HTMLElement;
 
+  const previousCorrectWord = LexiconTypist.dataset.correctAnswer;
+  const previousDifficultyLevelWord = +LexiconTypist.dataset.difficultyLevel;
+
   // Validation and xp statistic stuff
-  if (userInput.toLowerCase() === LexiconTypist.dataset.correctAnswer)
-    console.log("correct");
+  if (userInput.toLowerCase() === previousCorrectWord) console.log("correct");
   else console.log("wrong");
 
   // get the next question
@@ -37,13 +39,28 @@ export default function submitAndValidationClickHandler(
   // console.log("nextQuestion.definition:", nextQuestion.definition);
   definition.innerText = nextQuestion.definition;
 
-  // correctAnswer
+  // new correctAnswer
   LexiconTypist.dataset.correctAnswer = nextQuestion.word.toLowerCase();
   console.log("correctAnswer:", nextQuestion.word);
-
+  LexiconTypist.dataset.difficultyLevel =
+    nextQuestion.difficultyLevel.toString();
   // clear input
   const input = document.querySelector(
     "#eng--lexicon-typist--input"
   ) as HTMLInputElement;
   input.value = "";
+
+  const attemptPassed = userInput.toLowerCase() === previousCorrectWord;
+
+  const wordXP = previousDifficultyLevelWord;
+
+  // Call the updateVocabStats function via window.api
+  window.api
+    .updateVocabStats(previousCorrectWord, wordXP, attemptPassed)
+    .then((response: { status: string; message: string }) => {
+      console.log(response); // Handle the response from the main process
+    })
+    .catch((error: Error) => {
+      console.error(error); // Handle any errors that occur
+    });
 }

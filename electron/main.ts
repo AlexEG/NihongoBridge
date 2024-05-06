@@ -69,6 +69,7 @@ app.on("activate", () => {
 
 import { ipcMain } from "electron";
 import { readJsonFile } from "./modules/jsonReader";
+import { updateVocabularyStats } from "./modules/updateVocabularyStats";
 
 ipcMain.handle("read-json-file", async (event, fileName) => {
   try {
@@ -81,3 +82,19 @@ ipcMain.handle("read-json-file", async (event, fileName) => {
     throw err;
   }
 });
+
+ipcMain.handle(
+  "update-vocab-stats",
+  async (event, word: string, wordXP: number, attemptPassed: boolean) => {
+    try {
+      await updateVocabularyStats(word, wordXP, attemptPassed);
+      return {
+        status: "success",
+        message: "Vocabulary stats updated successfully.",
+      };
+    } catch (error) {
+      console.error("Error updating vocabulary stats:", error);
+      return { status: "error", message: "Failed to update vocabulary stats." };
+    }
+  }
+);

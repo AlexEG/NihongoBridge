@@ -36,10 +36,6 @@ import IPA from "../src/pages/IPA/_IPA";
 import VocabularyBank from "../src/pages/VocabularyBank/_VocabularyBank";
 import Practice from "../src/pages/Practice/_Practice";
 
-console.log(
-  '👋 This message is being logged by "renderer.ts", included via Vite'
-);
-
 const ROOT = document.querySelector("div#root");
 
 ROOT.append(TitleBar());
