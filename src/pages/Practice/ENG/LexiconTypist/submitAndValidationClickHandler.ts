@@ -35,6 +35,10 @@ export default function submitAndValidationClickHandler(
     "#eng--lexicon-typist--indicator-wrong"
   );
 
+  const input = document.querySelector(
+    "#eng--lexicon-typist--input"
+  ) as HTMLInputElement;
+
   if (submitBtn.textContent === "submit") {
     submitBtn.textContent = "next";
 
@@ -59,6 +63,7 @@ export default function submitAndValidationClickHandler(
         congratulationsArray[
           Math.floor(Math.random() * congratulationsArray.length)
         ];
+      input.setAttribute("disabled", "");
     } else {
       console.log("wrong answer");
       wrongAnswerIndicator.classList.replace("hidden", "flex");
@@ -81,6 +86,8 @@ export default function submitAndValidationClickHandler(
             Math.floor(Math.random() * encouragementArray.length)
           ]
         } "${previousCorrectWord}"`;
+
+      input.setAttribute("disabled", "");
     }
   } else {
     submitBtn.textContent = "submit";
@@ -100,14 +107,14 @@ export default function submitAndValidationClickHandler(
 
     // new correctAnswer
     LexiconTypist.dataset.correctAnswer = nextQuestion.word.toLowerCase();
-    console.log("correctAnswer:", nextQuestion.word);
+    console.log("Cheat correctAnswer:", nextQuestion.word);
+    console.log("Cheat word:", nextQuestion);
     LexiconTypist.dataset.difficultyLevel =
       nextQuestion.difficultyLevel.toString();
+
     // clear input
-    const input = document.querySelector(
-      "#eng--lexicon-typist--input"
-    ) as HTMLInputElement;
     input.value = "";
+    input.removeAttribute("disabled");
 
     const attemptPassed = userInput.toLowerCase() === previousCorrectWord;
 
@@ -122,5 +129,26 @@ export default function submitAndValidationClickHandler(
       .catch((error: Error) => {
         console.error(error); // Handle any errors that occur
       });
+
+    window.api
+      .updateProfileStats(wordXP, attemptPassed)
+      .then((response: { status: string; message: string }) => {
+        console.log(response); // Handle the response from the main process
+      })
+      .catch((error: Error) => {
+        console.error(error); // Handle any errors that occur
+      });
+
+    const titlebarTotalXp = document.querySelector(
+      "#layout--title-bar-total-xp > span:first-child"
+    ) as HTMLSpanElement;
+
+    // console.log("titlebarTotalXp", titlebarTotalXp);
+    const newXp = attemptPassed
+      ? +titlebarTotalXp.textContent + wordXP
+      : +titlebarTotalXp.textContent - wordXP;
+
+    // console.log("newXp", newXp);
+    titlebarTotalXp.innerText = newXp.toString();
   }
 }

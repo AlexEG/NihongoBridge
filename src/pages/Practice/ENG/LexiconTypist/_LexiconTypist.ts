@@ -37,7 +37,7 @@ export default function LexiconTypist(wordsArr: WordInfo[]) {
 
   //* input + submitBtn container + correct + wrong
   const inputSubmitBtnContainer = document.createElement("div");
-  const className6 = "mx-auto flex justify-center gap-x-2 mt-2 border";
+  const className6 = "mx-auto flex justify-center gap-x-2 mt-2 border0";
   inputSubmitBtnContainer.setAttribute("class", className6);
   inputSubmitBtnContainer.append(input, submitBtn);
 

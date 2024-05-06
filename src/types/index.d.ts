@@ -9,6 +9,10 @@ declare global {
         wordXP: number,
         attemptPassed: boolean
       ) => Promise<any>;
+      updateProfileStats: (
+        wordXP: number,
+        attemptPassed: boolean
+      ) => Promise<any>;
     };
   }
 }

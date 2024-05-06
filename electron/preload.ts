@@ -8,4 +8,6 @@ contextBridge.exposeInMainWorld("api", {
     ipcRenderer.invoke("read-json-file", fileName),
   updateVocabStats: (word: string, wordXP: number, attemptPassed: boolean) =>
     ipcRenderer.invoke("update-vocab-stats", word, wordXP, attemptPassed),
+  updateProfileStats: (wordXP: number, attemptPassed: boolean) =>
+    ipcRenderer.invoke("update-profile-stats", wordXP, attemptPassed),
 });

@@ -13,7 +13,7 @@ import VocabularyBankBtn from "./VocabularyBankBtn";
 export default function NavigationSidebar() {
   const container = document.createElement("nav");
   container.setAttribute("id", "navigation-sidbar");
-  container.setAttribute("class", "pl-1");
+  container.setAttribute("class", "pl-1 z-50");
 
   const div = document.createElement("div");
   div.setAttribute("class", "mt-auto ");
