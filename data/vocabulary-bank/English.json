@@ -14,18 +14,6 @@
       "tags": ["attention-to-detail", "precision", "thoroughness"]
     },
     {
-      "word": "quintessential",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "representing the most perfect or typical example of a quality or class.",
-      "ipa_us": "[ˌkwɪntəˈsenʃəl]",
-      "ipa_uk": "[ˌkwɪn.tɪˈsen.ʃəl]",
-      "example": "He was the quintessential gentleman, polite and gracious to everyone he met.",
-      "similar_words": ["prototypical", "archetypal", "typical"],
-      "syllable_division": "quin·tes·sen·tial",
-      "difficultyLevel": 65,
-      "tags": ["perfection", "typicality", "archetype"]
-    },
-    {
       "word": "ubiquitous",
       "soundFile": "/data/sound/nosound.mp3",
       "definition": "present, appearing, or found everywhere.",
@@ -591,18 +579,6 @@
       "tags": ["concept", "measurement", "chronology"]
     },
     {
-      "word": "person",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "A human being regarded as an individual.",
-      "ipa_us": "[ˈpɜrsən]",
-      "ipa_uk": "[ˈpɜːsən]",
-      "example": "She is a person of great importance.",
-      "similar_words": ["individual", "human", "being"],
-      "syllable_division": "Per·son",
-      "difficultyLevel": 1,
-      "tags": ["identity", "individuality", "humanity"]
-    },
-    {
       "word": "year",
       "soundFile": "/data/sound/nosound.mp3",
       "definition": "The time taken by a planet to make one revolution around the sun.",
@@ -650,18 +626,7 @@
       "difficultyLevel": 1,
       "tags": ["object", "general term", "non-specific"]
     },
-    {
-      "word": "man",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "An adult human male.",
-      "ipa_us": "[mæn]",
-      "ipa_uk": "[mæn]",
-      "example": "The man walked his dog every morning.",
-      "similar_words": ["male", "gentleman", "guy"],
-      "syllable_division": "Man (one syllable)",
-      "difficultyLevel": 1,
-      "tags": ["gender", "adult", "human"]
-    },
+
     {
       "word": "world",
       "soundFile": "/data/sound/nosound.mp3",
@@ -1202,18 +1167,7 @@
       "difficultyLevel": 70,
       "tags": ["API", "query language", "data"]
     },
-    {
-      "word": "redux",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "A predictable state container for JavaScript apps.",
-      "ipa_us": "[riˈdʌks]",
-      "ipa_uk": "[riˈdʌks]",
-      "example": "Redux is used for managing state in complex applications.",
-      "similar_words": ["state management", "predictable", "JavaScript"],
-      "syllable_division": "Re·dux",
-      "difficultyLevel": 65,
-      "tags": ["state management", "JavaScript", "web development"]
-    },
+
     {
       "word": "algorithm",
       "soundFile": "/data/sound/nosound.mp3",
@@ -1302,17 +1256,7 @@
       "syllable_division": "Hard·ware",
       "difficultyLevel": 25
     },
-    {
-      "word": "internet",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "A global computer network providing a variety of information and communication facilities.",
-      "ipa_us": "[ˈɪntərˌnɛt]",
-      "ipa_uk": "[ˈɪntənɛt]",
-      "example": "The internet has become an integral part of daily life.",
-      "similar_words": ["net", "web", "cyberspace"],
-      "syllable_division": "In·ter·net",
-      "difficultyLevel": 10
-    },
+
     {
       "word": "kernel",
       "soundFile": "/data/sound/nosound.mp3",
@@ -1334,17 +1278,6 @@
       "similar_words": ["virus", "spyware", "trojan"],
       "syllable_division": "Mal·ware",
       "difficultyLevel": 38
-    },
-    {
-      "word": "network",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "A group of two or more computer systems linked together.",
-      "ipa_us": "[ˈnɛtˌwɜrk]",
-      "ipa_uk": "[ˈnɛtˌwɜːk]",
-      "example": "The office network allows employees to share files and resources.",
-      "similar_words": ["web", "system", "grid"],
-      "syllable_division": "Net·work",
-      "difficultyLevel": 20
     },
     {
       "word": "operating system",
@@ -1488,18 +1421,7 @@
       "difficultyLevel": 35,
       "tags": ["database", "Node.js", "MongoDB"]
     },
-    {
-      "word": "love",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "An intense feeling of deep affection.",
-      "ipa_us": "[lʌv]",
-      "ipa_uk": "[lʌv]",
-      "example": "Parents often express their love for their children through hugs and kind words.",
-      "similar_words": ["affection", "fondness", "adoration"],
-      "syllable_division": "Love",
-      "difficultyLevel": 1,
-      "tags": ["emotion", "relationship", "feeling"]
-    },
+
     {
       "word": "home",
       "soundFile": "/data/sound/nosound.mp3",
@@ -1547,30 +1469,6 @@
       "syllable_division": "Hap·py",
       "difficultyLevel": 1,
       "tags": ["emotion", "state", "satisfaction"]
-    },
-    {
-      "word": "child",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "A young human being below the age of puberty or below the legal age of majority.",
-      "ipa_us": "[tʃaɪld]",
-      "ipa_uk": "[tʃaɪld]",
-      "example": "The child played happily in the park.",
-      "similar_words": ["kid", "offspring", "youth"],
-      "syllable_division": "Child",
-      "difficultyLevel": 1,
-      "tags": ["age", "development", "youth"]
-    },
-    {
-      "word": "school",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "An institution for educating children.",
-      "ipa_us": "[skuːl]",
-      "ipa_uk": "[skuːl]",
-      "example": "The school is hosting a science fair next week.",
-      "similar_words": ["academy", "institute", "educational institution"],
-      "syllable_division": "School",
-      "difficultyLevel": 1,
-      "tags": ["education", "learning", "institution"]
     },
     {
       "word": "food",
@@ -1621,30 +1519,6 @@
       "tags": ["time", "period", "light"]
     },
     {
-      "word": "night",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "The period of darkness in each twenty-four hours; the time from sunset to sunrise.",
-      "ipa_us": "[naɪt]",
-      "ipa_uk": "[naɪt]",
-      "example": "The stars are visible at night.",
-      "similar_words": ["darkness", "evening", "nighttime"],
-      "syllable_division": "Night",
-      "difficultyLevel": 1,
-      "tags": ["dark", "sleep", "evening"]
-    },
-    {
-      "word": "play",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "Engage in activity for enjoyment and recreation rather than a serious or practical purpose.",
-      "ipa_us": "[pleɪ]",
-      "ipa_uk": "[pleɪ]",
-      "example": "Children love to play outside.",
-      "similar_words": ["recreate", "amuse", "entertain"],
-      "syllable_division": "Play",
-      "difficultyLevel": 1,
-      "tags": ["recreation", "fun", "activity"]
-    },
-    {
       "word": "walk",
       "soundFile": "/data/sound/nosound.mp3",
       "definition": "Move at a regular pace by lifting and setting down each foot in turn.",
@@ -1656,18 +1530,7 @@
       "difficultyLevel": 1,
       "tags": ["movement", "exercise", "travel"]
     },
-    {
-      "word": "nebula",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "A cloud of gas and dust in outer space, visible in the night sky either as an indistinct bright patch or as a dark silhouette against other luminous matter.",
-      "ipa_us": "[ˈnɛbjələ]",
-      "ipa_uk": "[ˈnɛbjʊlə]",
-      "example": "The Orion Nebula is one of the brightest nebulae visible to the naked eye in the night sky.",
-      "similar_words": ["stellar nursery", "gas cloud", "interstellar cloud"],
-      "syllable_division": "Ne·bu·la",
-      "difficultyLevel": 20,
-      "tags": ["astronomy", "space", "interstellar"]
-    },
+
     {
       "word": "quasar",
       "soundFile": "/data/sound/nosound.mp3",
@@ -1697,18 +1560,6 @@
       "tags": ["universe", "space", "cosmology"]
     },
     {
-      "word": "pulsar",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "A highly magnetized, rotating neutron star that emits beams of electromagnetic radiation out of its magnetic poles.",
-      "ipa_us": "[ˈpʌlsɑr]",
-      "ipa_uk": "[ˈpʌlsɑː]",
-      "example": "Pulsars are detected by the radio waves they emit and are used by astronomers to study the interstellar medium.",
-      "similar_words": ["neutron star", "radio star", "magnetar"],
-      "syllable_division": "Pul·sar",
-      "difficultyLevel": 40,
-      "tags": ["neutron star", "radio waves", "astronomy"]
-    },
-    {
       "word": "exoplanet",
       "soundFile": "/data/sound/nosound.mp3",
       "definition": "A planet that orbits a star outside the solar system.",
@@ -1731,30 +1582,6 @@
       "syllable_division": "Su·per·no·va",
       "difficultyLevel": 45,
       "tags": ["star", "explosion", "astronomy"]
-    },
-    {
-      "word": "galaxy",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "A system of millions or billions of stars, together with gas and dust, held together by gravitational attraction.",
-      "ipa_us": "[ˈɡæləksi]",
-      "ipa_uk": "[ˈɡæləksi]",
-      "example": "The Milky Way is the galaxy that contains our Solar System.",
-      "similar_words": ["star system", "milky way", "andromeda"],
-      "syllable_division": "Gal·axy",
-      "difficultyLevel": 15,
-      "tags": ["space", "stars", "universe"]
-    },
-    {
-      "word": "meteoroid",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "A small body moving in the solar system that would become a meteor if it entered the earth's atmosphere.",
-      "ipa_us": "[ˈmiːtiərɔɪd]",
-      "ipa_uk": "[ˈmiːtiərɔɪd]",
-      "example": "Meteoroids that enter Earth's atmosphere are called meteors, and if they reach the ground, they are called meteorites.",
-      "similar_words": ["space rock", "meteor", "meteorite"],
-      "syllable_division": "Me·te·or·oid",
-      "difficultyLevel": 30,
-      "tags": ["space debris", "solar system", "astronomy"]
     },
     {
       "word": "cosmonaut",
@@ -2045,18 +1872,6 @@
       "tags": ["physics", "gravity", "force"]
     },
     {
-      "word": "observatory",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "A building or place given over to or equipped for observation of natural phenomena, especially in astronomy.",
-      "ipa_us": "[əbˈzɜrvəˌtɔri]",
-      "ipa_uk": "[əbˈzɜːvətəri]",
-      "example": "The observatory is located on a mountaintop for the best view of the night sky.",
-      "similar_words": ["planetarium", "telescope", "watchtower"],
-      "syllable_division": "Ob·serv·a·to·ry",
-      "difficultyLevel": 50,
-      "tags": ["astronomy", "science", "research"]
-    },
-    {
       "word": "solar",
       "soundFile": "/data/sound/nosound.mp3",
       "definition": "Of, relating to, or determined by the sun.",
@@ -2224,18 +2039,7 @@
       "difficultyLevel": 27,
       "tags": ["grace", "flexibility", "elegance"]
     },
-    {
-      "word": "light",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "The natural agent that stimulates sight and makes things visible.",
-      "ipa_us": "[laɪt]",
-      "ipa_uk": "[laɪt]",
-      "example": "The light from the sun takes about 8 minutes to reach Earth.",
-      "similar_words": ["illumination", "luminescence", "brightness"],
-      "syllable_division": "Light",
-      "difficultyLevel": 10,
-      "tags": ["visibility", "photons", "electromagnetic radiation"]
-    },
+
     {
       "word": "star",
       "soundFile": "/data/sound/nosound.mp3",
@@ -2247,30 +2051,6 @@
       "syllable_division": "Star",
       "difficultyLevel": 10,
       "tags": ["astronomy", "constellation", "space"]
-    },
-    {
-      "word": "moon",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "The natural satellite of the Earth, visible (chiefly at night) by reflected light from the sun.",
-      "ipa_us": "[muːn]",
-      "ipa_uk": "[muːn]",
-      "example": "The moon's gravitational pull causes the ocean tides on Earth.",
-      "similar_words": ["satellite", "lunar", "celestial body"],
-      "syllable_division": "Moon",
-      "difficultyLevel": 10,
-      "tags": ["astronomy", "lunar phases", "tides"]
-    },
-    {
-      "word": "planet",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "A celestial body moving in an elliptical orbit around a star.",
-      "ipa_us": "[ˈplænɪt]",
-      "ipa_uk": "[ˈplænɪt]",
-      "example": "Earth is the third planet from the sun in our solar system.",
-      "similar_words": ["world", "celestial body", "orbiting body"],
-      "syllable_division": "Plan·et",
-      "difficultyLevel": 15,
-      "tags": ["solar system", "orbit", "astronomy"]
     },
     {
       "word": "sky",
@@ -2332,18 +2112,7 @@
       "difficultyLevel": 10,
       "tags": ["cosmology", "universe", "exploration"]
     },
-    {
-      "word": "earth",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "The planet on which we live; the world.",
-      "ipa_us": "[ɜrθ]",
-      "ipa_uk": "[ɜːθ]",
-      "example": "Earth is the only planet known to support life.",
-      "similar_words": ["world", "globe", "planet"],
-      "syllable_division": "Earth",
-      "difficultyLevel": 10,
-      "tags": ["planet", "habitat", "life"]
-    },
+
     {
       "word": "atmosphere",
       "soundFile": "/data/sound/nosound.mp3",
@@ -2368,30 +2137,7 @@
       "difficultyLevel": 25,
       "tags": ["astronomy", "space", "stars"]
     },
-    {
-      "word": "comet",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "A celestial object consisting of a nucleus of ice and dust and, when near the sun, a ‘tail’ of gas and dust particles pointing away from the sun.",
-      "ipa_us": "[ˈkɑmɪt]",
-      "ipa_uk": "[ˈkɒmɪt]",
-      "example": "Comets are sometimes called 'dirty snowballs' because of their composition.",
-      "similar_words": ["asteroid", "meteor", "celestial body"],
-      "syllable_division": "Com·et",
-      "difficultyLevel": 30,
-      "tags": ["astronomy", "solar system", "space object"]
-    },
-    {
-      "word": "caucus",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "A meeting of supporters or members of a specific political party or movement.",
-      "ipa_us": "[ˈkɔkəs]",
-      "ipa_uk": "[ˈkɔːkəs]",
-      "example": "The party held a caucus to elect its new leadership.",
-      "similar_words": ["assembly", "convention", "gathering"],
-      "syllable_division": "Cau·cus",
-      "difficultyLevel": 35,
-      "tags": ["politics", "meeting", "party"]
-    },
+
     {
       "word": "bipartisan",
       "soundFile": "/data/sound/nosound.mp3",
@@ -2428,18 +2174,7 @@
       "difficultyLevel": 38,
       "tags": ["foreign policy", "negotiation", "relations"]
     },
-    {
-      "word": "filibuster",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "An action such as a prolonged speech that obstructs progress in a legislative assembly.",
-      "ipa_us": "[ˈfɪlɪˌbʌstər]",
-      "ipa_uk": "[ˈfɪlɪˌbʌstə]",
-      "example": "The senator used a filibuster to delay the vote on the bill.",
-      "similar_words": ["obstruction", "delay", "protest"],
-      "syllable_division": "Fil·i·bus·ter",
-      "difficultyLevel": 50,
-      "tags": ["legislation", "obstruction", "speech"]
-    },
+
     {
       "word": "gerrymander",
       "soundFile": "/data/sound/nosound.mp3",
@@ -2452,18 +2187,7 @@
       "difficultyLevel": 48,
       "tags": ["elections", "manipulation", "redistricting"]
     },
-    {
-      "word": "hegemony",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "Leadership or dominance, especially by one country or social group over others.",
-      "ipa_us": "[hɪˈdʒeməni]",
-      "ipa_uk": "[hɪˈdʒeməni]",
-      "example": "The country exerted its hegemony over the region through economic influence.",
-      "similar_words": ["dominance", "leadership", "supremacy"],
-      "syllable_division": "He·gem·o·ny",
-      "difficultyLevel": 42,
-      "tags": ["dominance", "influence", "power"]
-    },
+
     {
       "word": "ideology",
       "soundFile": "/data/sound/nosound.mp3",
@@ -2475,30 +2199,6 @@
       "syllable_division": "I·de·ol·o·gy",
       "difficultyLevel": 37,
       "tags": ["beliefs", "politics", "theory"]
-    },
-    {
-      "word": "jurisprudence",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "The theory or philosophy of law.",
-      "ipa_us": "[ˌdʒʊrɪsˈprudəns]",
-      "ipa_uk": "[ˌdʒʊərɪsˈpruːdəns]",
-      "example": "He studied the jurisprudence of international law.",
-      "similar_words": ["law", "legal theory", "philosophy"],
-      "syllable_division": "Ju·ris·pru·dence",
-      "difficultyLevel": 46,
-      "tags": ["law", "legal system", "philosophy"]
-    },
-    {
-      "word": "lobbyist",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "A person who takes part in an organized attempt to influence legislators.",
-      "ipa_us": "[ˈlɑbiɪst]",
-      "ipa_uk": "[ˈlɒbiɪst]",
-      "example": "The lobbyist advocated for environmental protection laws.",
-      "similar_words": ["advocate", "campaigner", "influencer"],
-      "syllable_division": "Lob·by·ist",
-      "difficultyLevel": 33,
-      "tags": ["advocacy", "influence", "legislation"]
     },
     {
       "word": "mandate",
@@ -2573,30 +2273,6 @@
       "tags": ["hydration", "life", "environment"]
     },
     {
-      "word": "fire",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "Combustion or burning, in which substances combine chemically with oxygen from the air and typically give out bright light, heat, and smoke.",
-      "ipa_us": "[ˈfaɪər]",
-      "ipa_uk": "[ˈfaɪə]",
-      "example": "The campers gathered around the fire to keep warm.",
-      "similar_words": ["flame", "burn", "heat"],
-      "syllable_division": "Fire",
-      "difficultyLevel": 10,
-      "tags": ["combustion", "warmth", "light"]
-    },
-    {
-      "word": "mountain",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "A large natural elevation of the earth's surface rising abruptly from the surrounding level; a large steep hill.",
-      "ipa_us": "[ˈmaʊntɪn]",
-      "ipa_uk": "[ˈmaʊntɪn]",
-      "example": "The mountain's peak was covered with snow.",
-      "similar_words": ["peak", "summit", "range"],
-      "syllable_division": "Moun·tain",
-      "difficultyLevel": 15,
-      "tags": ["geography", "nature", "elevation"]
-    },
-    {
       "word": "river",
       "soundFile": "/data/sound/nosound.mp3",
       "definition": "A large natural stream of water flowing in a channel to the sea, a lake, or another river.",
@@ -2620,18 +2296,7 @@
       "difficultyLevel": 10,
       "tags": ["marine", "saltwater", "oceanography"]
     },
-    {
-      "word": "forest",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "A large area covered chiefly with trees and undergrowth.",
-      "ipa_us": "[ˈfɔrɪst]",
-      "ipa_uk": "[ˈfɒrɪst]",
-      "example": "The forest was dense with a variety of trees and plants.",
-      "similar_words": ["woodland", "jungle", "timberland"],
-      "syllable_division": "For·est",
-      "difficultyLevel": 15,
-      "tags": ["ecosystem", "wildlife", "nature"]
-    },
+
     {
       "word": "stone",
       "soundFile": "/data/sound/nosound.mp3",
@@ -2644,30 +2309,7 @@
       "difficultyLevel": 10,
       "tags": ["geology", "material", "construction"]
     },
-    {
-      "word": "island",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "A piece of land surrounded by water.",
-      "ipa_us": "[ˈaɪlənd]",
-      "ipa_uk": "[ˈaɪlənd]",
-      "example": "The island was a popular destination for tourists seeking a tropical getaway.",
-      "similar_words": ["isle", "atoll", "cay"],
-      "syllable_division": "Is·land",
-      "difficultyLevel": 15,
-      "tags": ["geography", "travel", "seclusion"]
-    },
-    {
-      "word": "lake",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "A large body of water surrounded by land.",
-      "ipa_us": "[leɪk]",
-      "ipa_uk": "[leɪk]",
-      "example": "The lake was so clear that you could see the fish swimming below.",
-      "similar_words": ["pond", "reservoir", "basin"],
-      "syllable_division": "Lake",
-      "difficultyLevel": 10,
-      "tags": ["freshwater", "ecosystem", "recreation"]
-    },
+
     {
       "word": "sand",
       "soundFile": "/data/sound/nosound.mp3",
@@ -2765,18 +2407,6 @@
       "tags": ["waterway", "flow", "nature"]
     },
     {
-      "word": "sea",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "The expanse of salt water that covers most of the earth's surface and surrounds its landmasses.",
-      "ipa_us": "[siː]",
-      "ipa_uk": "[siː]",
-      "example": "The sea was calm, with waves gently lapping at the shore.",
-      "similar_words": ["ocean", "marine", "brine"],
-      "syllable_division": "Sea",
-      "difficultyLevel": 10,
-      "tags": ["marine", "saltwater", "oceanography"]
-    },
-    {
       "word": "forest",
       "soundFile": "/data/sound/nosound.mp3",
       "definition": "A large area covered chiefly with trees and undergrowth.",
@@ -2800,18 +2430,7 @@
       "difficultyLevel": 10,
       "tags": ["geology", "material", "construction"]
     },
-    {
-      "word": "island",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "A piece of land surrounded by water.",
-      "ipa_us": "[ˈaɪlənd]",
-      "ipa_uk": "[ˈaɪlənd]",
-      "example": "The island was a popular destination for tourists seeking a tropical getaway.",
-      "similar_words": ["isle", "atoll", "cay"],
-      "syllable_division": "Is·land",
-      "difficultyLevel": 15,
-      "tags": ["geography", "travel", "seclusion"]
-    },
+
     {
       "word": "lake",
       "soundFile": "/data/sound/nosound.mp3",
@@ -2823,18 +2442,6 @@
       "syllable_division": "Lake",
       "difficultyLevel": 10,
       "tags": ["freshwater", "ecosystem", "recreation"]
-    },
-    {
-      "word": "sand",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "A loose granular substance, typically pale yellowish brown, resulting from the erosion of siliceous and other rocks and forming a major constituent of beaches, riverbeds, the seabed, and deserts.",
-      "ipa_us": "[sænd]",
-      "ipa_uk": "[sænd]",
-      "example": "The children built castles out of the sand on the beach.",
-      "similar_words": ["grit", "dust", "soil"],
-      "syllable_division": "Sand",
-      "difficultyLevel": 10,
-      "tags": ["geology", "beach", "desert"]
     },
     {
       "word": "autonomy",
@@ -2992,18 +2599,7 @@
       "difficultyLevel": 10,
       "tags": ["planet", "humanity", "nature"]
     },
-    {
-      "word": "light",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "The natural agent that stimulates sight and makes things visible.",
-      "ipa_us": "[laɪt]",
-      "ipa_uk": "[laɪt]",
-      "example": "The light from the sun takes about 8 minutes to reach Earth.",
-      "similar_words": ["illumination", "brightness", "luminescence"],
-      "syllable_division": "Light",
-      "difficultyLevel": 10,
-      "tags": ["visibility", "radiation", "photon"]
-    },
+
     {
       "word": "star",
       "soundFile": "/data/sound/nosound.mp3",
@@ -3041,18 +2637,6 @@
       "tags": ["solar system", "orbit", "astronomy"]
     },
     {
-      "word": "sky",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "The region of the atmosphere and outer space seen from the earth.",
-      "ipa_us": "[skaɪ]",
-      "ipa_uk": "[skaɪ]",
-      "example": "The sky appears blue during the day due to the scattering of sunlight by the atmosphere.",
-      "similar_words": ["heavens", "firmament", "atmosphere"],
-      "syllable_division": "Sky",
-      "difficultyLevel": 10,
-      "tags": ["atmosphere", "space", "blue"]
-    },
-    {
       "word": "universe",
       "soundFile": "/data/sound/nosound.mp3",
       "definition": "All existing matter and space considered as a whole; the cosmos.",
@@ -3064,18 +2648,7 @@
       "difficultyLevel": 15,
       "tags": ["cosmology", "big bang", "space-time"]
     },
-    {
-      "word": "gravity",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "The force that attracts a body toward the center of the earth, or toward any other physical body having mass.",
-      "ipa_us": "[ˈɡrævɪti]",
-      "ipa_uk": "[ˈɡrævɪti]",
-      "example": "Gravity is the force that keeps planets in orbit around the sun.",
-      "similar_words": ["force", "attraction", "weight"],
-      "syllable_division": "Grav·i·ty",
-      "difficultyLevel": 15,
-      "tags": ["physics", "mass", "acceleration"]
-    },
+
     {
       "word": "space",
       "soundFile": "/data/sound/nosound.mp3",
@@ -3099,18 +2672,6 @@
       "syllable_division": "Earth",
       "difficultyLevel": 10,
       "tags": ["planet", "life", "habitat"]
-    },
-    {
-      "word": "atmosphere",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "The envelope of gases surrounding the earth or another planet.",
-      "ipa_us": "[ˈætməˌsfɪr]",
-      "ipa_uk": "[ˈætməˌsfɪə]",
-      "example": "The Earth's atmosphere is composed mainly of nitrogen and oxygen.",
-      "similar_words": ["air", "environment", "stratosphere"],
-      "syllable_division": "At·mos·phere",
-      "difficultyLevel": 15,
-      "tags": ["air", "climate", "ozone layer"]
     },
     {
       "word": "bipartisanship",
@@ -3172,18 +2733,7 @@
       "difficultyLevel": 50,
       "tags": ["obstruction", "delay", "politics"]
     },
-    {
-      "word": "gerrymander",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "Manipulate the boundaries of (an electoral constituency) to favor one party or class.",
-      "ipa_us": "[ˈdʒɛrimændər]",
-      "ipa_uk": "[ˈdʒɛrimændə]",
-      "example": "The district was gerrymandered to ensure the incumbent's re-election.",
-      "similar_words": ["manipulate", "redistrict", "skew"],
-      "syllable_division": "Ger·ry·man·der",
-      "difficultyLevel": 48,
-      "tags": ["manipulation", "redistricting", "politics"]
-    },
+
     {
       "word": "hegemony",
       "soundFile": "/data/sound/nosound.mp3",
@@ -3196,18 +2746,7 @@
       "difficultyLevel": 42,
       "tags": ["dominance", "leadership", "politics"]
     },
-    {
-      "word": "ideology",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "A system of ideas and ideals, especially one that forms the basis of economic or political theory and policy.",
-      "ipa_us": "[ˌaɪdiˈɑlədʒi]",
-      "ipa_uk": "[ˌaɪdiˈɒlədʒi]",
-      "example": "The political party's ideology focuses on social equality and economic reform.",
-      "similar_words": ["beliefs", "doctrine", "philosophy"],
-      "syllable_division": "I·de·ol·o·gy",
-      "difficultyLevel": 38,
-      "tags": ["beliefs", "doctrine", "politics"]
-    },
+
     {
       "word": "jurisprudence",
       "soundFile": "/data/sound/nosound.mp3",
@@ -3257,18 +2796,6 @@
       "tags": ["astronomy", "cosmos", "star formation"]
     },
     {
-      "word": "cosmonaut",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "A Russian astronaut.",
-      "ipa_us": "[ˈkɑzməˌnɔt]",
-      "ipa_uk": "[ˈkɒzməˌnɔːt]",
-      "example": "Yuri Gagarin, the first human to journey into outer space, was a Soviet cosmonaut.",
-      "similar_words": ["astronaut", "space traveler", "rocketeer"],
-      "syllable_division": "Cos·mo·naut",
-      "difficultyLevel": 30,
-      "tags": ["space exploration", "astronautics", "spacecraft"]
-    },
-    {
       "word": "observatory",
       "soundFile": "/data/sound/nosound.mp3",
       "definition": "A building or place given over to or equipped for observation of natural phenomena, especially in astronomy.",
@@ -3293,22 +2820,6 @@
       "tags": ["stellar", "explosion", "astronomy"]
     },
     {
-      "word": "quasar",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "A massive and extremely remote celestial object, emitting exceptionally large amounts of energy, which typically has a starlike image in a telescope.",
-      "ipa_us": "[ˈkweɪzɑr]",
-      "ipa_uk": "[ˈkweɪzɑː]",
-      "example": "Quasars are believed to be powered by the accretion of material into supermassive black holes in the centers of distant galaxies.",
-      "similar_words": [
-        "active galactic nucleus",
-        "black hole",
-        "radio source"
-      ],
-      "syllable_division": "Qua·sar",
-      "difficultyLevel": 45,
-      "tags": ["cosmology", "black hole", "high-energy"]
-    },
-    {
       "word": "pulsar",
       "soundFile": "/data/sound/nosound.mp3",
       "definition": "A highly magnetized, rotating neutron star that emits a beam of electromagnetic radiation.",
@@ -3320,18 +2831,7 @@
       "difficultyLevel": 50,
       "tags": ["neutron star", "radio waves", "astronomy"]
     },
-    {
-      "word": "exoplanet",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "A planet that orbits a star outside the solar system.",
-      "ipa_us": "[ˈɛksəˌplænɪt]",
-      "ipa_uk": "[ˈɛksəˌplænɪt]",
-      "example": "Thousands of exoplanets have been discovered in the Milky Way galaxy.",
-      "similar_words": ["extrasolar planet", "alien world", "distant planet"],
-      "syllable_division": "Ex·o·plan·et",
-      "difficultyLevel": 55,
-      "tags": ["astronomy", "solar system", "alien"]
-    },
+
     {
       "word": "meteoroid",
       "soundFile": "/data/sound/nosound.mp3",
@@ -3356,18 +2856,7 @@
       "difficultyLevel": 65,
       "tags": ["astronomy", "observation", "magnification"]
     },
-    {
-      "word": "asteroid",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "A small rocky body orbiting the sun, found mainly between the orbits of Mars and Jupiter in the asteroid belt.",
-      "ipa_us": "[ˈæstəˌrɔɪd]",
-      "ipa_uk": "[ˈastərɔɪd]",
-      "example": "The asteroid belt contains millions of asteroids, ranging in size from Ceres, which is nearly 600 miles across, to bodies that are less than a mile across.",
-      "similar_words": ["planetoid", "minor planet", "celestial body"],
-      "syllable_division": "As·ter·oid",
-      "difficultyLevel": 70,
-      "tags": ["space rock", "solar system", "orbit"]
-    },
+
     {
       "word": "the",
       "soundFile": "/data/sound/nosound.mp3",
@@ -3952,18 +3441,7 @@
       "difficultyLevel": 5,
       "tags": ["pronoun", "people", "plural", "most common 1000"]
     },
-    {
-      "word": "site",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "An area of ground on which a town, building, or monument is constructed.",
-      "ipa_us": "[saɪt]",
-      "ipa_uk": "[saɪt]",
-      "example": "The construction site is busy.",
-      "similar_words": ["location", "place", "area"],
-      "syllable_division": "Site",
-      "difficultyLevel": 15,
-      "tags": ["noun", "location", "place", "most common 1000"]
-    },
+
     {
       "word": "he",
       "soundFile": "/data/sound/nosound.mp3",
@@ -3987,30 +3465,6 @@
       "syllable_division": "Up",
       "difficultyLevel": 5,
       "tags": ["adverb", "higher", "elevation", "most common 1000"]
-    },
-    {
-      "word": "no",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "Not any.",
-      "ipa_us": "[noʊ]",
-      "ipa_uk": "[nəʊ]",
-      "example": "There are no apples left in the basket.",
-      "similar_words": ["none", "zero", "nil"],
-      "syllable_division": "No",
-      "difficultyLevel": 10,
-      "tags": ["negation", "absence", "lack", "most common 1000"]
-    },
-    {
-      "word": "information",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "Facts provided or learned about something or someone.",
-      "ipa_us": "[ˌɪnfərˈmeɪʃn]",
-      "ipa_uk": "[ˌɪnfəˈmeɪʃn]",
-      "example": "A website provides information about the company.",
-      "similar_words": ["data", "facts", "details"],
-      "syllable_division": "In·for·ma·tion",
-      "difficultyLevel": 20,
-      "tags": ["data", "facts", "knowledge", "most common 1000"]
     },
     {
       "word": "time",
@@ -4047,18 +3501,6 @@
       "syllable_division": "Site",
       "difficultyLevel": 20,
       "tags": ["location", "area", "place", "most common 1000"]
-    },
-    {
-      "word": "he",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "Used to refer to a man, boy, or male animal previously mentioned or easily identified.",
-      "ipa_us": "[hi]",
-      "ipa_uk": "[hiː]",
-      "example": "He is my brother.",
-      "similar_words": ["him", "his", "male"],
-      "syllable_division": "He",
-      "difficultyLevel": 10,
-      "tags": ["male", "man", "boy", "most common 1000"]
     },
     {
       "word": "up",
@@ -4120,18 +3562,7 @@
       "difficultyLevel": 10,
       "tags": ["possession", "ownership", "belonging", "most common 1000"]
     },
-    {
-      "word": "may",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "Expressing possibility.",
-      "ipa_us": "[meɪ]",
-      "ipa_uk": "[meɪ]",
-      "example": "It may rain today.",
-      "similar_words": ["might", "could", "possibly"],
-      "syllable_division": "May",
-      "difficultyLevel": 10,
-      "tags": ["modal verb", "possibility", "permission", "most common 1000"]
-    },
+
     {
       "word": "what",
       "soundFile": "/data/sound/nosound.mp3",
@@ -4353,18 +3784,7 @@
       "difficultyLevel": 25,
       "tags": ["perspective", "scenery", "outlook", "most common 1000"]
     },
-    {
-      "word": "online",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "Controlled by or connected to a computer.",
-      "ipa_us": "[ˌɔnˈlaɪn]",
-      "ipa_uk": "[ˌɒnˈlaɪn]",
-      "example": "You can find the book in the online library catalog.",
-      "similar_words": ["internet", "web", "digital"],
-      "syllable_division": "On·line",
-      "difficultyLevel": 35,
-      "tags": ["internet", "connected", "digital", "most common 1000"]
-    },
+
     {
       "word": "first",
       "soundFile": "/data/sound/nosound.mp3",
@@ -4378,18 +3798,6 @@
       "tags": ["initial", "primary", "beginning", "most common 1000"]
     },
     {
-      "word": "been",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "Past participle of be.",
-      "ipa_us": "[bɪn]",
-      "ipa_uk": "[biːn]",
-      "example": "I have been to the store twice today.",
-      "similar_words": ["was", "were", "being"],
-      "syllable_division": "Been",
-      "difficultyLevel": 10,
-      "tags": ["existence", "state", "experience", "most common 1000"]
-    },
-    {
       "word": "would",
       "soundFile": "/data/sound/nosound.mp3",
       "definition": "Past of will, in various senses.",
@@ -4401,18 +3809,7 @@
       "difficultyLevel": 20,
       "tags": ["future", "intention", "possibility", "most common 1000"]
     },
-    {
-      "word": "how",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "In what way or manner; by what means.",
-      "ipa_us": "[haʊ]",
-      "ipa_uk": "[haʊ]",
-      "example": "He did not know how he should respond.",
-      "similar_words": ["in what way", "in which", "the way that"],
-      "syllable_division": "How",
-      "difficultyLevel": 10,
-      "tags": ["manner", "method", "process", "most common 1000"]
-    },
+
     {
       "word": "were",
       "soundFile": "/data/sound/nosound.mp3",
@@ -4436,18 +3833,6 @@
       "syllable_division": "Me",
       "difficultyLevel": 5,
       "tags": ["pronoun", "self", "individual", "most common 1000"]
-    },
-    {
-      "word": "services",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "The action of helping or doing work for someone.",
-      "ipa_us": "[ˈsɜrvɪsɪz]",
-      "ipa_uk": "[ˈsɜːvɪsɪz]",
-      "example": "Many companies offer online services.",
-      "similar_words": ["assistance", "help", "support"],
-      "syllable_division": "Ser·vic·es",
-      "difficultyLevel": 40,
-      "tags": ["assistance", "aid", "help", "most common 1000"]
     },
     {
       "word": "some",
@@ -4522,18 +3907,6 @@
       "tags": ["internet", "connectivity", "network", "most common 1000"]
     },
     {
-      "word": "first",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "Coming before all others in time or order.",
-      "ipa_us": "[fɜrst]",
-      "ipa_uk": "[fɜːst]",
-      "example": "She won first prize.",
-      "similar_words": ["initial", "primary", "foremost"],
-      "syllable_division": "First",
-      "difficultyLevel": 5,
-      "tags": ["ordinal number", "precedence", "beginning", "most common 1000"]
-    },
-    {
       "word": "am",
       "soundFile": "/data/sound/nosound.mp3",
       "definition": "First person singular present of 'be'.",
@@ -4598,18 +3971,7 @@
       "difficultyLevel": 5,
       "tags": ["verb", "past tense", "existence", "most common 1000"]
     },
-    {
-      "word": "me",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "Used by a speaker to refer to himself or herself as the object of a verb or preposition.",
-      "ipa_us": "[mi]",
-      "ipa_uk": "[miː]",
-      "example": "He gave me the book.",
-      "similar_words": ["myself", "I", "mine"],
-      "syllable_division": "Me",
-      "difficultyLevel": 5,
-      "tags": ["pronoun", "self-reference", "object", "most common 1000"]
-    },
+
     {
       "word": "services",
       "soundFile": "/data/sound/nosound.mp3",
@@ -4622,18 +3984,7 @@
       "difficultyLevel": 20,
       "tags": ["assistance", "work", "aid", "most common 1000"]
     },
-    {
-      "word": "some",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "An unspecified amount or number of.",
-      "ipa_us": "[sʌm]",
-      "ipa_uk": "[sʌm]",
-      "example": "I have some money.",
-      "similar_words": ["a few", "a little", "an amount of"],
-      "syllable_division": "Some",
-      "difficultyLevel": 5,
-      "tags": ["determiner", "quantity", "unspecified", "most common 1000"]
-    },
+
     {
       "word": "these",
       "soundFile": "/data/sound/nosound.mp3",
@@ -7546,18 +6897,7 @@
       "difficultyLevel": 2,
       "tags": ["supply", "offer", "furnish", "most common 1000"]
     },
-    {
-      "word": "food",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "any nutritious substance that people or animals eat or drink or that plants absorb in order to maintain life and growth",
-      "ipa_us": "[fuːd]",
-      "ipa_uk": "[fuːd]",
-      "example": "The restaurant is known for its delicious food.",
-      "similar_words": ["nourishment", "meals", "cuisine"],
-      "syllable_division": "Food",
-      "difficultyLevel": 1,
-      "tags": ["nutrition", "cuisine", "sustenance", "most common 1000"]
-    },
+
     {
       "word": "source",
       "soundFile": "/data/sound/nosound.mp3",
@@ -8434,18 +7774,7 @@
       "difficultyLevel": 1,
       "tags": ["evaluation", "examination", "trial", "most common 1000"]
     },
-    {
-      "word": "friend",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "a person with whom one has a bond of mutual affection, typically one exclusive of sexual or family relations",
-      "ipa_us": "[frɛnd]",
-      "ipa_uk": "[frɛnd]",
-      "example": "She's a friend of mine.",
-      "similar_words": ["companion", "ally", "confidante"],
-      "syllable_division": "Friend",
-      "difficultyLevel": 1,
-      "tags": ["relationship", "companionship", "trust", "most common 1000"]
-    },
+
     {
       "word": "come",
       "soundFile": "/data/sound/nosound.mp3",
@@ -12258,18 +11587,6 @@
       "syllable_division": "Fast",
       "difficultyLevel": 1,
       "tags": ["quick", "rapid", "speedy", "most common 1000"]
-    },
-    {
-      "word": "function",
-      "soundFile": "/data/sound/nosound.mp3",
-      "definition": "an activity or purpose natural to or intended for a person or thing",
-      "ipa_us": "[ˈfʌŋk.ʃən]",
-      "ipa_uk": "[ˈfʌŋk.ʃən]",
-      "example": "The function of the heart is to pump blood throughout the body.",
-      "similar_words": ["role", "activity", "purpose"],
-      "syllable_division": "Func·tion",
-      "difficultyLevel": 2,
-      "tags": ["role", "activity", "purpose", "most common 1000"]
     },
     {
       "word": "fact",
