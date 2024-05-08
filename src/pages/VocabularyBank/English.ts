@@ -15,7 +15,6 @@ interface WordInfo {
   similar_words: string[];
   syllable_division: string;
   tags: string[];
-  difficultyLevel: number;
 }
 
 export default function English() {
@@ -61,7 +60,3 @@ export default function English() {
 
   return English;
 }
-
-/*
-"water":5,"time":4,"world":3,"star":3,"space":3,"sun":3,"air":3,"ubiquitous":2,"year":2,"way":2,"day":2,"thing":2,"algorithm":2,"webpack":2,"supernova":2,"telescope":2,"universe":2,"diplomacy":2,"cloud":2,"river":2,"stone":2,"they":2,"up":2,"what":2,"which":2,"their":2,"would":2,"were":2,"these":2,
-*/

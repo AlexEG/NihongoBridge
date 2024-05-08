@@ -71,6 +71,7 @@ import { ipcMain } from "electron";
 import { readJsonFile } from "./modules/jsonReader";
 import { updateVocabularyStats } from "./modules/updateVocabularyStats";
 import { updateProfileStats } from "./modules/updateProfileStats";
+import { addNewWordToVocabularyBank } from "./modules/addNewWordToVocabularyBank";
 
 ipcMain.handle("read-json-file", async (event, fileName) => {
   try {
@@ -112,6 +113,42 @@ ipcMain.handle(
     } catch (error) {
       console.error("Error updating Profile stats:", error);
       return { status: "error", message: "Failed to update Profile stats." };
+    }
+  }
+);
+
+ipcMain.handle(
+  "add-new-word-to-vocabulary-bank",
+  async (
+    event,
+    word: string,
+    definition: string,
+    ipa_us: string,
+    example: string,
+    similar_words: string,
+    syllable_division: string,
+    tags: string
+  ) => {
+    try {
+      await addNewWordToVocabularyBank(
+        word,
+        definition,
+        ipa_us,
+        example,
+        similar_words,
+        syllable_division,
+        tags
+      );
+      return {
+        status: "success",
+        message: `${word} added successfully to your Vocabulary Bank `,
+      };
+    } catch (error) {
+      console.error("Error updating Profile stats:", error);
+      return {
+        status: "error",
+        message: `Failed to add ${word} to your Vocabulary Bank`,
+      };
     }
   }
 );

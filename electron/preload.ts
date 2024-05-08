@@ -10,4 +10,23 @@ contextBridge.exposeInMainWorld("api", {
     ipcRenderer.invoke("update-vocab-stats", word, wordXP, attemptPassed),
   updateProfileStats: (wordXP: number, attemptPassed: boolean) =>
     ipcRenderer.invoke("update-profile-stats", wordXP, attemptPassed),
+  addNewWordToVocabularyBank: (
+    word: string,
+    definition: string,
+    ipa_us: string,
+    example: string,
+    similar_words: string,
+    syllable_division: string,
+    tags: string
+  ) =>
+    ipcRenderer.invoke(
+      "add-new-word-to-vocabulary-bank",
+      word,
+      definition,
+      ipa_us,
+      example,
+      similar_words,
+      syllable_division,
+      tags
+    ),
 });

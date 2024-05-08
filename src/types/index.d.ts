@@ -13,6 +13,15 @@ declare global {
         wordXP: number,
         attemptPassed: boolean
       ) => Promise<any>;
+      addNewWordToVocabularyBank: (
+        word: string,
+        definition: string,
+        ipa_us: string,
+        example: string,
+        similar_words: string,
+        syllable_division: string,
+        tags: string
+      ) => Promise<any>;
     };
   }
 }

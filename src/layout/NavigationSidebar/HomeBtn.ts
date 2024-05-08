@@ -19,7 +19,7 @@ export default function HomeBtn() {
   );
 
   svg.append(path);
-  const button = SidebarNavigationBtn(svg, "International Phonetic Alphabet");
+  const button = SidebarNavigationBtn(svg, "Home");
   button.addEventListener("click", switchToHome);
 
   function switchToHome() {

@@ -8,7 +8,6 @@ interface WordInfo {
   similar_words: string[];
   syllable_division: string;
   tags: string[];
-  difficultyLevel: number;
 }
 
 export default function WordENG(wordInfo: WordInfo) {
@@ -16,7 +15,7 @@ export default function WordENG(wordInfo: WordInfo) {
   // The main container it's just a border to contan everything else
   const WordENG = document.createElement("div");
   const className0 =
-    "h-16 border border-[hsl(212,12%,21%)] mb-4 grid grid-cols-[64px,128px,128px,256px,256px,128px,128px,64px] gap-x-1 w-fit mx-auto";
+    "h-16 border border-[hsl(212,12%,21%)] mb-4 grid grid-cols-[64px,128px,128px,300px,300px,128px] gap-x-2 w-fit mx-auto";
   WordENG.setAttribute("class", className0);
 
   // **********[Sound Button]********** //
@@ -132,44 +131,42 @@ export default function WordENG(wordInfo: WordInfo) {
   similarWordsContainer.append(word1, word2, word3);
   WordENG.append(similarWordsContainer);
 
-  // **********[tags]********** //
-  const tagsContainer = document.createElement("div");
-  const className14 = "w-full h-full flex flex-col justify-center items-center";
-  tagsContainer.setAttribute("class", className14);
+  // // **********[tags]********** //
+  // const tagsContainer = document.createElement("div");
+  // const className14 = "w-full h-full flex flex-col justify-center items-center";
+  // tagsContainer.setAttribute("class", className14);
 
-  const className = "text-white/50 truncate text-xs text-center ";
+  // const className = "text-white/50 truncate text-xs text-center ";
 
-  if (wordInfo.tags) {
-    const tag1 = document.createElement("span");
-    tag1.setAttribute("class", className);
-    tag1.innerText = wordInfo.tags[0];
+  // if (wordInfo.tags) {
+  //   const tag1 = document.createElement("span");
+  //   tag1.setAttribute("class", className);
+  //   tag1.innerText = wordInfo.tags[0];
 
-    const tag2 = document.createElement("span");
-    tag2.setAttribute("class", className);
-    tag2.innerText = wordInfo.tags[1];
+  //   const tag2 = document.createElement("span");
+  //   tag2.setAttribute("class", className);
+  //   tag2.innerText = wordInfo.tags[1];
 
-    const tag3 = document.createElement("span");
-    tag3.setAttribute("class", className);
-    tag3.innerText = wordInfo.tags[2];
+  //   const tag3 = document.createElement("span");
+  //   tag3.setAttribute("class", className);
+  //   tag3.innerText = wordInfo.tags[2];
 
-    tagsContainer.append(tag1, tag2, tag3);
-  }
-  WordENG.append(tagsContainer);
-
+  //   tagsContainer.append(tag1, tag2, tag3);
+  // }
+  // WordENG.append(tagsContainer);
   // **********[difficultyLevel]********** //
-  if (wordInfo.difficultyLevel) {
-    const difficultyLevelContainer = document.createElement("div");
-    const className15 = "w-full h-full flex items-center justify-center";
-    difficultyLevelContainer.setAttribute("class", className15);
+  // if (wordInfo.difficultyLevel) {
+  //   const difficultyLevelContainer = document.createElement("div");
+  //   const className15 = "w-full h-full flex items-center justify-center";
+  //   difficultyLevelContainer.setAttribute("class", className15);
 
-    const number = document.createElement("p");
-    const className16 = "text-white";
-    number.setAttribute("class", className16);
-    number.innerText = String(wordInfo.difficultyLevel);
+  //   const number = document.createElement("p");
+  //   const className16 = "text-white";
+  //   number.setAttribute("class", className16);
+  //   number.innerText = String(wordInfo.difficultyLevel);
 
-    difficultyLevelContainer.append(number);
-    WordENG.append(difficultyLevelContainer);
-  }
-
+  //   difficultyLevelContainer.append(number);
+  //   WordENG.append(difficultyLevelContainer);
+  // }
   return WordENG;
 }

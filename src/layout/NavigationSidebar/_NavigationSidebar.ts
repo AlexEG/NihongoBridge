@@ -9,6 +9,7 @@ import StatisticBtn from "./StatisticBtn";
 import LeaderboardsBtn from "./LeaderboardsBtn";
 import IPABtn from "./IPABtn";
 import VocabularyBankBtn from "./VocabularyBankBtn";
+import VocabularyShop from "./VocabularyShop";
 
 export default function NavigationSidebar() {
   const container = document.createElement("nav");
@@ -30,6 +31,7 @@ export default function NavigationSidebar() {
     PracticeBtn(),
     LeaderboardsBtn(),
     VocabularyBankBtn(),
+    VocabularyShop(),
     div
   );
 
