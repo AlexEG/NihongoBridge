@@ -8,7 +8,8 @@
     "example": {
       "japanese": "私は来週、東京に旅行に行きます。",
       "english": "I am going to travel to Tokyo next week."
-    }
+    },
+    "pitchAccentPattern": [1, 2, 2]
   },
   {
     "kanji": "学生",
@@ -19,7 +20,8 @@
     "example": {
       "japanese": "私は学生です。",
       "english": "I am a student."
-    }
+    },
+    "pitchAccentPattern": [1, 2, 2, 2]
   },
   {
     "kanji": "先生",
@@ -30,7 +32,8 @@
     "example": {
       "japanese": "彼は先生です。",
       "english": "He is a teacher."
-    }
+    },
+    "pitchAccentPattern": [1, 2, 2, 2]
   },
   {
     "kanji": "友達",
@@ -41,7 +44,8 @@
     "example": {
       "japanese": "彼女は私の友達です。",
       "english": "She is my friend."
-    }
+    },
+    "pitchAccentPattern": [1, 2, 2, 2]
   },
   {
     "kanji": "家族",
@@ -52,7 +56,8 @@
     "example": {
       "japanese": "私の家族は大切です。",
       "english": "My family is important."
-    }
+    },
+    "pitchAccentPattern": [1, 2, 2, 2]
   },
   {
     "kanji": "水",
@@ -63,7 +68,8 @@
     "example": {
       "japanese": "私は水を飲みます。",
       "english": "I drink water."
-    }
+    },
+    "pitchAccentPattern": [1, 2]
   },
   {
     "kanji": "火",
@@ -74,7 +80,8 @@
     "example": {
       "japanese": "火は熱いです。",
       "english": "Fire is hot."
-    }
+    },
+    "pitchAccentPattern": [1, 2]
   },
   {
     "kanji": "猫",
@@ -85,7 +92,8 @@
     "example": {
       "japanese": "猫が好きです。",
       "english": "I like cats."
-    }
+    },
+    "pitchAccentPattern": [1, 2, 2, 2]
   },
   {
     "kanji": "水",
@@ -96,7 +104,8 @@
     "example": {
       "japanese": "水を飲みます。",
       "english": "I drink water."
-    }
+    },
+    "pitchAccentPattern": [1, 2, 2, 2]
   },
   {
     "kanji": "山",
@@ -107,7 +116,8 @@
     "example": {
       "japanese": "山に登ります。",
       "english": "I climb the mountain."
-    }
+    },
+    "pitchAccentPattern": [1, 2, 3, 2]
   },
   {
     "kanji": "太陽",
@@ -118,7 +128,8 @@
     "example": {
       "japanese": "太陽が輝いています。",
       "english": "The sun is shining."
-    }
+    },
+    "pitchAccentPattern": [1, 2, 1, 2]
   },
   {
     "kanji": "花",
@@ -129,7 +140,8 @@
     "example": {
       "japanese": "花がきれいです。",
       "english": "The flower is beautiful."
-    }
+    },
+    "pitchAccentPattern": [1, 2, 2, 2]
   },
   {
     "kanji": "星",
@@ -140,7 +152,8 @@
     "example": {
       "japanese": "星が輝いています。",
       "english": "The stars are twinkling."
-    }
+    },
+    "pitchAccentPattern": [1, 2]
   },
   {
     "kanji": "海",
@@ -151,7 +164,8 @@
     "example": {
       "japanese": "海は青くて広いです。",
       "english": "The sea is blue and vast."
-    }
+    },
+    "pitchAccentPattern": [1, 2]
   },
   {
     "kanji": "猫",
@@ -162,7 +176,8 @@
     "example": {
       "japanese": "猫が窓辺で寝ています。",
       "english": "The cat is sleeping by the window."
-    }
+    },
+    "pitchAccentPattern": [1, 2, 2, 2]
   },
   {
     "kanji": "星",
@@ -173,6 +188,7 @@
     "example": {
       "japanese": "夜空に星が輝いています。",
       "english": "Stars are shining in the night sky."
-    }
+    },
+    "pitchAccentPattern": [1, 2, 2, 2]
   }
 ]

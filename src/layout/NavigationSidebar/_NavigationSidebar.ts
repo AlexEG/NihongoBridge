@@ -25,7 +25,7 @@ export default function NavigationSidebar() {
     HomeBtn(),
     IPABtn(),
     StatisticBtn(),
-    CalendarBtn(),
+    // CalendarBtn(),
     HiraganaBtn(),
     // KatakanaBtn(),
     PracticeBtn(),
