@@ -18,20 +18,58 @@ export default function AddNewWordInputFields() {
 
   const wordInputField = inputField("Word", "Important");
   const syllableDivisionField = inputField("Syllable Division", "Im·por·tant");
-  const definition = inputField("Definition", "of great significance or value");
-  const example = inputField("Example", "Important habitats for wildlife.");
-  const ipaUS = inputField("IPA US", "[ɪmˈpɔːt(ə)nt]");
-  const similarWords = inputField("Similar Words", "main, chief, principal");
-  const tags = inputField("Tags", "significant, valuable, crucial");
+  const definitionField = inputField(
+    "Definition",
+    "of great significance or value"
+  );
+  const exampleField = inputField(
+    "Example",
+    "Important habitats for wildlife."
+  );
+  const ipaUSField = inputField("IPA US", "[ɪmˈpɔːt(ə)nt]");
+  const similarWordsField = inputField(
+    "Similar Words",
+    "main, chief, principal"
+  );
+  const tagsField = inputField("Tags", "significant, valuable, crucial");
+
+  wordInputField.setAttribute(
+    "id",
+    "vocabulary-bank--eng--add-new-word-input-fields--word"
+  );
+  syllableDivisionField.setAttribute(
+    "id",
+    "vocabulary-bank--eng--add-new-word-input-fields--syllable-division"
+  );
+  definitionField.setAttribute(
+    "id",
+    "vocabulary-bank--eng--add-new-word-input-fields--definition"
+  );
+  exampleField.setAttribute(
+    "id",
+    "vocabulary-bank--eng--add-new-word-input-fields--example"
+  );
+  ipaUSField.setAttribute(
+    "id",
+    "vocabulary-bank--eng--add-new-word-input-fields--ipa-us"
+  );
+  similarWordsField.setAttribute(
+    "id",
+    "vocabulary-bank--eng--add-new-word-input-fields--similar-words"
+  );
+  tagsField.setAttribute(
+    "id",
+    "vocabulary-bank--eng--add-new-word-input-fields--tags"
+  );
 
   inputFields.append(
     wordInputField,
-    definition,
-    example,
+    definitionField,
+    exampleField,
     syllableDivisionField,
-    ipaUS,
-    similarWords,
-    tags
+    ipaUSField,
+    similarWordsField,
+    tagsField
   );
 
   const soundfileAndSaveWordWrapper = document.createElement("div");
