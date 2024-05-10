@@ -1,3 +1,4 @@
+import Home from "../../../src/pages/Home/_Home";
 import { renderWords } from "../../../electron/modules/renderWords";
 import WordsList from "../../components/WordsList";
 import SidebarNavigationBtn from "./SidebarNavigationBtn";
@@ -25,7 +26,7 @@ export default function HomeBtn() {
   function switchToHome() {
     const root = document.querySelector("#root");
     root.querySelector("main").remove();
-    root.append(WordsList());
+    root.append(Home());
     renderWords();
   }
   return button;

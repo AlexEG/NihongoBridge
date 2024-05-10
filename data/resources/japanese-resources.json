@@ -1,0 +1,14 @@
+{
+  "metadate": {
+    "totalNumberOfResources": 5,
+    "articlesCount": 2,
+    "youtubeCount": 3
+  },
+  "articles": [
+    {
+      "image": "/data/resources/thumbnails/Wikipedia-logo.png",
+      "title": "Japanese pitch accent - Wikipedia",
+      "link": "https://en.wikipedia.org/wiki/Japanese_pitch_accent#:~:text=Japanese%20pitch%20accent%20(%E9%AB%98%E4%BD%8E%E3%82%A2%E3%82%AF%E3%82%BB%E3%83%B3%E3%83%88,%22river%22%20is%20%5Bka."
+    }
+  ]
+}

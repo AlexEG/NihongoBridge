@@ -1,0 +1,14 @@
+{
+  "metadate": {
+    "totalNumberOfResources": 5,
+    "articlesCount": 2,
+    "youtubeCount": 3
+  },
+  "articles": [
+    {
+      "image": "/data/resources/thumbnails/Wikipedia-logo.png",
+      "title": "International Phonetic Alphabet - Wikipedia",
+      "link": "https://en.wikipedia.org/wiki/International_Phonetic_Alphabet"
+    }
+  ]
+}
