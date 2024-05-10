@@ -1,4 +1,4 @@
-import { app, BrowserWindow } from "electron";
+import { app, BrowserWindow, dialog, ipcMain } from "electron";
 import path from "path";
 import fs from "fs";
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
@@ -67,7 +67,6 @@ app.on("activate", () => {
 
 // -------------------
 
-import { ipcMain } from "electron";
 import { readJsonFile } from "./modules/jsonReader";
 import { updateVocabularyStats } from "./modules/updateVocabularyStats";
 import { updateProfileStats } from "./modules/updateProfileStats";
@@ -154,15 +153,6 @@ ipcMain.handle(
 );
 
 //* drag & drop mp3 file VocabularyBank
-/*
-ipcMain.on("process-file", (event, { path: filePath, name: fileName }) => {
-  const newPath = path.join("data/sound/english/words", `${fileName}.mp3`);
-  fs.rename(filePath, newPath, (err) => {
-    if (err) throw err;
-    console.log(`MP3 file saved as ${newPath}`);
-  });
-});
-*/
 
 ipcMain.handle("process-file", async (event, { filePath, fileName }) => {
   console.log(`Received file path: ${filePath}`); // Log the received file path
@@ -176,5 +166,17 @@ ipcMain.handle("process-file", async (event, { filePath, fileName }) => {
   } catch (err) {
     console.error("Error moving file:", err);
     return { status: "error", message: err.message };
+  }
+});
+
+ipcMain.handle("open-file-dialog", async (event) => {
+  const result = await dialog.showOpenDialog({
+    properties: ["openFile"],
+    filters: [{ name: "Audio", extensions: ["mp3"] }],
+  });
+  if (result.canceled) {
+    return;
+  } else {
+    return result.filePaths[0];
   }
 });

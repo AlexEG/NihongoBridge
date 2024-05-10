@@ -31,13 +31,14 @@ export default function Soundfile() {
 
   // ------------------
 
-  // browseFilebtn.addEventListener("click", async () => {
-  //   const filePath = await window.api.selectFile();
-  //   if (filePath) {
-  //     console.log("File selected:", filePath);
-  //     // Store the filePath in a variable to use when the form is submitted
-  //   }
-  // });
+  browseFilebtn.addEventListener("click", async () => {
+    const filePath = await window.api.openFileDialog();
+    if (filePath) {
+      console.log("File selected:", filePath);
+      // Store the filePath in a variable to use when the form is submitted
+      container.dataset.droppedFilePath = filePath;
+    }
+  });
 
   // this is not good for pref
   // Highlight the drop zone when a file is dragged over it

@@ -14,6 +14,7 @@ declare global {
         attemptPassed: boolean
       ) => Promise<any>;
       processFile: (filePath: string, fileName: string) => Promise<any>;
+      openFileDialog: () => Promise<string>;
       addNewWordToVocabularyBank: (
         word: string,
         definition: string,

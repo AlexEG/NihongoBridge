@@ -1,7 +1,7 @@
 // See the Electron documentation for details on how to use preload scripts:
 // https://www.electronjs.org/docs/latest/tutorial/process-model#preload-scripts
 
-import { contextBridge, ipcRenderer, dialog } from "electron";
+import { contextBridge, ipcRenderer } from "electron";
 
 contextBridge.exposeInMainWorld("api", {
   readJsonFile: (fileName: string) =>
@@ -32,19 +32,7 @@ contextBridge.exposeInMainWorld("api", {
   processFile: (filePath: string, fileName: string) => {
     return ipcRenderer.invoke("process-file", { filePath, fileName });
   },
-  selectFile: async () => {
-    const result = await dialog.showOpenDialog({
-      properties: ["openFile"],
-      filters: [{ name: "Audio", extensions: ["mp3"] }],
-    });
-    if (result.canceled) {
-      return;
-    } else {
-      return result.filePaths[0];
-    }
+  openFileDialog: () => {
+    return ipcRenderer.invoke("open-file-dialog");
   },
 });
-
-// processFile: (filePath: string, fileName: string) => {
-//   ipcRenderer.invoke("process-file", { filePath, fileName });
-// },

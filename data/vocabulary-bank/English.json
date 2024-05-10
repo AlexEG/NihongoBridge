@@ -1,6 +1,6 @@
 {
   "metadate": {
-    "number_of_words": 23
+    "number_of_words": 25
   },
   "words": [
     {
@@ -395,6 +395,36 @@
     {
       "word": "bbbb",
       "soundFile": "/data/sound/bbbb.mp3",
+      "definition": "???",
+      "ipa_us": "???",
+      "ipa_uk": "???",
+      "example": "???",
+      "similar_words": [
+        "???"
+      ],
+      "syllable_division": "???",
+      "tags": [
+        "???"
+      ]
+    },
+    {
+      "word": "ggg",
+      "soundFile": "/data/sound/ggg.mp3",
+      "definition": "???",
+      "ipa_us": "???",
+      "ipa_uk": "???",
+      "example": "???",
+      "similar_words": [
+        "???"
+      ],
+      "syllable_division": "???",
+      "tags": [
+        "???"
+      ]
+    },
+    {
+      "word": "ggg",
+      "soundFile": "/data/sound/ggg.mp3",
       "definition": "???",
       "ipa_us": "???",
       "ipa_uk": "???",
