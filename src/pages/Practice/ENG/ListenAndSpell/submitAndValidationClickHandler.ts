@@ -17,24 +17,24 @@ export default function submitAndValidationClickHandler(
   wordsArr: WordInfo[]
 ) {
   const LexiconTypist = document.querySelector(
-    "#eng--lexicon-typist"
+    "#practice--eng---listen-and-spell"
   ) as HTMLElement;
   const previousCorrectWord = LexiconTypist.dataset.correctAnswer;
 
   // on the first click check the answer and the change the submit btn text to next
   // then when next clicked get the next question and render it
   const submitBtn = document.querySelector(
-    "#eng--lexicon-typist--submit-btn"
+    "#practice--eng---listen-and-spell--submit-btn"
   ) as HTMLButtonElement;
   const correctAnswerIndicator = document.querySelector(
-    "#eng--lexicon-typist--indicator-correct"
+    "#practice--eng---listen-and-spell--indicator-correct"
   );
   const wrongAnswerIndicator = document.querySelector(
-    "#eng--lexicon-typist--indicator-wrong"
+    "#practice--eng---listen-and-spell--indicator-wrong"
   );
 
   const input = document.querySelector(
-    "#eng--lexicon-typist--input"
+    "#practice--eng---listen-and-spell--input"
   ) as HTMLInputElement;
 
   if (submitBtn.textContent === "submit") {
@@ -94,19 +94,14 @@ export default function submitAndValidationClickHandler(
 
     // get the next question
     const nextQuestion = getNextQuestion(questionOrderType, wordsArr);
-    // definition
-    const definition = document.querySelector(
-      "#eng--lexicon-typist--definition > h1"
-    ) as HTMLElement;
-
-    // console.log("definition:", definition);
-    // console.log("nextQuestion.definition:", nextQuestion.definition);
-    definition.innerText = nextQuestion.definition;
+    //* sound file
 
     // new correctAnswer
     LexiconTypist.dataset.correctAnswer = nextQuestion.word.toLowerCase();
     console.log("Cheat correctAnswer:", nextQuestion.word);
     console.log("Cheat word:", nextQuestion);
+    // new sound file path
+    LexiconTypist.dataset.soundFilePath = nextQuestion.soundFile;
 
     // clear input
     input.value = "";

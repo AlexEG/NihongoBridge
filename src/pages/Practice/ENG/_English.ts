@@ -1,4 +1,5 @@
 import LexiconTypist from "./LexiconTypist/_LexiconTypist";
+import ListenAndSpell from "./ListenAndSpell/_ListenAndSpell";
 interface VocabularyData {
   metadate: { number_of_words: number };
   words: WordInfo[];
@@ -48,6 +49,11 @@ export default function English() {
           "vocabulary (definition -> multiple choices)",
           "is a focused exercise where you’ll encounter precise definitions and challenge yourself to identify the correct term from five options",
           LexiconTypist(data.words)
+        ),
+        ipcc(
+          "Listen & Spell",
+          "listen to the pronunciation of a word and then type it out to practice spelling",
+          ListenAndSpell(data.words)
         )
       );
     })
