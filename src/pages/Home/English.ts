@@ -10,6 +10,7 @@ interface resources {
     image: string;
     title: string;
     link: string;
+    addedDate: number;
   }[];
 }
 export default function English() {
@@ -27,7 +28,12 @@ export default function English() {
     .then((data: resources) => {
       for (const articleInfo of data.articles) {
         postsContainer.append(
-          Article(articleInfo.image, articleInfo.title, articleInfo.link)
+          Article(
+            articleInfo.image,
+            articleInfo.title,
+            articleInfo.link,
+            articleInfo.addedDate
+          )
         );
       }
     })

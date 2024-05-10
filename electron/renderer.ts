@@ -35,12 +35,14 @@ import { renderWords } from "./modules/renderWords";
 import IPA from "../src/pages/IPA/_IPA";
 import VocabularyBank from "../src/pages/VocabularyBank/_VocabularyBank";
 import Practice from "../src/pages/Practice/_Practice";
+import Home from "../src/pages/Home/_Home";
 
 const ROOT = document.querySelector("div#root");
 
 ROOT.append(TitleBar());
 ROOT.append(NavigationSidebar());
-ROOT.append(WordsList());
+// ROOT.append(WordsList());
+ROOT.append(Home());
 // ROOT.append(IPA());
 // ROOT.append(VocabularyBank());
 // ROOT.append(Practice());

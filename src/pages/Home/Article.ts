@@ -1,11 +1,16 @@
-export default function Article(coverURL: string, text: string, link: string) {
+export default function Article(
+  coverURL: string,
+  text: string,
+  link: string,
+  addedDate: number
+) {
   const blogPost = document.createElement("div");
   const className =
     "border0 h-56 w-64 opacity-80 hover:opacity-100 transition-opacity cursor-pointer ";
   blogPost.setAttribute("class", className);
 
   const cover = document.createElement("div");
-  const className2 = "w-full h-40 relative";
+  const className2 = "w-full h-40 relative overflow-hidden border0";
 
   cover.setAttribute("class", className2);
   cover.style.backgroundImage = `url('${coverURL}')`;
@@ -17,6 +22,18 @@ export default function Article(coverURL: string, text: string, link: string) {
 
   overlay.setAttribute("class", className3);
   cover.append(overlay);
+
+  //* NEW bar
+  // if the article is less than a week old
+  // Display the "NEW" bar
+  if (Math.floor(Date.now() / 1000) - addedDate <= 604800) {
+    const isNewBar = document.createElement("div");
+    const className7 =
+      "bg-black text-white absolute top-2 -right-4 text-xs rotate-45 px-5";
+    isNewBar.setAttribute("class", className7);
+    isNewBar.textContent = "NEW";
+    cover.append(isNewBar);
+  }
 
   const titleText = document.createElement("p");
   const className4 = "text-white p-1 truncate-2-lines text-sm";
