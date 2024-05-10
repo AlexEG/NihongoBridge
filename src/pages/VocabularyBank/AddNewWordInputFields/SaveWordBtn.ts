@@ -1,5 +1,9 @@
 export default function SaveWordBtn() {
   const saveWordBtn = document.createElement("button");
+  saveWordBtn.setAttribute(
+    "id",
+    "vocabulary-bank--eng--add-new-word-input-fields--save-word-btn"
+  );
   const className =
     "px-2 py-1 text-[hsl(212,12%,50%)] border border-[hsl(216,28%,20%)] bg-[hsl(216,28%,7%)] hover:border-[hsl(216,28%,30%)] transition-colors hover:text-[hsl(212,12%,80%)] mx-auto text-sm mt-10";
 
@@ -44,6 +48,7 @@ function addNewWordToVocabularyBank() {
   );
 
   closeAddNewWordFieldsPopup();
+  saveWordSoundFile();
 }
 
 function closeAddNewWordFieldsPopup() {
@@ -56,4 +61,36 @@ function closeAddNewWordFieldsPopup() {
 
   const inputs = Array.from(addNewWordFieldsPopup.querySelectorAll("input"));
   for (const input of inputs) input.value = "";
+}
+
+function saveWordSoundFile() {
+  const wordInputField = document.querySelector(
+    "#vocabulary-bank--eng--add-new-word-input-fields--word > input"
+  ) as HTMLInputElement;
+  const fileName = wordInputField.getAttribute("value");
+  // const fileName = "testtest";
+
+  const soundFileDragDropContainer = document.querySelector(
+    "#vocabulary-bank--eng--add-new-word-input-fields--sound-file-drag-and-drop-zone"
+  ) as HTMLDivElement;
+  const droppedFilePath = soundFileDragDropContainer.dataset.droppedFilePath;
+
+  // console.log("droppedFilePath", droppedFilePath);
+  // console.log("soundFileDragDropContainer", soundFileDragDropContainer);
+  // console.log("wordInputField", wordInputField);
+  // console.log("wordInputField v", wordInputField.value);
+  // console.log("fileName", fileName);
+
+  if (droppedFilePath && fileName) {
+    window.api
+      .processFile(droppedFilePath, fileName)
+      .then((response) => {
+        console.log("File successfully processed!", response.message);
+        // Update the UI to show success message
+      })
+      .catch((error) => {
+        console.error("Error processing file:", error);
+        // Update the UI to show error message
+      });
+  }
 }

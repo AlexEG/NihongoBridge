@@ -1,6 +1,6 @@
 import { app, BrowserWindow } from "electron";
 import path from "path";
-
+import fs from "fs";
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require("electron-squirrel-startup")) {
   app.quit();
@@ -152,3 +152,29 @@ ipcMain.handle(
     }
   }
 );
+
+//* drag & drop mp3 file VocabularyBank
+/*
+ipcMain.on("process-file", (event, { path: filePath, name: fileName }) => {
+  const newPath = path.join("data/sound/english/words", `${fileName}.mp3`);
+  fs.rename(filePath, newPath, (err) => {
+    if (err) throw err;
+    console.log(`MP3 file saved as ${newPath}`);
+  });
+});
+*/
+
+ipcMain.handle("process-file", async (event, { filePath, fileName }) => {
+  console.log(`Received file path: ${filePath}`); // Log the received file path
+  const newPath = path.join("data/sound/english/words", `${fileName}.mp3`);
+  console.log(`New file path: ${newPath}`); // Log the new file path
+
+  try {
+    await fs.promises.rename(filePath, newPath);
+    console.log(`MP3 file saved as ${newPath}`);
+    return { status: "success", message: "File processed successfully." };
+  } catch (err) {
+    console.error("Error moving file:", err);
+    return { status: "error", message: err.message };
+  }
+});

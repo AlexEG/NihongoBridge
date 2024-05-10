@@ -13,6 +13,7 @@ declare global {
         wordXP: number,
         attemptPassed: boolean
       ) => Promise<any>;
+      processFile: (filePath: string, fileName: string) => Promise<any>;
       addNewWordToVocabularyBank: (
         word: string,
         definition: string,
@@ -23,5 +24,6 @@ declare global {
         tags: string
       ) => Promise<any>;
     };
+    selectFile: () => Promise<string>;
   }
 }

@@ -88,7 +88,7 @@ function webviewCloseBtn() {
   closeBtn.addEventListener("click", closeWebview);
   function closeWebview() {
     const SOURCES = closeBtn.parentElement;
-    console.log("SOURCES", SOURCES);
+    // console.log("SOURCES", SOURCES);
     closeBtn.style.display = "none";
     SOURCES.querySelector("section").style.display = "grid";
 

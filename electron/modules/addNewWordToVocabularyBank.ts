@@ -58,7 +58,7 @@ async function addNewWordToVocabularyBank(
 
   const newWord: WordInfo = {
     word: word,
-    soundFile: "/data/sound/nosound.mp3",
+    soundFile: `/data/sound/${word}.mp3`,
     definition: definition,
     ipa_us: ipa_us,
     ipa_uk: "???",

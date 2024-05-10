@@ -94,8 +94,11 @@ function inputField(text: string, placeholder: string) {
     "text-[hsl(212,12%,80%)] border border-[hsl(216,28%,20%)] p-2 bg-[hsl(216,28%,7%)] w-96 ml-auto";
   wordInput.setAttribute("class", className3);
   wordInput.setAttribute("type", "text");
+  wordInput.setAttribute("value", "");
   wordInput.setAttribute("placeholder", placeholder);
-
+  wordInput.onchange = () => {
+    wordInput.setAttribute("value", wordInput.value);
+  };
   inputField.append(wordSpan, wordInput);
 
   return inputField;
