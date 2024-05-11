@@ -19,7 +19,7 @@ interface WordInfo {
 
 export default function ListenAndSpell(wordsArr: WordInfo[]) {
   const ListenAndSpell = document.createElement("div");
-  const className = "relative flex flex-col justify-evenly border ";
+  const className = "relative flex flex-col justify-evenly border0 ";
   ListenAndSpell.setAttribute("class", className);
   ListenAndSpell.setAttribute("id", "practice--eng---listen-and-spell");
   ListenAndSpell.dataset.correctAnswer = "";

@@ -93,7 +93,7 @@
     },
     {
       "word": "east",
-      "soundFile": "/data/sound/nosound.mp3",
+      "soundFile": "/data/sound/english/words/east.mp3",
       "definition": "the direction toward the point of the horizon where the sun rises at the equinoxes",
       "ipa_us": "[iːst]",
       "ipa_uk": "[iːst]",
@@ -104,7 +104,7 @@
     },
     {
       "word": "paper",
-      "soundFile": "/data/sound/nosound.mp3",
+      "soundFile": "/data/sound/english/words/paper.mp3",
       "definition": "material manufactured in thin sheets from the pulp of wood or other fibrous substances",
       "ipa_us": "[ˈpeɪpər]",
       "ipa_uk": "[ˈpeɪpə]",
@@ -115,7 +115,7 @@
     },
     {
       "word": "ubiquitous",
-      "soundFile": "/data/sound/nosound.mp3",
+      "soundFile": "/data/sound/english/words/ubiquitous.mp3",
       "definition": "present, appearing, or found everywhere.",
       "ipa_us": "[juːˈbɪkwɪtəs]",
       "ipa_uk": "???",
@@ -126,7 +126,7 @@
     },
     {
       "word": "breeze",
-      "soundFile": "/data/sound/nosound.mp3",
+      "soundFile": "/data/sound/english/words/breeze.mp3",
       "definition": "Breeze (one syllable)",
       "ipa_us": "A gentle wind or current of air.",
       "ipa_uk": "???",
@@ -137,7 +137,7 @@
     },
     {
       "word": "pictures",
-      "soundFile": "/data/sound/nosound.mp3",
+      "soundFile": "/data/sound/english/words/pictures.mp3",
       "definition": "Pic·tures",
       "ipa_us": "a painting or drawing",
       "ipa_uk": "???",

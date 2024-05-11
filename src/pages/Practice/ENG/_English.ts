@@ -1,5 +1,6 @@
 import LexiconTypist from "./LexiconTypist/_LexiconTypist";
 import ListenAndSpell from "./ListenAndSpell/_ListenAndSpell";
+import WordToSyllableDivision from "./WordToSyllableDivision";
 interface VocabularyData {
   metadate: { number_of_words: number };
   words: WordInfo[];
@@ -45,15 +46,20 @@ export default function English() {
     .readJsonFile("vocabulary-bank/English.json")
     .then((data: VocabularyData) => {
       English.append(
+        // ipcc(
+        //   "vocabulary (definition -> multiple choices)",
+        //   "is a focused exercise where you’ll encounter precise definitions and challenge yourself to identify the correct term from five options",
+        //   LexiconTypist(data.words)
+        // ),
+        // ipcc(
+        //   "Listen & Spell",
+        //   "listen to the pronunciation of a word and then type it out to practice spelling",
+        //   ListenAndSpell(data.words)
+        // ),
         ipcc(
-          "vocabulary (definition -> multiple choices)",
-          "is a focused exercise where you’ll encounter precise definitions and challenge yourself to identify the correct term from five options",
-          LexiconTypist(data.words)
-        ),
-        ipcc(
-          "Listen & Spell",
-          "listen to the pronunciation of a word and then type it out to practice spelling",
-          ListenAndSpell(data.words)
+          "Word => Syllable Division",
+          "",
+          WordToSyllableDivision(data.words)
         )
       );
     })
