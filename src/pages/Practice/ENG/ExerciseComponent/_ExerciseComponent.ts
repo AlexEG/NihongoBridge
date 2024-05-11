@@ -28,21 +28,16 @@ export default function ExerciseComponent(
     | "soundToSpell"
     | "soundToOptions"
     | "textToSpell"
-    | "textToOptions",
-  wordsArr: WordInfo[]
+    | "textToOptions"
 ) {
   const ExerciseComponent = document.createElement("div");
-  const className = "relative flex flex-col justify-evenly border";
+  const className = "relative flex flex-col justify-evenly border0";
   ExerciseComponent.setAttribute("class", className);
   const ECID = `practice--${section}--${exerciseName}`;
   ExerciseComponent.setAttribute("id", ECID);
   ExerciseComponent.dataset.correctAnswer = "";
 
   const questionOrderType = "random";
-  const firstQuestion = getNextQuestion(questionOrderType, wordsArr);
-  ExerciseComponent.dataset.correctAnswer = firstQuestion.word;
-  ExerciseComponent.dataset.soundFilePath = firstQuestion.soundFile;
-  ExerciseComponent.dataset.questionOrderType = questionOrderType;
 
   // console.log(firstQuestion);
 
@@ -50,6 +45,15 @@ export default function ExerciseComponent(
   function render(data: VocabularyData) {
     const metadate = data.metadate;
     const wordsArr = data.words;
+
+    const firstQuestion = getNextQuestion(questionOrderType, wordsArr);
+    ExerciseComponent.dataset.correctAnswer = firstQuestion.word;
+    ExerciseComponent.dataset.soundFilePath = firstQuestion.soundFile;
+    ExerciseComponent.dataset.questionOrderType = questionOrderType;
+
+    // auto play
+    const audio = new Audio(ExerciseComponent.dataset.soundFilePath);
+    audio.autoplay = true;
 
     const inputAndCheckBtn = InputAndCheckBtn(ECID);
     ExerciseComponent.append(
@@ -60,6 +64,7 @@ export default function ExerciseComponent(
       inputAndCheckBtn
     );
 
+    // ******************* //
     const input = inputAndCheckBtn.firstElementChild as HTMLInputElement;
     const checkBtn = inputAndCheckBtn.lastElementChild;
 
@@ -98,9 +103,18 @@ export default function ExerciseComponent(
         const nextQuestion = getNextQuestion(questionOrderType, wordsArr);
         ExerciseComponent.dataset.correctAnswer = nextQuestion.word;
         ExerciseComponent.dataset.soundFilePath = nextQuestion.soundFile;
+        // auto play
+        const audio = new Audio(nextQuestion.soundFile);
+        audio.autoplay = true;
+        input.focus();
       }
     }
 
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Enter") {
+        checkHandler();
+      }
+    });
     checkBtn.addEventListener("click", checkHandler);
   }
   //* ******
@@ -191,7 +205,7 @@ function soundBtnsWrapper() {
   const normalSlowSpeedWrapper = document.createElement("div");
   normalSlowSpeedWrapper.setAttribute(
     "class",
-    "flex gap-x-2 justify-center items-end"
+    "flex gap-x-2 justify-center items-end mt-12"
   );
   normalSlowSpeedWrapper.append(
     PlaySoundBtn("large", "1"),

@@ -1,6 +1,6 @@
 export default function IndicatorCorrectWrong(ECID: string) {
   const container = document.createElement("div");
-  const className = "py-2 border";
+  const className = "h-10 py-2 mt-10 border0";
   container.setAttribute("class", className);
   container.setAttribute("id", `${ECID}--indicator-correct-wrong`);
 

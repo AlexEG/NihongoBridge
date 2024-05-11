@@ -42,31 +42,20 @@ export default function English() {
   //   LexiconTypist()
   // );
 
-  window.api
-    .readJsonFile("vocabulary-bank/English.json")
-    .then((data: VocabularyData) => {
-      English.append(
-        // ipcc(
-        //   "vocabulary (definition -> multiple choices)",
-        //   "is a focused exercise where you’ll encounter precise definitions and challenge yourself to identify the correct term from five options",
-        //   LexiconTypist(data.words)
-        // ),
-        // ipcc(
-        //   "Listen & Spell",
-        //   "listen to the pronunciation of a word and then type it out to practice spelling",
-        //   ListenAndSpell(data.words)
-        // ),
-        ipcc(
-          "Word => Syllable Division",
-          "",
-          WordToSyllableDivision(data.words)
-        )
-      );
-    })
-    .catch((error: Error) => {
-      console.error("Failed to read the JSON file:", error);
-    });
   // English.append(precisionOfMeaning, lexiconTypist, auditoryLexicon);
+  English.append(
+    // ipcc(
+    //   "vocabulary (definition -> multiple choices)",
+    //   "is a focused exercise where you’ll encounter precise definitions and challenge yourself to identify the correct term from five options",
+    //   LexiconTypist(data.words)
+    // ),
+    // ipcc(
+    //   "Listen & Spell",
+    //   "listen to the pronunciation of a word and then type it out to practice spelling",
+    //   ListenAndSpell(data.words)
+    // ),
+    ipcc("Word => Syllable Division", "", WordToSyllableDivision)
+  );
 
   return English;
 }
@@ -76,7 +65,7 @@ export default function English() {
 function ipcc(
   titleText: string,
   descriptionText: string,
-  HTMLpageToRender: HTMLElement
+  WordToSyllableDivision: () => HTMLDivElement
 ) {
   const ipcc = document.createElement("div");
   const className2 =
@@ -123,7 +112,7 @@ function ipcc(
   ipcc.addEventListener("click", clickHandler);
 
   function clickHandler() {
-    ipcc.parentElement.parentElement.append(HTMLpageToRender);
+    ipcc.parentElement.parentElement.append(WordToSyllableDivision());
     ipcc.parentElement.remove();
   }
   return ipcc;

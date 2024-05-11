@@ -18,7 +18,7 @@ export default function getNextQuestion(
 
   switch (questionOrderType) {
     case "random":
-      next = wordsArr[Math.floor(Math.random() * wordsArr.length + 1)];
+      next = wordsArr[Math.floor(Math.random() * wordsArr.length)];
       break;
 
     default:

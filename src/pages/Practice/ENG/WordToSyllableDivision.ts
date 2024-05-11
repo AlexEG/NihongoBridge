@@ -1,11 +1,10 @@
 import ExerciseComponent from "./ExerciseComponent/_ExerciseComponent";
 
-export default function WordToSyllableDivision(wordsArr: any) {
+export default function WordToSyllableDivision() {
   const WordToSyllableDivision = ExerciseComponent(
     "english",
     "word-to-syllable-division",
-    "soundToSpell",
-    wordsArr
+    "soundToSpell"
   );
 
   return WordToSyllableDivision;

@@ -10,6 +10,7 @@ export default function InputAndCheckBtn(ECID: string) {
 
   input.setAttribute("type", "text");
   input.setAttribute("class", className2);
+  // input.setAttribute("autofocus", "");
   input.setAttribute("placeholder", "cat, water, etc...");
   input.setAttribute("id", `${ECID}--input`);
   input.oninput = () => input.setAttribute("value", input.value);
