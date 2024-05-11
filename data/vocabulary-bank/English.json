@@ -123,28 +123,6 @@
       "similar_words": ["omnipresent", "pervasive", "universal"],
       "syllable_division": "u·biq·ui·tous",
       "tags": ["omnipresence", "commonality", "universality"]
-    },
-    {
-      "word": "breeze",
-      "soundFile": "/data/sound/english/words/breeze.mp3",
-      "definition": "Breeze (one syllable)",
-      "ipa_us": "A gentle wind or current of air.",
-      "ipa_uk": "???",
-      "example": "The breeze rustled the leaves on the trees.",
-      "similar_words": ["[briːz]"],
-      "syllable_division": "wind, zephyr, gust",
-      "tags": ["gentleness", "wind", "airiness"]
-    },
-    {
-      "word": "pictures",
-      "soundFile": "/data/sound/english/words/pictures.mp3",
-      "definition": "Pic·tures",
-      "ipa_us": "a painting or drawing",
-      "ipa_uk": "???",
-      "example": "Draw a picture of a tree.",
-      "similar_words": ["[ˈpɪktʃərz]"],
-      "syllable_division": "images, photos, portraits",
-      "tags": ["images", "photography", "art", "most common 1000"]
     }
   ]
 }

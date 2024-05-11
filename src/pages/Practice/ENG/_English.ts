@@ -1,6 +1,6 @@
-import LexiconTypist from "./LexiconTypist/_LexiconTypist";
-import ListenAndSpell from "./ListenAndSpell/_ListenAndSpell";
-import WordToSyllableDivision from "./WordToSyllableDivision";
+import ExerciseComponent from "./ExerciseComponent/_ExerciseComponent";
+import SoundToSpellExerciseComponent from "./SoundToSpellExerciseComponent/_SoundToSpellExerciseComponent";
+
 interface VocabularyData {
   metadate: { number_of_words: number };
   words: WordInfo[];
@@ -42,19 +42,34 @@ export default function English() {
   //   LexiconTypist()
   // );
 
-  // English.append(precisionOfMeaning, lexiconTypist, auditoryLexicon);
+  /*
+  “Phonetic Finesse: Listen to words and transcribe them using IPA symbols. It’s an engaging way to get familiar with the sounds of a language and perfect your pronunciation.”
+   */
+
   English.append(
-    // ipcc(
-    //   "vocabulary (definition -> multiple choices)",
-    //   "is a focused exercise where you’ll encounter precise definitions and challenge yourself to identify the correct term from five options",
-    //   LexiconTypist(data.words)
-    // ),
-    // ipcc(
-    //   "Listen & Spell",
-    //   "listen to the pronunciation of a word and then type it out to practice spelling",
-    //   ListenAndSpell(data.words)
-    // ),
-    ipcc("Word => Syllable Division", "", WordToSyllableDivision)
+    ipcc(
+      "Listen & Spell",
+      "listen to the pronunciation of a word and then type it out to practice spelling",
+      () =>
+        SoundToSpellExerciseComponent(
+          "english",
+          "word-to-syllable-division",
+          "word"
+        )
+    ),
+    ipcc(
+      "Syllable Segmenter",
+      "Listen to words and type their syllables. A fun way to practice language sounds and improve spelling.",
+      () =>
+        SoundToSpellExerciseComponent(
+          "english",
+          "word-to-syllable-division",
+          "syllableDivision"
+        )
+    ),
+    ipcc("Word => Syllable Division", "", () =>
+      ExerciseComponent("english", "word-to-syllable-division", "soundToSpell")
+    )
   );
 
   return English;
@@ -65,7 +80,7 @@ export default function English() {
 function ipcc(
   titleText: string,
   descriptionText: string,
-  WordToSyllableDivision: () => HTMLDivElement
+  exercise: () => HTMLElement
 ) {
   const ipcc = document.createElement("div");
   const className2 =
@@ -112,7 +127,7 @@ function ipcc(
   ipcc.addEventListener("click", clickHandler);
 
   function clickHandler() {
-    ipcc.parentElement.parentElement.append(WordToSyllableDivision());
+    ipcc.parentElement.parentElement.append(exercise());
     ipcc.parentElement.remove();
   }
   return ipcc;

@@ -18,28 +18,20 @@ interface WordInfo {
   similar_words: string[];
   syllable_division: string;
   tags: string[];
-  difficultyLevel: number;
 }
 
-export default function ExerciseComponent(
+export default function SoundToSpellExerciseComponent(
   section: "english" | "japanese",
   exerciseName: string,
-  exerciseType:
-    | "soundToSpell"
-    | "soundToOptions"
-    | "textToSpell"
-    | "textToOptions"
+  answerType: "word" | "syllableDivision"
 ) {
   const ExerciseComponent = document.createElement("div");
   const className = "relative flex flex-col justify-evenly border0";
   ExerciseComponent.setAttribute("class", className);
   const ECID = `practice--${section}--${exerciseName}`;
   ExerciseComponent.setAttribute("id", ECID);
-  ExerciseComponent.dataset.correctAnswer = "";
 
   const questionOrderType = "random";
-
-  // console.log(firstQuestion);
 
   //* ******
   function render(data: VocabularyData) {
@@ -47,7 +39,10 @@ export default function ExerciseComponent(
     const wordsArr = data.words;
 
     const firstQuestion = getNextQuestion(questionOrderType, wordsArr);
-    ExerciseComponent.dataset.correctAnswer = firstQuestion.word;
+    answerType === "word"
+      ? (ExerciseComponent.dataset.correctAnswer = firstQuestion.word)
+      : (ExerciseComponent.dataset.correctAnswer =
+          firstQuestion.syllable_division.toLowerCase());
     ExerciseComponent.dataset.soundFilePath = firstQuestion.soundFile;
     ExerciseComponent.dataset.questionOrderType = questionOrderType;
 
@@ -66,6 +61,12 @@ export default function ExerciseComponent(
 
     // ******************* //
     const input = inputAndCheckBtn.firstElementChild as HTMLInputElement;
+    const inputPlaceholder =
+      answerType === "word"
+        ? "cat, water, etc..."
+        : "u·biq·ui·tous , im por tant , pa-per";
+    input.setAttribute("placeholder", inputPlaceholder);
+
     const checkBtn = inputAndCheckBtn.lastElementChild;
 
     function checkHandler() {
@@ -75,17 +76,24 @@ export default function ExerciseComponent(
         console.log("check");
 
         const correctAnswer = ExerciseComponent.dataset.correctAnswer;
+
         console.log("the correctAnswer is:", correctAnswer);
 
-        if (input.getAttribute("value") === correctAnswer) {
+        const inputValue = input.getAttribute("value");
+        const userAnswer =
+          answerType === "word"
+            ? inputValue
+            : inputValue.replace(/[-_ ]/g, "·");
+
+        if (userAnswer === correctAnswer) {
           console.log("correct answer");
           giveIndicatorCorrectWrongMessage(true);
-          updateVocabStats(correctAnswer, true);
+          updateVocabStats(correctAnswer.replace(/[·]/g, ""), true);
           updateProfileStats(true);
         } else {
           console.log("wrong answer");
           giveIndicatorCorrectWrongMessage(false);
-          updateVocabStats(correctAnswer, false);
+          updateVocabStats(correctAnswer.replace(/[·]/g, ""), false);
           updateProfileStats(false);
         }
 
@@ -101,7 +109,10 @@ export default function ExerciseComponent(
         // get next question data
         const questionOrderType = ExerciseComponent.dataset.questionOrderType;
         const nextQuestion = getNextQuestion(questionOrderType, wordsArr);
-        ExerciseComponent.dataset.correctAnswer = nextQuestion.word;
+        answerType === "word"
+          ? (ExerciseComponent.dataset.correctAnswer = nextQuestion.word)
+          : (ExerciseComponent.dataset.correctAnswer =
+              nextQuestion.syllable_division.toLowerCase());
         ExerciseComponent.dataset.soundFilePath = nextQuestion.soundFile;
         // auto play
         const audio = new Audio(nextQuestion.soundFile);
@@ -151,16 +162,16 @@ export default function ExerciseComponent(
       wrong.classList.replace("hidden", "flex");
       const correctAnswer = ExerciseComponent.dataset.correctAnswer;
       const encouragementArray = [
-        "Good try, but the correct answer is ???",
-        "Not quite, the accurate response would be ???",
-        "Close, but the right answer is actually ???",
-        "Almost there! The correct answer is ???",
-        "Nice attempt, however, ??? is correct.",
-        "That's not it, but ??? is the one.",
-        "You're on the right track, but it's ???",
-        "Not exactly, the answer we're looking for is ???",
-        "A valiant effort, but the answer is ???",
-        "You've missed the mark, the correct answer is ???",
+        `Good try, but the correct answer is "???"`,
+        `Not quite, the accurate response would be "???"`,
+        `Close, but the right answer is actually "???"`,
+        `Almost there! The correct answer is "???"`,
+        `Nice attempt, however, "???" is correct.`,
+        `That's not it, but "???" is the one.`,
+        `You're on the right track, but it's "???"`,
+        `Not exactly, the answer we're looking for is "???"`,
+        `A valiant effort, but the answer is "???"`,
+        `You've missed the mark, the correct answer is "???"`,
       ];
       wrong.lastElementChild.textContent = encouragementArray[
         Math.floor(Math.random() * 10)
@@ -256,3 +267,5 @@ function updateProfileStats(attemptPassed: boolean) {
 }
 
 //* ******
+
+//TODO fix bug: when existing from exercise using the EN JP local nav and entering other exercise and clicking on Enter key to Check and Continue two sounds will play in the next question
