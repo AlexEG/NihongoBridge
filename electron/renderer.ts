@@ -36,6 +36,7 @@ import IPA from "../src/pages/IPA/_IPA";
 import VocabularyBank from "../src/pages/VocabularyBank/_VocabularyBank";
 import Practice from "../src/pages/Practice/_Practice";
 import Home from "../src/pages/Home/_Home";
+import VocabularyShop from "../src/pages/VocabularyShop/_VocabularyShop";
 
 const ROOT = document.querySelector("div#root");
 
@@ -45,6 +46,7 @@ ROOT.append(NavigationSidebar());
 // ROOT.append(Home());
 // ROOT.append(IPA());
 // ROOT.append(VocabularyBank());
-ROOT.append(Practice());
+// ROOT.append(Practice());
+ROOT.append(VocabularyShop());
 
 renderWords();

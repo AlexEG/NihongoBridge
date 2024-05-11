@@ -1,6 +1,6 @@
 {
   "metadate": {
-    "number_of_words": 25
+    "number_of_words": 10
   },
   "words": [
     {
@@ -101,17 +101,6 @@
       "similar_words": ["orient", "sunrise direction", "eastward"],
       "syllable_division": "East",
       "tags": ["direction", "compass", "orientation", "most common 1000"]
-    },
-    {
-      "word": "paper",
-      "soundFile": "/data/sound/english/words/paper.mp3",
-      "definition": "material manufactured in thin sheets from the pulp of wood or other fibrous substances",
-      "ipa_us": "[ˈpeɪpər]",
-      "ipa_uk": "[ˈpeɪpə]",
-      "example": "She wrote her thoughts down on a piece of paper.",
-      "similar_words": ["sheet", "document", "parchment"],
-      "syllable_division": "Pa·per",
-      "tags": ["writing material", "stationery", "document", "most common 1000"]
     },
     {
       "word": "ubiquitous",

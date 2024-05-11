@@ -1,6 +1,7 @@
+import VocabularyShop from "../../pages/VocabularyShop/_VocabularyShop";
 import SidebarNavigationBtn from "./SidebarNavigationBtn";
 
-export default function VocabularyShop() {
+export default function VocabularyShopBtn() {
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.setAttribute("fill", "none");
   svg.setAttribute("viewBox", "0 0 24 24");
@@ -17,6 +18,13 @@ export default function VocabularyShop() {
   );
 
   svg.append(path);
+  const button = SidebarNavigationBtn(svg, "Practice");
+  button.addEventListener("click", switchToVocabularyShop);
 
-  return SidebarNavigationBtn(svg, "Vocabulary Shop");
+  function switchToVocabularyShop() {
+    const root = document.querySelector("#root");
+    root.querySelector("main").remove();
+    root.append(VocabularyShop());
+  }
+  return button;
 }
