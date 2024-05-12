@@ -1,11 +1,13 @@
 {
-  "practiceSessionsCount": 2,
-  "earnedExperiencePoints": 0,
-  "lostExperiencePoints": 20,
-  "successfulAttempts": 0,
-  "failedAttempts": 2,
+  "practiceSessionsCount": 4,
+  "earnedExperiencePoints": 10,
+  "lostExperiencePoints": 30,
+  "successfulAttempts": 1,
+  "failedAttempts": 3,
   "practiceTimestamps": [
     1715474535,
-    1715475698
+    1715475698,
+    1715477801,
+    1715478861
   ]
 }

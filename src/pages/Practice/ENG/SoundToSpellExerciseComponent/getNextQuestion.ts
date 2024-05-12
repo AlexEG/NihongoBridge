@@ -2,8 +2,8 @@ interface WordInfo {
   soundFile: string;
   word: string;
   definition: string;
-  ipa_us: string;
-  ipa_uk: string;
+  ipa_phonetic_transcription_us: string;
+  ipa_phonemic_transcription_us: string;
   example: string;
   similar_words: string[];
   syllable_division: string;

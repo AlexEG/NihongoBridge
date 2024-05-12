@@ -1,5 +1,13 @@
 import ExerciseComponent from "./ExerciseComponent/_ExerciseComponent";
 import SoundToSpellExerciseComponent from "./SoundToSpellExerciseComponent/_SoundToSpellExerciseComponent";
+import {
+  EnglishPhoneticIPASymbols,
+  GeneralAmericanEnglishPhonemes,
+  englishAlphabetLowerCase,
+  punctuationCharacters,
+  qwertyLayout,
+  qwertyLayoutWithSymbols,
+} from "./TouchKeyboardInput/KeyboardLayouts";
 
 interface VocabularyData {
   metadate: { number_of_words: number };
@@ -43,7 +51,7 @@ export default function English() {
   // );
 
   /*
-  “Phonetic Finesse: Listen to words and transcribe them using IPA symbols. It’s an engaging way to get familiar with the sounds of a language and perfect your pronunciation.”
+  
    */
 
   English.append(
@@ -54,7 +62,8 @@ export default function English() {
         SoundToSpellExerciseComponent(
           "english",
           "word-to-syllable-division",
-          "word"
+          "word",
+          qwertyLayout
         )
     ),
     ipcc(
@@ -64,8 +73,25 @@ export default function English() {
         SoundToSpellExerciseComponent(
           "english",
           "word-to-syllable-division",
-          "syllableDivision"
+          "syllableDivision",
+          qwertyLayoutWithSymbols
         )
+    ),
+    ipcc("Sound => Phonemes", "", () =>
+      SoundToSpellExerciseComponent(
+        "english",
+        "word-to-syllable-division",
+        "ipa_phonemic_transcription_us",
+        GeneralAmericanEnglishPhonemes
+      )
+    ),
+    ipcc("Sound => Phonetic", "", () =>
+      SoundToSpellExerciseComponent(
+        "english",
+        "word-to-syllable-division",
+        "ipa_phonetic_transcription_us",
+        EnglishPhoneticIPASymbols
+      )
     ),
     ipcc("Word => Syllable Division", "", () =>
       ExerciseComponent("english", "word-to-syllable-division", "soundToSpell")

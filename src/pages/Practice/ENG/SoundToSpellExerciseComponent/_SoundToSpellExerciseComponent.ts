@@ -14,8 +14,8 @@ interface WordInfo {
   soundFile: string;
   word: string;
   definition: string;
-  ipa_us: string;
-  ipa_uk: string;
+  ipa_phonetic_transcription_us: string;
+  ipa_phonemic_transcription_us: string;
   example: string;
   similar_words: string[];
   syllable_division: string;
@@ -25,7 +25,12 @@ interface WordInfo {
 export default function SoundToSpellExerciseComponent(
   section: "english" | "japanese",
   exerciseName: string,
-  answerType: "word" | "syllableDivision"
+  answerType:
+    | "word"
+    | "syllableDivision"
+    | "ipa_phonetic_transcription_us"
+    | "ipa_phonemic_transcription_us",
+  touchKeyboardCharacters: string[][]
 ) {
   const ExerciseComponent = document.createElement("div");
   const className = "relative flex flex-col justify-evenly border0";
@@ -41,10 +46,27 @@ export default function SoundToSpellExerciseComponent(
     const wordsArr = data.words;
 
     const firstQuestion = getNextQuestion(questionOrderType, wordsArr);
+    console.log("firstQuestion:", firstQuestion);
+    console.log(
+      "ipa_phonemic_transcription_us:",
+      firstQuestion.ipa_phonemic_transcription_us
+    );
+    console.log(
+      "ipa_phonetic_transcription_us:",
+      firstQuestion.ipa_phonetic_transcription_us
+    );
+
     answerType === "word"
       ? (ExerciseComponent.dataset.correctAnswer = firstQuestion.word)
-      : (ExerciseComponent.dataset.correctAnswer =
-          firstQuestion.syllable_division.toLowerCase());
+      : answerType === "syllableDivision"
+        ? (ExerciseComponent.dataset.correctAnswer =
+            firstQuestion.syllable_division.toLowerCase())
+        : answerType === "ipa_phonemic_transcription_us"
+          ? (ExerciseComponent.dataset.correctAnswer =
+              firstQuestion.ipa_phonemic_transcription_us)
+          : (ExerciseComponent.dataset.correctAnswer =
+              firstQuestion.ipa_phonetic_transcription_us);
+
     ExerciseComponent.dataset.soundFilePath = firstQuestion.soundFile;
     ExerciseComponent.dataset.questionOrderType = questionOrderType;
 
@@ -54,42 +76,13 @@ export default function SoundToSpellExerciseComponent(
 
     const inputAndCheckBtn = InputAndCheckBtn(ECID);
 
-    const englishAlphabetUpperCase = [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E",
-      "F",
-      "G",
-      "H",
-      "I",
-      "J",
-      "K",
-      "L",
-      "M",
-      "N",
-      "O",
-      "P",
-      "Q",
-      "R",
-      "S",
-      "T",
-      "U",
-      "V",
-      "W",
-      "X",
-      "Y",
-      "Z",
-    ];
-
     ExerciseComponent.append(
       // CustomizableQuestionNavigator(),
       //* sound
       soundBtnsWrapper(),
       IndicatorCorrectWrong(ECID),
       inputAndCheckBtn,
-      TouchKeyboardInput(englishAlphabetUpperCase),
+      TouchKeyboardInput(touchKeyboardCharacters),
       EnableDisableTouchKeyboardInputBtn()
     );
 
@@ -116,8 +109,11 @@ export default function SoundToSpellExerciseComponent(
         const inputValue = input.getAttribute("value")
           ? input.getAttribute("value").toLowerCase()
           : "";
+
         const userAnswer =
-          answerType === "word"
+          answerType === "word" ||
+          answerType === "ipa_phonemic_transcription_us" ||
+          answerType === "ipa_phonetic_transcription_us"
             ? inputValue
             : inputValue.replace(/[-_ ]/g, "·");
 
@@ -145,10 +141,18 @@ export default function SoundToSpellExerciseComponent(
         // get next question data
         const questionOrderType = ExerciseComponent.dataset.questionOrderType;
         const nextQuestion = getNextQuestion(questionOrderType, wordsArr);
+
         answerType === "word"
           ? (ExerciseComponent.dataset.correctAnswer = nextQuestion.word)
-          : (ExerciseComponent.dataset.correctAnswer =
-              nextQuestion.syllable_division.toLowerCase());
+          : answerType === "syllableDivision"
+            ? (ExerciseComponent.dataset.correctAnswer =
+                nextQuestion.syllable_division.toLowerCase())
+            : answerType === "ipa_phonemic_transcription_us"
+              ? (ExerciseComponent.dataset.correctAnswer =
+                  nextQuestion.ipa_phonemic_transcription_us)
+              : (ExerciseComponent.dataset.correctAnswer =
+                  nextQuestion.ipa_phonetic_transcription_us);
+
         ExerciseComponent.dataset.soundFilePath = nextQuestion.soundFile;
         // auto play
         const audio = new Audio(nextQuestion.soundFile);

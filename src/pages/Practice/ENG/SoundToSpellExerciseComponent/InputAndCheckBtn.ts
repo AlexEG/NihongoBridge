@@ -18,7 +18,7 @@ export default function InputAndCheckBtn(ECID: string) {
   //* checkBtn
   const checkBtn = document.createElement("button");
   const className3 =
-    "px-6 py-1.5 text-[hsl(212,12%,50%)] border border-[hsl(216,28%,20%)] bg-[hsl(216,28%,7%)] hover:border-[hsl(216,28%,30%)] transition-colors";
+    "px-6 min-w-32 py-1.5 text-[hsl(212,12%,50%)] border border-[hsl(216,28%,20%)] bg-[hsl(216,28%,7%)] hover:border-[hsl(216,28%,30%)] transition-colors";
 
   checkBtn.setAttribute("class", className3);
   checkBtn.setAttribute("id", `${ECID}--check-btn`);

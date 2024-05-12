@@ -1,14 +1,22 @@
 import ControlRow from "./ControlRow";
 
-export default function TouchKeyboardInput(characters: string[]) {
+export default function TouchKeyboardInput(keyboardLayout: string[][]) {
   const TouchKeyboardInput = document.createElement("div");
   const className =
     "border0 mt-4 p-4 max-w-xl flex-wrap gap-2 items-center justify-center mx-auto hidden";
   TouchKeyboardInput.setAttribute("class", className);
   TouchKeyboardInput.setAttribute("id", "touch-keyboard-input");
   TouchKeyboardInput.dataset.isOpen = "false";
-  for (const character of characters) {
-    TouchKeyboardInput.append(keyboardBtn(character));
+
+  for (const row of keyboardLayout) {
+    const rowWrapper = document.createElement("div");
+    const className = "border0 mt-2 w-full flex flex-wrap gap-2 justify-center";
+    rowWrapper.setAttribute("class", className);
+
+    for (const character of row) {
+      rowWrapper.append(keyboardBtn(character));
+    }
+    TouchKeyboardInput.append(rowWrapper);
   }
 
   TouchKeyboardInput.append(ControlRow());
