@@ -1,4 +1,6 @@
 // import CustomizableQuestionNavigator from "../../CustomizableQuestionNavigator";
+import TouchKeyboardInput from "../TouchKeyboardInput/_TouchKeyboardInput";
+import EnableDisableTouchKeyboardInputBtn from "../TouchKeyboardInput/EnableDisableTouchKeyboardInputBtn";
 import getNextQuestion from "./getNextQuestion";
 import IndicatorCorrectWrong from "./IndicatorCorrectWrong";
 import InputAndCheckBtn from "./InputAndCheckBtn";
@@ -51,12 +53,44 @@ export default function SoundToSpellExerciseComponent(
     audio.autoplay = true;
 
     const inputAndCheckBtn = InputAndCheckBtn(ECID);
+
+    const englishAlphabetUpperCase = [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L",
+      "M",
+      "N",
+      "O",
+      "P",
+      "Q",
+      "R",
+      "S",
+      "T",
+      "U",
+      "V",
+      "W",
+      "X",
+      "Y",
+      "Z",
+    ];
+
     ExerciseComponent.append(
       // CustomizableQuestionNavigator(),
       //* sound
       soundBtnsWrapper(),
       IndicatorCorrectWrong(ECID),
-      inputAndCheckBtn
+      inputAndCheckBtn,
+      TouchKeyboardInput(englishAlphabetUpperCase),
+      EnableDisableTouchKeyboardInputBtn()
     );
 
     // ******************* //
@@ -67,7 +101,7 @@ export default function SoundToSpellExerciseComponent(
         : "u·biq·ui·tous , im por tant , pa-per";
     input.setAttribute("placeholder", inputPlaceholder);
 
-    const checkBtn = inputAndCheckBtn.lastElementChild;
+    const checkBtn = inputAndCheckBtn.lastElementChild as HTMLButtonElement;
 
     function checkHandler() {
       console.log("checkBtn.textContent", checkBtn.textContent);
@@ -79,7 +113,9 @@ export default function SoundToSpellExerciseComponent(
 
         console.log("the correctAnswer is:", correctAnswer);
 
-        const inputValue = input.getAttribute("value");
+        const inputValue = input.getAttribute("value")
+          ? input.getAttribute("value").toLowerCase()
+          : "";
         const userAnswer =
           answerType === "word"
             ? inputValue
@@ -123,7 +159,8 @@ export default function SoundToSpellExerciseComponent(
 
     document.addEventListener("keydown", function (event) {
       if (event.key === "Enter") {
-        checkHandler();
+        event.preventDefault();
+        checkBtn.click();
       }
     });
     checkBtn.addEventListener("click", checkHandler);

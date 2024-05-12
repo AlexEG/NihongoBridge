@@ -43,3 +43,5 @@ export default function English() {
 
   return English;
 }
+
+//TODO use less addEventListener
