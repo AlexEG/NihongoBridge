@@ -1,14 +1,16 @@
 import ActionBar from "./ActionBar";
 
 export default function FolderCard(
-  filename: string,
+  folderName: string,
   wordsNum: number,
-  isFolderInstalled: boolean
+  isFolderInstalled: boolean,
+  folderFileName: string
 ) {
   const FolderCard = document.createElement("div");
   const className =
     "h-44 w-44 border border-[hsl(212,12%,21%)] hover:border-[hsl(212,12%,81%)] transition-colors p-1 grid grid-rows-[4.8rem,3rem,1fr] relative";
   FolderCard.setAttribute("class", className);
+  // FolderCard.dataset.folderFileName = folderFileName;
 
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.setAttribute("fill", "none");
@@ -35,7 +37,7 @@ export default function FolderCard(
 
   // ***** //
   const name = document.createElement("p");
-  name.textContent = filename;
+  name.textContent = folderName;
   const className2 =
     "truncate-2-lines text-white/80 text-sm group-hover:text-white text-center";
   name.setAttribute("class", className2);
@@ -44,7 +46,7 @@ export default function FolderCard(
   FolderCard.append(
     svg,
     name,
-    ActionBar(isFolderInstalled),
+    ActionBar(isFolderInstalled, folderFileName),
     numberOfWords(wordsNum)
   );
   return FolderCard;

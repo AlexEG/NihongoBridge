@@ -1,19 +1,18 @@
 import AddToVocabulayBankBtn from "./AddToVocabulayBankBtn";
 import PlaySoundBtn from "./PlaySoundBtn";
 
-interface WordInfo {
+type WordInfo = {
   soundFile: string;
-  word: string;
   definition: string;
-  ipa_us: string;
-  ipa_uk: string;
+  ipa_phonetic_transcription_us: string;
+  ipa_phonemic_transcription_us: string;
   example: string;
   similar_words: string[];
   syllable_division: string;
   tags: string[];
-}
+};
 
-export default function WordCard(wordInfo: WordInfo) {
+export default function WordCard(word: string, wordInfo: WordInfo) {
   const WordCard = document.createElement("div");
   const className =
     "h-44 w-44 border border-[hsl(212,12%,21%)] hover:border-[hsl(212,12%,81%)] transition-colors relative";
@@ -30,7 +29,7 @@ export default function WordCard(wordInfo: WordInfo) {
   );
 
   WordCard.append(
-    wordTitle(wordInfo.word),
+    wordTitle(word),
     wordDefinition(wordInfo.definition),
     SoundBtnAndAddToVocabulayBankBtnWrapper
   );

@@ -1,4 +1,20 @@
-export default function ViewFolderContentBtn() {
+import WordCard from "../WordCard/_WordCard";
+
+type FolderData = {
+  [key: string]: WordInfo;
+};
+type WordInfo = {
+  soundFile: string;
+  definition: string;
+  ipa_phonetic_transcription_us: string;
+  ipa_phonemic_transcription_us: string;
+  example: string;
+  similar_words: string[];
+  syllable_division: string;
+  tags: string[];
+};
+
+export default function ViewFolderContentBtn(folderFileName: string) {
   const ViewFolderContentBtn = document.createElement("button");
   const className = "group bg-[hsl(216,28%,7%)] p-1.5 rounded-md";
   ViewFolderContentBtn.setAttribute("class", className);
@@ -27,7 +43,46 @@ export default function ViewFolderContentBtn() {
   svg.append(path);
   ViewFolderContentBtn.append(svg);
 
-  // ViewFolderContentBtn.addEventListener("click",renderFolderContent)
+  ViewFolderContentBtn.addEventListener("click", renderFolderContent);
+  function renderFolderContent() {
+    // hide folders container
+    // show close folder btn
+    const folderCardsContainer = document.querySelector(
+      "#vocabulary-shop--folder-cards-container"
+    );
+    const closeFolderView = document.querySelector(
+      "#vocabulary-shop--close-folder-view-btn"
+    );
+    folderCardsContainer.classList.replace("flex", "hidden");
+    closeFolderView.classList.replace("hidden", "flex");
+
+    // render folder words
+
+    function renderFolderWords(data: FolderData) {
+      console.log("Folder Words:", data);
+      const English = document.querySelector("#vocabulary-shop--english");
+      const wordsContainer = document.createElement("div");
+      const className = "flex flex-wrap justify-center gap-x-4 gap-y-8 border0";
+      wordsContainer.setAttribute("class", className);
+      wordsContainer.setAttribute("id", "vocabulary-shop--words-container");
+
+      for (const [word, wordInfo] of Object.entries(data)) {
+        wordsContainer.append(WordCard(word, wordInfo));
+      }
+      English.append(wordsContainer);
+    }
+
+    console.log("folderFileName:", folderFileName);
+
+    window.api
+      .readJsonFile(`vocabulary-shop/folders/${folderFileName}.json`)
+      .then((data: FolderData) => {
+        renderFolderWords(data);
+      })
+      .catch((error: Error) => {
+        console.error("Failed to read the JSON file:", error);
+      });
+  }
 
   return ViewFolderContentBtn;
 }

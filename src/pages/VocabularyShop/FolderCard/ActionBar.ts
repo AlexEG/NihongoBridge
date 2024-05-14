@@ -1,6 +1,9 @@
 import ViewFolderContentBtn from "./ViewFolderContentBtn";
 
-export default function ActionBar(isFolderInstalled: boolean) {
+export default function ActionBar(
+  isFolderInstalled: boolean,
+  folderFileName: string
+) {
   const actionBar = document.createElement("div");
   const className3 = "flex gap-x-1 justify-end mt-auto";
   actionBar.setAttribute("class", className3);
@@ -9,7 +12,7 @@ export default function ActionBar(isFolderInstalled: boolean) {
     actionBar.append(uninstallFolderFromVocabulayBankBtn());
   actionBar.append(
     AddFolderToVocabulayBankBtn(isFolderInstalled),
-    ViewFolderContentBtn()
+    ViewFolderContentBtn(folderFileName)
   );
 
   return actionBar;

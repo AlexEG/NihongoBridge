@@ -1,15 +1,9 @@
+import CloseFolderView from "./FolderCard/CloseFolderView";
 import FolderCard from "./FolderCard/_FolderCard";
 import WordCard from "./WordCard/_WordCard";
 
 type FolderData = {
-  metadata: {
-    number_of_words: number;
-    folder_name: string;
-    is_installed: boolean;
-  };
-  words: {
-    [key: string]: WordInfo;
-  };
+  [key: string]: WordInfo;
 };
 type WordInfo = {
   soundFile: string;
@@ -35,8 +29,9 @@ type VocabularyShopFoldersMetadata = {
 export default function English() {
   const English = document.createElement("div");
   const className =
-    "relative flex flex-wrap justify-center gap-x-4 gap-y-8 max-w-5xl mx-auto py-16 selection:text-white border0";
+    "relative max-w-5xl mx-auto py-16 selection:text-white border";
   English.setAttribute("class", className);
+  English.setAttribute("id", "vocabulary-shop--english");
 
   const className2 = "flex flex-wrap justify-center gap-x-4 gap-y-8 border0";
   const folderCardsContainer = document.createElement("div");
@@ -46,14 +41,14 @@ export default function English() {
     "vocabulary-shop--folder-cards-container"
   );
 
-  function renderFolders(data: VocabularyShopFoldersMetadata) {
-    for (const [filename, folderMetadata] of Object.entries(data)) {
+  function renderFolderCards(data: VocabularyShopFoldersMetadata) {
+    for (const [folderFileName, folderMetadata] of Object.entries(data)) {
       const folderName = folderMetadata.folder_name;
       const wordsNum = folderMetadata.number_of_words;
       const isFolderInstalled = folderMetadata.is_installed;
 
       folderCardsContainer.append(
-        FolderCard(folderName, wordsNum, isFolderInstalled)
+        FolderCard(folderName, wordsNum, isFolderInstalled, folderFileName)
       );
     }
   }
@@ -61,7 +56,7 @@ export default function English() {
   window.api
     .readJsonFile("vocabulary-shop/folders_metadata.json")
     .then((data: VocabularyShopFoldersMetadata) => {
-      renderFolders(data);
+      renderFolderCards(data);
       // console.log("VocabularyShop Folders metadata:", data);
     })
     .catch((error: Error) => {
@@ -95,7 +90,7 @@ export default function English() {
   //   })
   //   .catch((error) => console.error(error));
 
-  English.append(folderCardsContainer);
+  English.append(CloseFolderView(), folderCardsContainer);
   return English;
 }
 
