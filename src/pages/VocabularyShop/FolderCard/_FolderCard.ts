@@ -1,9 +1,13 @@
 import ActionBar from "./ActionBar";
 
-export default function FolderCard() {
+export default function FolderCard(
+  filename: string,
+  wordsNum: number,
+  isFolderInstalled: boolean
+) {
   const FolderCard = document.createElement("div");
   const className =
-    "h-44 w-44 border border-[hsl(212,12%,21%)] hover:border-[hsl(212,12%,81%)] transition-colors p-1 grid grid-rows-[4.8rem,3rem,1fr]";
+    "h-44 w-44 border border-[hsl(212,12%,21%)] hover:border-[hsl(212,12%,81%)] transition-colors p-1 grid grid-rows-[4.8rem,3rem,1fr] relative";
   FolderCard.setAttribute("class", className);
 
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -31,15 +35,30 @@ export default function FolderCard() {
 
   // ***** //
   const name = document.createElement("p");
-  name.textContent = "The 1000 Most Common Words In English";
+  name.textContent = filename;
   const className2 =
     "truncate-2-lines text-white/80 text-sm group-hover:text-white text-center";
   name.setAttribute("class", className2);
   // ***** //
 
-  FolderCard.append(svg, name, ActionBar());
+  FolderCard.append(
+    svg,
+    name,
+    ActionBar(isFolderInstalled),
+    numberOfWords(wordsNum)
+  );
   return FolderCard;
 }
 
 //TODO make a way to edit the folder icon like add some icon like food sport stuff like that
 // oh right this is not a section that the user can edit this suppose to be edited only through github
+
+function numberOfWords(WordsNum: number) {
+  const numberOfWords = document.createElement("span");
+  const className =
+    "bg-[hsl(216,28%,7%)] px-2 py-1 rounded-md text-xs text-white/50 absolute top-1 right-1";
+  numberOfWords.setAttribute("class", className);
+  numberOfWords.textContent = WordsNum.toString();
+
+  return numberOfWords;
+}

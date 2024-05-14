@@ -35,4 +35,6 @@ contextBridge.exposeInMainWorld("api", {
   openFileDialog: () => {
     return ipcRenderer.invoke("open-file-dialog");
   },
+  readJsonFiles: (directoryPath: string) =>
+    ipcRenderer.invoke("read-json-files", directoryPath),
 });

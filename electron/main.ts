@@ -71,6 +71,7 @@ import { readJsonFile } from "./modules/jsonReader";
 import { updateVocabularyStats } from "./modules/updateVocabularyStats";
 import { updateProfileStats } from "./modules/updateProfileStats";
 import { addNewWordToVocabularyBank } from "./modules/addNewWordToVocabularyBank";
+import { readJsonFiles } from "./modules/readJsonFiles";
 
 ipcMain.handle("read-json-file", async (event, fileName) => {
   try {
@@ -178,5 +179,15 @@ ipcMain.handle("open-file-dialog", async (event) => {
     return;
   } else {
     return result.filePaths[0];
+  }
+});
+
+ipcMain.handle("read-json-files", async (event, directoryPath) => {
+  try {
+    const data = await readJsonFiles(directoryPath);
+    // console.log("from Main", data);
+    return data;
+  } catch (error) {
+    console.error("Failed to read JSON files:", error);
   }
 });

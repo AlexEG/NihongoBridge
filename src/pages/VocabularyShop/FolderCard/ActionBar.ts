@@ -1,13 +1,12 @@
-export default function ActionBar() {
+export default function ActionBar(isFolderInstalled: boolean) {
   const actionBar = document.createElement("div");
   const className3 = "flex gap-x-1 justify-end mt-auto";
   actionBar.setAttribute("class", className3);
 
-  const folderIsInstalled = true;
-  if (folderIsInstalled)
+  if (isFolderInstalled)
     actionBar.append(uninstallFolderFromVocabulayBankBtn());
   actionBar.append(
-    AddFolderToVocabulayBankBtn(folderIsInstalled),
+    AddFolderToVocabulayBankBtn(isFolderInstalled),
     openFolderInPopup()
   );
 
