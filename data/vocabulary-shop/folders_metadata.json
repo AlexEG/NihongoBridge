@@ -1,0 +1,12 @@
+{
+  "english": {
+    "folder_name": "The 1000 Most Common Words In English",
+    "number_of_words": 8,
+    "is_installed": true
+  },
+  "english2": {
+    "folder_name": "Some English Words",
+    "number_of_words": 6,
+    "is_installed": false
+  }
+}

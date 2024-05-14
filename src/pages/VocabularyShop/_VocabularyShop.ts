@@ -33,3 +33,5 @@ function sectionsContainer() {
 
   return sectionsContainer;
 }
+
+//TODO instead of get all folders just have a one json file that have in it the metadata of all folders and when the user want to open one folder or add it to there vocab bank you just grap that one json file and if they just looking around there cpu doesn't do any work
