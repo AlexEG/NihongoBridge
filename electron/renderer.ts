@@ -46,7 +46,7 @@ ROOT.append(NavigationSidebar());
 // ROOT.append(Home());
 // ROOT.append(IPA());
 // ROOT.append(VocabularyBank());
-ROOT.append(Practice());
-// ROOT.append(VocabularyShop());
+// ROOT.append(Practice());
+ROOT.append(VocabularyShop());
 
 renderWords();

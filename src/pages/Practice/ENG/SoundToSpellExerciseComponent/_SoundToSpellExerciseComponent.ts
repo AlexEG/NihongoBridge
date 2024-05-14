@@ -310,3 +310,5 @@ function updateProfileStats(attemptPassed: boolean) {
 //* ******
 
 //TODO fix bug: when existing from exercise using the EN JP local nav and entering other exercise and clicking on Enter key to Check and Continue two sounds will play in the next question
+
+//TODO new bug with file system when updating word stats /kriˈeɪt/ it create folder with the name kriˈeɪt and in side it a file with no name that have the data

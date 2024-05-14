@@ -1,3 +1,4 @@
+import FolderCard from "./FolderCard/_FolderCard";
 import WordCard from "./WordCard/_WordCard";
 
 interface VocabularyData {
@@ -27,9 +28,11 @@ export default function English() {
     const metadate = data.metadate;
     const wordsArr = data.words;
 
-    for (const wordInfo of wordsArr) {
-      English.append(WordCard(wordInfo));
-    }
+    // for (const wordInfo of wordsArr) {
+    //   English.append(WordCard(wordInfo));
+    // }
+
+    English.append(FolderCard());
   }
 
   window.api
