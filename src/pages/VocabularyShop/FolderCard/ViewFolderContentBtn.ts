@@ -4,14 +4,9 @@ type FolderData = {
   [key: string]: WordInfo;
 };
 type WordInfo = {
+  is_in_vocabulary_bank: boolean;
   soundFile: string;
   definition: string;
-  ipa_phonetic_transcription_us: string;
-  ipa_phonemic_transcription_us: string;
-  example: string;
-  similar_words: string[];
-  syllable_division: string;
-  tags: string[];
 };
 
 export default function ViewFolderContentBtn(folderFileName: string) {
@@ -59,23 +54,26 @@ export default function ViewFolderContentBtn(folderFileName: string) {
     // render folder words
 
     function renderFolderWords(data: FolderData) {
-      console.log("Folder Words:", data);
+      // console.log("Folder Words:", data);
       const English = document.querySelector("#vocabulary-shop--english");
+
       const wordsContainer = document.createElement("div");
       const className = "flex flex-wrap justify-center gap-x-4 gap-y-8 border0";
       wordsContainer.setAttribute("class", className);
       wordsContainer.setAttribute("id", "vocabulary-shop--words-container");
 
       for (const [word, wordInfo] of Object.entries(data)) {
+        console.log("wordInfo:", wordInfo);
+
         wordsContainer.append(WordCard(word, wordInfo));
       }
       English.append(wordsContainer);
     }
 
-    console.log("folderFileName:", folderFileName);
+    // console.log("folderFileName:", folderFileName);
 
     window.api
-      .readJsonFile(`vocabulary-shop/folders/${folderFileName}.json`)
+      .readJsonFile(`vocabulary-shop/metadata/${folderFileName}.json`)
       .then((data: FolderData) => {
         renderFolderWords(data);
       })

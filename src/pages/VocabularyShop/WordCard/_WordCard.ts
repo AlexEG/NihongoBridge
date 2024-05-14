@@ -2,14 +2,9 @@ import AddToVocabulayBankBtn from "./AddToVocabulayBankBtn";
 import PlaySoundBtn from "./PlaySoundBtn";
 
 type WordInfo = {
+  is_in_vocabulary_bank: boolean;
   soundFile: string;
   definition: string;
-  ipa_phonetic_transcription_us: string;
-  ipa_phonemic_transcription_us: string;
-  example: string;
-  similar_words: string[];
-  syllable_division: string;
-  tags: string[];
 };
 
 export default function WordCard(word: string, wordInfo: WordInfo) {
@@ -17,6 +12,7 @@ export default function WordCard(word: string, wordInfo: WordInfo) {
   const className =
     "h-44 w-44 border border-[hsl(212,12%,21%)] hover:border-[hsl(212,12%,81%)] transition-colors relative";
   WordCard.setAttribute("class", className);
+  WordCard.dataset.isInVocabularyBank = `${wordInfo.is_in_vocabulary_bank}`;
 
   // ******* //
   const SoundBtnAndAddToVocabulayBankBtnWrapper = document.createElement("div");
@@ -25,7 +21,7 @@ export default function WordCard(word: string, wordInfo: WordInfo) {
   SoundBtnAndAddToVocabulayBankBtnWrapper.setAttribute("class", className2);
   SoundBtnAndAddToVocabulayBankBtnWrapper.append(
     PlaySoundBtn(wordInfo.soundFile),
-    AddToVocabulayBankBtn()
+    AddToVocabulayBankBtn(wordInfo.is_in_vocabulary_bank)
   );
 
   WordCard.append(

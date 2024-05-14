@@ -1,20 +1,5 @@
 import CloseFolderView from "./FolderCard/CloseFolderView";
 import FolderCard from "./FolderCard/_FolderCard";
-import WordCard from "./WordCard/_WordCard";
-
-type FolderData = {
-  [key: string]: WordInfo;
-};
-type WordInfo = {
-  soundFile: string;
-  definition: string;
-  ipa_phonetic_transcription_us: string;
-  ipa_phonemic_transcription_us: string;
-  example: string;
-  similar_words: string[];
-  syllable_division: string;
-  tags: string[];
-};
 
 type FolderMetadata = {
   number_of_words: number;
@@ -29,7 +14,7 @@ type VocabularyShopFoldersMetadata = {
 export default function English() {
   const English = document.createElement("div");
   const className =
-    "relative max-w-5xl mx-auto py-16 selection:text-white border";
+    "relative max-w-5xl mx-auto py-16 selection:text-white border0";
   English.setAttribute("class", className);
   English.setAttribute("id", "vocabulary-shop--english");
 
@@ -62,33 +47,6 @@ export default function English() {
     .catch((error: Error) => {
       console.error("Failed to read the JSON file:", error);
     });
-
-  // type AllFoldersData = {
-  //   [filename: string]: FolderData;
-  // };
-
-  // function renderFolders(data: AllFoldersData) {
-  //   for (const [filename, folderData] of Object.entries(data)) {
-  //     const metadate = folderData.metadata;
-  //     const wordsNum = metadate.number_of_words;
-  //     const folderName = metadate.folder_name;
-  //     const isFolderInstalled = metadate.is_installed;
-
-  //     const words = folderData.words;
-  //     console.log("Words:", words);
-  //     folderCardsContainer.append(
-  //       FolderCard(folderName, wordsNum, isFolderInstalled)
-  //     );
-  //   }
-  // }
-
-  // window.api
-  //   .readJsonFiles("vocabulary-shop/folders")
-  //   .then((data: AllFoldersData) => {
-  //     // console.log(data);
-  //     renderFolders(data);
-  //   })
-  //   .catch((error) => console.error(error));
 
   English.append(CloseFolderView(), folderCardsContainer);
   return English;
