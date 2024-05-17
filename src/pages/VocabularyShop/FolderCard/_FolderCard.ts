@@ -1,8 +1,8 @@
 import ActionBar from "./ActionBar";
 
 export default function FolderCard(
-  folderName: string,
-  wordsNum: number,
+  folderTitle: string,
+  wordsCount: number,
   isFolderInstalled: boolean,
   folderFileName: string
 ) {
@@ -37,7 +37,7 @@ export default function FolderCard(
 
   // ***** //
   const name = document.createElement("p");
-  name.textContent = folderName;
+  name.textContent = folderTitle;
   const className2 =
     "truncate-2-lines text-white/80 text-sm group-hover:text-white text-center";
   name.setAttribute("class", className2);
@@ -47,7 +47,7 @@ export default function FolderCard(
     svg,
     name,
     ActionBar(isFolderInstalled, folderFileName),
-    numberOfWords(wordsNum)
+    numberOfWords(wordsCount)
   );
   return FolderCard;
 }

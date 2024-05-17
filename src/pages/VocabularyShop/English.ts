@@ -4,11 +4,24 @@ import FolderCard from "./FolderCard/_FolderCard";
 type FolderMetadata = {
   number_of_words: number;
   folder_name: string;
-  is_installed: boolean;
+  // is_installed: boolean;
 };
 
 type VocabularyShopFoldersMetadata = {
   [folderKey: string]: FolderMetadata;
+};
+
+type FoldersMetadata = {
+  [key: string]: {
+    folder_title: string;
+    words_count: number;
+  };
+};
+
+type MetadataJson = {
+  version: string;
+  folder_count: number;
+  folders_metadata: FoldersMetadata;
 };
 
 export default function English() {
@@ -26,26 +39,42 @@ export default function English() {
     "vocabulary-shop--folder-cards-container"
   );
 
-  function renderFolderCards(data: VocabularyShopFoldersMetadata) {
+  function renderFolderCards(data: FoldersMetadata) {
     for (const [folderFileName, folderMetadata] of Object.entries(data)) {
-      const folderName = folderMetadata.folder_name;
-      const wordsNum = folderMetadata.number_of_words;
-      const isFolderInstalled = folderMetadata.is_installed;
+      const folderTitle = folderMetadata.folder_title;
+      const wordsCount = folderMetadata.words_count;
+      const isFolderInstalled = false;
 
       folderCardsContainer.append(
-        FolderCard(folderName, wordsNum, isFolderInstalled, folderFileName)
+        FolderCard(folderTitle, wordsCount, isFolderInstalled, folderFileName)
       );
     }
   }
 
+  // ******************** //
+  // window.api
+  //   .readJsonFile("vocabulary-shop/folders_metadata.json")
+  //   .then((data: VocabularyShopFoldersMetadata) => {
+  //     renderFolderCards(data);
+  //     // console.log("VocabularyShop Folders metadata:", data);
+  //   })
+  //   .catch((error: Error) => {
+  //     console.error("Failed to read the JSON file:", error);
+  //   });
+  // ******************** //
+
   window.api
-    .readJsonFile("vocabulary-shop/folders_metadata.json")
-    .then((data: VocabularyShopFoldersMetadata) => {
-      renderFolderCards(data);
-      // console.log("VocabularyShop Folders metadata:", data);
+    .fetchMetadata(
+      "https://raw.githubusercontent.com/AlexEG/NihongoBridgeDB/main/metadata.json"
+    )
+    .then((metadata: MetadataJson) => {
+      console.log("From GitHub", metadata);
+
+      const foldersMetadata = metadata.folders_metadata;
+      renderFolderCards(foldersMetadata);
     })
-    .catch((error: Error) => {
-      console.error("Failed to read the JSON file:", error);
+    .catch((error) => {
+      console.error("Error fetching metadata:", error);
     });
 
   English.append(CloseFolderView(), folderCardsContainer);

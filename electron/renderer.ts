@@ -49,4 +49,4 @@ ROOT.append(NavigationSidebar());
 // ROOT.append(Practice());
 ROOT.append(VocabularyShop());
 
-renderWords();
+// renderWords();

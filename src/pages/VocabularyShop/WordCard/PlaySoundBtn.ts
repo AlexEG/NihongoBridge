@@ -1,11 +1,19 @@
-export default function PlaySoundBtn(soundFilePath: string) {
+export default function PlaySoundBtn(
+  word: string,
+  is_audio_file_available: boolean
+) {
   const soundBtn = document.createElement("button");
   const className2 = "group w-fit h-fit bg-[hsl(216,28%,7%)] p-1.5 rounded-md";
   soundBtn.setAttribute("class", className2);
   soundBtn.dataset.playSpeed = "1";
 
   soundBtn.addEventListener("click", () => {
-    const audio = new Audio(soundFilePath);
+    const audioFilePath = is_audio_file_available
+      ? `https://raw.githubusercontent.com/AlexEG/NihongoBridgeDB/main/english/vocabulary-audio-files/${word}.mp3`
+      : "/data/sound/nosound.mp3";
+    console.log("audioFilePath", audioFilePath);
+
+    const audio = new Audio(audioFilePath);
     if (!(soundBtn.dataset.playSpeed === "1")) audio.playbackRate = 0.6;
     audio.play();
     soundBtn.dataset.playSpeed = "0.6";

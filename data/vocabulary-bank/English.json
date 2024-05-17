@@ -5,7 +5,7 @@
   "words": [
     {
       "word": "rates",
-      "soundFile": "/data/sound/english/words/rates.mp3",
+      "soundFile": "https://raw.githubusercontent.com/AlexEG/NihongoBridgeDB/blob/main/english/vocabulary-audio-files/above.mp3",
       "definition": "a measure, quantity, or frequency, typically one measured against another quantity or measure",
       "ipa_phonetic_transcription_us": "['reɪt]",
       "ipa_phonemic_transcription_us": "/reɪts/",

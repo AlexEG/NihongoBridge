@@ -72,6 +72,7 @@ import { updateVocabularyStats } from "./modules/updateVocabularyStats";
 import { updateProfileStats } from "./modules/updateProfileStats";
 import { addNewWordToVocabularyBank } from "./modules/addNewWordToVocabularyBank";
 import { readJsonFiles } from "./modules/readJsonFiles";
+import { fetchMetadata } from "./modules/MetadataFetcher";
 
 ipcMain.handle("read-json-file", async (event, fileName) => {
   try {
@@ -190,4 +191,8 @@ ipcMain.handle("read-json-files", async (event, directoryPath) => {
   } catch (error) {
     console.error("Failed to read JSON files:", error);
   }
+});
+
+ipcMain.handle("fetch-metadata", async (event, url) => {
+  return fetchMetadata(url);
 });

@@ -4,8 +4,7 @@ type FolderData = {
   [key: string]: WordInfo;
 };
 type WordInfo = {
-  is_in_vocabulary_bank: boolean;
-  soundFile: string;
+  is_audio_file_available: boolean;
   definition: string;
 };
 
@@ -72,13 +71,29 @@ export default function ViewFolderContentBtn(folderFileName: string) {
 
     // console.log("folderFileName:", folderFileName);
 
+    // window.api
+    //   .readJsonFile(`vocabulary-shop/metadata/${folderFileName}.json`)
+    //   .then((data: FolderData) => {
+    //     renderFolderWords(data);
+    //   })
+    //   .catch((error: Error) => {
+    //     console.error("Failed to read the JSON file:", error);
+    //   });
+
     window.api
-      .readJsonFile(`vocabulary-shop/metadata/${folderFileName}.json`)
-      .then((data: FolderData) => {
-        renderFolderWords(data);
+      .fetchMetadata(
+        `https://raw.githubusercontent.com/AlexEG/NihongoBridgeDB/main/english/metadata/${folderFileName}.json`
+      )
+      .then((metadata: FolderData) => {
+        console.log("From GitHub", metadata);
+
+        // const foldersMetadata = metadata.folders_metadata;
+        renderFolderWords(metadata);
+
+        // renderFolderCards(foldersMetadata);
       })
-      .catch((error: Error) => {
-        console.error("Failed to read the JSON file:", error);
+      .catch((error) => {
+        console.error("Error fetching metadata:", error);
       });
   }
 

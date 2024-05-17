@@ -2,8 +2,7 @@ import AddToVocabulayBankBtn from "./AddToVocabulayBankBtn";
 import PlaySoundBtn from "./PlaySoundBtn";
 
 type WordInfo = {
-  is_in_vocabulary_bank: boolean;
-  soundFile: string;
+  is_audio_file_available: boolean;
   definition: string;
 };
 
@@ -12,7 +11,7 @@ export default function WordCard(word: string, wordInfo: WordInfo) {
   const className =
     "h-44 w-44 border border-[hsl(212,12%,21%)] hover:border-[hsl(212,12%,81%)] transition-colors relative";
   WordCard.setAttribute("class", className);
-  WordCard.dataset.isInVocabularyBank = `${wordInfo.is_in_vocabulary_bank}`;
+  WordCard.dataset.isInVocabularyBank = `false`;
 
   // ******* //
   const SoundBtnAndAddToVocabulayBankBtnWrapper = document.createElement("div");
@@ -20,8 +19,8 @@ export default function WordCard(word: string, wordInfo: WordInfo) {
     "absolute bottom-1 right-1 flex justify-end gap-x-1 items-center border0 mt-auto";
   SoundBtnAndAddToVocabulayBankBtnWrapper.setAttribute("class", className2);
   SoundBtnAndAddToVocabulayBankBtnWrapper.append(
-    PlaySoundBtn(wordInfo.soundFile),
-    AddToVocabulayBankBtn(wordInfo.is_in_vocabulary_bank)
+    PlaySoundBtn(word, wordInfo.is_audio_file_available),
+    AddToVocabulayBankBtn(false)
   );
 
   WordCard.append(

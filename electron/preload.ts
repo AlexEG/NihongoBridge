@@ -37,4 +37,5 @@ contextBridge.exposeInMainWorld("api", {
   },
   readJsonFiles: (directoryPath: string) =>
     ipcRenderer.invoke("read-json-files", directoryPath),
+  fetchMetadata: (url: string) => ipcRenderer.invoke("fetch-metadata", url),
 });

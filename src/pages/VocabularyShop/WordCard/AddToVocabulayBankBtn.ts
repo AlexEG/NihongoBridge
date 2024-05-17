@@ -23,7 +23,7 @@ export default function AddToVocabulayBankBtn(isInVocabularyBank: boolean) {
   const plusSign = "M12 4.5v15m7.5-7.5h-15";
   const checkMark =
     "M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z";
-  console.log("isInVocabularyBank:", isInVocabularyBank);
+  // console.log("isInVocabularyBank:", isInVocabularyBank);
 
   if (isInVocabularyBank) {
     svg.setAttribute("stroke", "#00ff00cc");

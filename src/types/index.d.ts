@@ -15,6 +15,7 @@ declare global {
       ) => Promise<any>;
       processFile: (filePath: string, fileName: string) => Promise<any>;
       openFileDialog: () => Promise<string>;
+      fetchMetadata(url: string): Promise<any>;
       readJsonFiles(directoryPath: string): Promise<object>;
       addNewWordToVocabularyBank: (
         word: string,
