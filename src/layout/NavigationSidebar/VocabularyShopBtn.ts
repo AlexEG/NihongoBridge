@@ -18,7 +18,7 @@ export default function VocabularyShopBtn() {
   );
 
   svg.append(path);
-  const button = SidebarNavigationBtn(svg, "Practice");
+  const button = SidebarNavigationBtn(svg, "Vocabulary Shop");
   button.addEventListener("click", switchToVocabularyShop);
 
   function switchToVocabularyShop() {

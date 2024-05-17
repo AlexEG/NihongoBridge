@@ -62,7 +62,7 @@ export default function ViewFolderContentBtn(folderFileName: string) {
       wordsContainer.setAttribute("id", "vocabulary-shop--words-container");
 
       for (const [word, wordInfo] of Object.entries(data)) {
-        console.log("wordInfo:", wordInfo);
+        // console.log("wordInfo:", wordInfo);
 
         wordsContainer.append(WordCard(word, wordInfo));
       }
