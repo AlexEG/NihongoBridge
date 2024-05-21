@@ -92,3 +92,7 @@ typings/
 out/
 
 _TODO/
+
+data/sound
+data/vocabulary-bank
+data/statistic
