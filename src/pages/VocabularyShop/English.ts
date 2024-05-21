@@ -1,27 +1,11 @@
 import CloseFolderView from "./FolderCard/CloseFolderView";
 import FolderCard from "./FolderCard/_FolderCard";
 
-type FolderMetadata = {
-  number_of_words: number;
-  folder_name: string;
-  // is_installed: boolean;
-};
-
-type VocabularyShopFoldersMetadata = {
-  [folderKey: string]: FolderMetadata;
-};
-
 type FoldersMetadata = {
   [key: string]: {
     folder_title: string;
     words_count: number;
   };
-};
-
-type MetadataJson = {
-  version: string;
-  folder_count: number;
-  folders_metadata: FoldersMetadata;
 };
 
 export default function English() {
@@ -65,13 +49,15 @@ export default function English() {
 
   window.api
     .fetchMetadata(
-      "https://raw.githubusercontent.com/AlexEG/NihongoBridgeDB/main/metadata.json"
+      "https://raw.githubusercontent.com/AlexEG/NihongoBridgeDB/main/english/metadata/all_folders_metadata.json"
     )
-    .then((metadata: MetadataJson) => {
-      console.log("From GitHub", metadata);
+    .then((folders_metadata: FoldersMetadata) => {
+      console.log(
+        "From GitHub (english/metadata/all_folders_metadata.json)",
+        folders_metadata
+      );
 
-      const foldersMetadata = metadata.folders_metadata;
-      renderFolderCards(foldersMetadata);
+      renderFolderCards(folders_metadata);
     })
     .catch((error) => {
       console.error("Error fetching metadata:", error);

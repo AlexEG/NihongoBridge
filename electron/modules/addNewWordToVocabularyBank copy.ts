@@ -11,8 +11,8 @@ interface WordInfo {
   soundFile: string;
   word: string;
   definition: string;
-  ipa_phonetic_transcription_us: string;
-  ipa_phonemic_transcription_us: string;
+  ipa_us: string;
+  ipa_uk: string;
   example: string;
   similar_words: string[];
   syllable_division: string;
@@ -24,15 +24,13 @@ const basePath = app.getAppPath();
 const vocabularyBankDir = path.join(basePath, "data", "vocabulary-bank");
 
 async function addNewWordToVocabularyBank(
-  is_audio_file_available: boolean,
   word: string,
   definition: string,
-  ipa_phonetic_transcription_us: string,
-  ipa_phonemic_transcription_us: string,
+  ipa_us: string,
   example: string,
-  similar_words: string[],
+  similar_words: string,
   syllable_division: string,
-  tags: string[]
+  tags: string
 ): Promise<void> {
   const dirPath = path.dirname(vocabularyBankDir);
   await fs.mkdir(dirPath, { recursive: true }); // Ensure the directory exists
@@ -58,20 +56,16 @@ async function addNewWordToVocabularyBank(
     }
   }
 
-  const audioFilePath = is_audio_file_available
-    ? `/data/sound/english/words/${word}.mp3`
-    : "/data/sound/nosound.mp3";
-
   const newWord: WordInfo = {
     word: word,
-    soundFile: audioFilePath,
+    soundFile: `/data/sound/${word}.mp3`,
     definition: definition,
-    ipa_phonetic_transcription_us: ipa_phonetic_transcription_us,
-    ipa_phonemic_transcription_us: ipa_phonemic_transcription_us,
+    ipa_us: ipa_us,
+    ipa_uk: "???",
     example: example,
-    similar_words: similar_words,
+    similar_words: similar_words.split(",").map((w) => w.trim()),
     syllable_division: syllable_division,
-    tags: tags,
+    tags: tags.split(",").map((w) => w.trim()),
   };
 
   VocabularyBank.metadate.number_of_words += 1;

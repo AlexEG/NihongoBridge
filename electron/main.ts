@@ -73,6 +73,7 @@ import { updateProfileStats } from "./modules/updateProfileStats";
 import { addNewWordToVocabularyBank } from "./modules/addNewWordToVocabularyBank";
 import { readJsonFiles } from "./modules/readJsonFiles";
 import { fetchMetadata } from "./modules/MetadataFetcher";
+import { addNewWordToVocabularyBankWordList } from "./modules/addNewWordToVocabularyBankWordList";
 
 ipcMain.handle("read-json-file", async (event, fileName) => {
   try {
@@ -114,42 +115,6 @@ ipcMain.handle(
     } catch (error) {
       console.error("Error updating Profile stats:", error);
       return { status: "error", message: "Failed to update Profile stats." };
-    }
-  }
-);
-
-ipcMain.handle(
-  "add-new-word-to-vocabulary-bank",
-  async (
-    event,
-    word: string,
-    definition: string,
-    ipa_us: string,
-    example: string,
-    similar_words: string,
-    syllable_division: string,
-    tags: string
-  ) => {
-    try {
-      await addNewWordToVocabularyBank(
-        word,
-        definition,
-        ipa_us,
-        example,
-        similar_words,
-        syllable_division,
-        tags
-      );
-      return {
-        status: "success",
-        message: `${word} added successfully to your Vocabulary Bank `,
-      };
-    } catch (error) {
-      console.error("Error updating Profile stats:", error);
-      return {
-        status: "error",
-        message: `Failed to add ${word} to your Vocabulary Bank`,
-      };
     }
   }
 );
@@ -196,3 +161,41 @@ ipcMain.handle("read-json-files", async (event, directoryPath) => {
 ipcMain.handle("fetch-metadata", async (event, url) => {
   return fetchMetadata(url);
 });
+
+ipcMain.handle(
+  "add-new-word-to-vocabulary-bank-word-list",
+  async (event, newWord: string) => {
+    await addNewWordToVocabularyBankWordList(newWord);
+  }
+);
+ipcMain.handle(
+  "add-new-word-to-vocabulary-bank",
+  async (
+    event,
+    is_audio_file_available: boolean,
+    word: string,
+    definition: string,
+    ipa_phonetic_transcription_us: string,
+    ipa_phonemic_transcription_us: string,
+    example: string,
+    similar_words: string[],
+    syllable_division: string,
+    tags: string[]
+  ) => {
+    try {
+      await addNewWordToVocabularyBank(
+        is_audio_file_available,
+        word,
+        definition,
+        ipa_phonetic_transcription_us,
+        ipa_phonemic_transcription_us,
+        example,
+        similar_words,
+        syllable_division,
+        tags
+      );
+    } catch (error) {
+      console.error("Error updating Profile stats:", error);
+    }
+  }
+);

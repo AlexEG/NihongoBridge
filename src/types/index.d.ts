@@ -16,16 +16,19 @@ declare global {
       processFile: (filePath: string, fileName: string) => Promise<any>;
       openFileDialog: () => Promise<string>;
       fetchMetadata(url: string): Promise<any>;
+      addNewWordToVocabularyBankWordList(newWord: string): Promise<void>;
       readJsonFiles(directoryPath: string): Promise<object>;
-      addNewWordToVocabularyBank: (
+      addNewWordToVocabularyBank(
+        is_audio_file_available: boolean,
         word: string,
         definition: string,
-        ipa_us: string,
+        ipa_phonetic_transcription_us: string,
+        ipa_phonemic_transcription_us: string,
         example: string,
-        similar_words: string,
+        similar_words: string[],
         syllable_division: string,
-        tags: string
-      ) => Promise<any>;
+        tags: string[]
+      ): Promise<void>;
     };
     selectFile: () => Promise<string>;
   }

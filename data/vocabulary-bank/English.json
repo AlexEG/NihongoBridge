@@ -1,6 +1,6 @@
 {
   "metadate": {
-    "number_of_words": 10
+    "number_of_words": 12
   },
   "words": [
     {
@@ -112,6 +112,29 @@
       "similar_words": ["omnipresent", "pervasive", "universal"],
       "syllable_division": "u·biq·ui·tous",
       "tags": ["omnipresence", "commonality", "universality"]
+    },
+    {
+      "word": "new",
+      "soundFile": "/data/sound/english/words/new.mp3",
+      "definition": "Not=existing before; made, introduced, or discovered recently or now for the first time.",
+      "ipa_phonetic_transcription_us": "[nuː]",
+      "ipa_phonemic_transcription_us": "",
+      "example": "They bought a new car.",
+      "similar_words": ["recent", "fresh", "novel"],
+      "syllable_division": "New",
+      "tags": ["novelty", "freshness", "innovation", "most common 1000"]
+    },
+
+    {
+      "word": "of",
+      "soundFile": "/data/sound/english/words/of.mp3",
+      "definition": "Expressing the relationship between a part and a whole.",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[əv]",
+      "example": "The pages of the book turned yellow over time.",
+      "similar_words": ["from", "in", "on"],
+      "syllable_division": "Of",
+      "tags": ["preposition", "relationship", "part-whole", "most common 1000"]
     }
   ]
 }

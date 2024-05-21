@@ -61,24 +61,25 @@ export default function ViewFolderContentBtn(folderFileName: string) {
       wordsContainer.setAttribute("class", className);
       wordsContainer.setAttribute("id", "vocabulary-shop--words-container");
 
-      for (const [word, wordInfo] of Object.entries(data)) {
-        // console.log("wordInfo:", wordInfo);
+      // check if a word is already added to the user vocabulary bank
 
-        wordsContainer.append(WordCard(word, wordInfo));
-      }
+      window.api
+        .readJsonFile("vocabulary-bank/english-vocabulary-bank-word-list.json")
+        .then((userBankWords: string[]) => {
+          console.log("userBankWords:", userBankWords);
+
+          for (const [word, wordInfo] of Object.entries(data)) {
+            // console.log("wordInfo:", wordInfo);
+            const isInVocabularyBank = userBankWords.includes(word);
+            wordsContainer.append(WordCard(word, wordInfo, isInVocabularyBank));
+          }
+        })
+        .catch((error: Error) => {
+          console.error("Failed to read the JSON file:", error);
+        });
+
       English.append(wordsContainer);
     }
-
-    // console.log("folderFileName:", folderFileName);
-
-    // window.api
-    //   .readJsonFile(`vocabulary-shop/metadata/${folderFileName}.json`)
-    //   .then((data: FolderData) => {
-    //     renderFolderWords(data);
-    //   })
-    //   .catch((error: Error) => {
-    //     console.error("Failed to read the JSON file:", error);
-    //   });
 
     window.api
       .fetchMetadata(

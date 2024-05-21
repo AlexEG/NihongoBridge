@@ -52,9 +52,6 @@ export default function FolderCard(
   return FolderCard;
 }
 
-//TODO make a way to edit the folder icon like add some icon like food sport stuff like that
-// oh right this is not a section that the user can edit this suppose to be edited only through github
-
 function numberOfWords(WordsNum: number) {
   const numberOfWords = document.createElement("span");
   const className =
