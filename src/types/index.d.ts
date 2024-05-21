@@ -18,6 +18,7 @@ declare global {
       fetchMetadata(url: string): Promise<any>;
       addNewWordToVocabularyBankWordList(newWord: string): Promise<void>;
       readJsonFiles(directoryPath: string): Promise<object>;
+      downloadAudioFile(audioFileURL: string): void;
       addNewWordToVocabularyBank(
         is_audio_file_available: boolean,
         word: string,

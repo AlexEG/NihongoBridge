@@ -42,6 +42,8 @@ contextBridge.exposeInMainWorld("api", {
   readJsonFiles: (directoryPath: string) =>
     ipcRenderer.invoke("read-json-files", directoryPath),
   fetchMetadata: (url: string) => ipcRenderer.invoke("fetch-metadata", url),
+  downloadAudioFile: (audioFileURL: string) =>
+    ipcRenderer.invoke("download-audio-file", audioFileURL),
   addNewWordToVocabularyBankWordList: (newWord: string) =>
     ipcRenderer.invoke("add-new-word-to-vocabulary-bank-word-list", newWord),
 });

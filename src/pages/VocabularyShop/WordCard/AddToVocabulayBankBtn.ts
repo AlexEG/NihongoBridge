@@ -65,6 +65,10 @@ export default function AddToVocabulayBankBtn(
       // fetch the word JSON file from https://github.com/AlexEG/NihongoBridgeDB/tree/main/english/all_vocabulary
 
       window.api.addNewWordToVocabularyBankWordList(word);
+      if (is_audio_file_available)
+        window.api.downloadAudioFile(
+          `https://raw.githubusercontent.com/AlexEG/NihongoBridgeDB/main/english/vocabulary-audio-files/${word}.mp3`
+        );
 
       window.api
         .fetchMetadata(

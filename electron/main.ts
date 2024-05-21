@@ -74,6 +74,7 @@ import { addNewWordToVocabularyBank } from "./modules/addNewWordToVocabularyBank
 import { readJsonFiles } from "./modules/readJsonFiles";
 import { fetchMetadata } from "./modules/MetadataFetcher";
 import { addNewWordToVocabularyBankWordList } from "./modules/addNewWordToVocabularyBankWordList";
+import { downloadAudioFile } from "./modules/mp3FileDownloader";
 
 ipcMain.handle("read-json-file", async (event, fileName) => {
   try {
@@ -199,3 +200,11 @@ ipcMain.handle(
     }
   }
 );
+
+ipcMain.handle("download-audio-file", async (event, audioFileURL) => {
+  try {
+    downloadAudioFile(audioFileURL);
+  } catch (error) {
+    console.error("Failed to read JSON files:", error);
+  }
+});
