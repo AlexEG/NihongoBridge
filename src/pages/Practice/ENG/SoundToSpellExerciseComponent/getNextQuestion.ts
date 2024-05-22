@@ -10,6 +10,8 @@ interface WordInfo {
   tags: string[];
 }
 
+let currentIndex = 0;
+
 export default function getNextQuestion(
   questionOrderType: string,
   wordsArr: WordInfo[]
@@ -20,6 +22,10 @@ export default function getNextQuestion(
     case "random":
       next = wordsArr[Math.floor(Math.random() * wordsArr.length)];
       break;
+    case "indexOrder":
+      next = wordsArr[currentIndex % wordsArr.length];
+      currentIndex++;
+      break;
 
     default:
       next = wordsArr[0];
@@ -28,3 +34,7 @@ export default function getNextQuestion(
 
   return next;
 }
+
+// export function resetIndexOrder() {
+//   currentIndex = 0;
+// }

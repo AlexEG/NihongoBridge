@@ -38,7 +38,8 @@ export default function SoundToSpellExerciseComponent(
   const ECID = `practice--${section}--${exerciseName}`;
   ExerciseComponent.setAttribute("id", ECID);
 
-  const questionOrderType = "random";
+  // const questionOrderType = "random";
+  const questionOrderType = "indexOrder";
 
   //* ******
   function render(data: VocabularyData) {
@@ -97,7 +98,7 @@ export default function SoundToSpellExerciseComponent(
     const checkBtn = inputAndCheckBtn.lastElementChild as HTMLButtonElement;
 
     function checkHandler() {
-      console.log("checkBtn.textContent", checkBtn.textContent);
+      // console.log("checkBtn.textContent", checkBtn.textContent);
 
       if (checkBtn.textContent === "Check") {
         console.log("check");

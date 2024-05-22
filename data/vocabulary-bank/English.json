@@ -1,28 +1,8 @@
 {
   "metadate": {
-    "number_of_words": 69
+    "number_of_words": 164
   },
   "words": [
-    {
-      "word": "rates",
-      "soundFile": "https://raw.githubusercontent.com/AlexEG/NihongoBridgeDB/blob/main/english/vocabulary-audio-files/above.mp3",
-      "definition": "a measure, quantity, or frequency, typically one measured against another quantity or measure",
-      "ipa_phonetic_transcription_us": "['reɪt]",
-      "ipa_phonemic_transcription_us": "/reɪts/",
-      "example": "The island has the lowest crime rate in the world.",
-      "similar_words": [
-        "speed",
-        "pace",
-        "tempo"
-      ],
-      "syllable_division": "Rates",
-      "tags": [
-        "measurement",
-        "charge",
-        "price",
-        "most common 1000"
-      ]
-    },
     {
       "word": "create",
       "soundFile": "/data/sound/english/words/create.mp3",
@@ -30,18 +10,9 @@
       "ipa_phonetic_transcription_us": "[kriˈeɪt]",
       "ipa_phonemic_transcription_us": "/kriˈeɪt/",
       "example": "He created a thirty-acre lake.",
-      "similar_words": [
-        "generate",
-        "produce",
-        "design"
-      ],
+      "similar_words": ["generate", "produce", "design"],
       "syllable_division": "Cre·ate",
-      "tags": [
-        "invent",
-        "make",
-        "construct",
-        "most common 1000"
-      ]
+      "tags": ["invent", "make", "construct", "most common 1000"]
     },
     {
       "word": "key",
@@ -50,18 +21,9 @@
       "ipa_phonetic_transcription_us": "[kiː]",
       "ipa_phonemic_transcription_us": "/kiː/",
       "example": "There were two keys to the cupboard.",
-      "similar_words": [
-        "answer",
-        "clue",
-        "solution"
-      ],
+      "similar_words": ["answer", "clue", "solution"],
       "syllable_division": "Key",
-      "tags": [
-        "lock",
-        "secure",
-        "access",
-        "most common 1000"
-      ]
+      "tags": ["lock", "secure", "access", "most common 1000"]
     },
     {
       "word": "body",
@@ -70,18 +32,9 @@
       "ipa_phonetic_transcription_us": "[ˈbɑːdi]",
       "ipa_phonemic_transcription_us": "/ˈbɑːdi/",
       "example": "It's important to keep your body in good condition.",
-      "similar_words": [
-        "anatomy",
-        "figure",
-        "frame"
-      ],
+      "similar_words": ["anatomy", "figure", "frame"],
       "syllable_division": "Bod·y",
-      "tags": [
-        "physique",
-        "form",
-        "structure",
-        "most common 1000"
-      ]
+      "tags": ["physique", "form", "structure", "most common 1000"]
     },
     {
       "word": "young",
@@ -90,18 +43,9 @@
       "ipa_phonetic_transcription_us": "[jʌŋ]",
       "ipa_phonemic_transcription_us": "/jʌŋ/",
       "example": "A young girl came up to me and asked for money.",
-      "similar_words": [
-        "youthful",
-        "juvenile",
-        "junior"
-      ],
+      "similar_words": ["youthful", "juvenile", "junior"],
       "syllable_division": "Young",
-      "tags": [
-        "adolescent",
-        "teenage",
-        "new",
-        "most common 1000"
-      ]
+      "tags": ["adolescent", "teenage", "new", "most common 1000"]
     },
     {
       "word": "important",
@@ -110,18 +54,9 @@
       "ipa_phonetic_transcription_us": "[ɪmˈpɔːrʔənt]",
       "ipa_phonemic_transcription_us": "/ɪmˈpɔːrtənt/",
       "example": "Important habitats for wildlife.",
-      "similar_words": [
-        "main",
-        "chief",
-        "principal"
-      ],
+      "similar_words": ["main", "chief", "principal"],
       "syllable_division": "Im·por·tant",
-      "tags": [
-        "significant",
-        "valuable",
-        "crucial",
-        "most common 1000"
-      ]
+      "tags": ["significant", "valuable", "crucial", "most common 1000"]
     },
     {
       "word": "field",
@@ -130,18 +65,9 @@
       "ipa_phonetic_transcription_us": "[fiːld]",
       "ipa_phonemic_transcription_us": "/fiːld/",
       "example": "The farmer worked in the field from dawn till dusk.",
-      "similar_words": [
-        "meadow",
-        "pasture",
-        "plot"
-      ],
+      "similar_words": ["meadow", "pasture", "plot"],
       "syllable_division": "Field",
-      "tags": [
-        "agriculture",
-        "land",
-        "area",
-        "most common 1000"
-      ]
+      "tags": ["agriculture", "land", "area", "most common 1000"]
     },
     {
       "word": "few",
@@ -150,18 +76,9 @@
       "ipa_phonetic_transcription_us": "[fjuː]",
       "ipa_phonemic_transcription_us": "/fjuː/",
       "example": "Only a few guests remained after the party.",
-      "similar_words": [
-        "some",
-        "a handful of",
-        "a couple"
-      ],
+      "similar_words": ["some", "a handful of", "a couple"],
       "syllable_division": "Few",
-      "tags": [
-        "small number",
-        "handful",
-        "minority",
-        "most common 1000"
-      ]
+      "tags": ["small number", "handful", "minority", "most common 1000"]
     },
     {
       "word": "east",
@@ -170,18 +87,9 @@
       "ipa_phonetic_transcription_us": "[iːst]",
       "ipa_phonemic_transcription_us": "/iːst/",
       "example": "The sun rises in the east.",
-      "similar_words": [
-        "orient",
-        "sunrise direction",
-        "eastward"
-      ],
+      "similar_words": ["orient", "sunrise direction", "eastward"],
       "syllable_division": "East",
-      "tags": [
-        "direction",
-        "compass",
-        "orientation",
-        "most common 1000"
-      ]
+      "tags": ["direction", "compass", "orientation", "most common 1000"]
     },
     {
       "word": "ubiquitous",
@@ -190,17 +98,9 @@
       "ipa_phonetic_transcription_us": "[juːˈbɪk.wɪ.təs]",
       "ipa_phonemic_transcription_us": "/juːˈbɪkwɪtəs/",
       "example": "Smartphones are ubiquitous these days, with almost everyone using one.",
-      "similar_words": [
-        "omnipresent",
-        "pervasive",
-        "universal"
-      ],
+      "similar_words": ["omnipresent", "pervasive", "universal"],
       "syllable_division": "u·biq·ui·tous",
-      "tags": [
-        "omnipresence",
-        "commonality",
-        "universality"
-      ]
+      "tags": ["omnipresence", "commonality", "universality"]
     },
     {
       "word": "the",
@@ -209,11 +109,7 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[ðə]",
       "example": "The sun rises in the east and sets in the west.",
-      "similar_words": [
-        "this",
-        "that",
-        "these"
-      ],
+      "similar_words": ["this", "that", "these"],
       "syllable_division": "The",
       "tags": [
         "definite article",
@@ -229,18 +125,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[əv]",
       "example": "The pages of the book turned yellow over time.",
-      "similar_words": [
-        "from",
-        "in",
-        "on"
-      ],
+      "similar_words": ["from", "in", "on"],
       "syllable_division": "Of",
-      "tags": [
-        "preposition",
-        "relationship",
-        "part-whole",
-        "most common 1000"
-      ]
+      "tags": ["preposition", "relationship", "part-whole", "most common 1000"]
     },
     {
       "word": "and",
@@ -249,18 +136,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[ænd]",
       "example": "She bought apples and oranges from the market.",
-      "similar_words": [
-        "also",
-        "plus",
-        "as well as"
-      ],
+      "similar_words": ["also", "plus", "as well as"],
       "syllable_division": "And",
-      "tags": [
-        "conjunction",
-        "connection",
-        "joint",
-        "most common 1000"
-      ]
+      "tags": ["conjunction", "connection", "joint", "most common 1000"]
     },
     {
       "word": "to",
@@ -269,17 +147,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[tu]",
       "example": "Walking to the store is a pleasure on sunny days.",
-      "similar_words": [
-        "toward",
-        "in the direction of"
-      ],
+      "similar_words": ["toward", "in the direction of"],
       "syllable_division": "To",
-      "tags": [
-        "preposition",
-        "direction",
-        "motion",
-        "most common 1000"
-      ]
+      "tags": ["preposition", "direction", "motion", "most common 1000"]
     },
     {
       "word": "in",
@@ -288,17 +158,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[ɪn]",
       "example": "She was in the garden when the phone rang.",
-      "similar_words": [
-        "inside",
-        "within"
-      ],
+      "similar_words": ["inside", "within"],
       "syllable_division": "In",
-      "tags": [
-        "preposition",
-        "enclosure",
-        "surrounding",
-        "most common 1000"
-      ]
+      "tags": ["preposition", "enclosure", "surrounding", "most common 1000"]
     },
     {
       "word": "is",
@@ -307,22 +169,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[ɪz]",
       "example": "The sky is clear tonight.",
-      "similar_words": [
-        "am",
-        "are",
-        "was",
-        "were",
-        "be",
-        "being",
-        "been"
-      ],
+      "similar_words": ["am", "are", "was", "were", "be", "being", "been"],
       "syllable_division": "Is",
-      "tags": [
-        "verb",
-        "existence",
-        "state",
-        "most common 1000"
-      ]
+      "tags": ["verb", "existence", "state", "most common 1000"]
     },
     {
       "word": "more",
@@ -331,18 +180,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[mɔr]",
       "example": "I need more time to finish the work.",
-      "similar_words": [
-        "additional",
-        "extra",
-        "further"
-      ],
+      "similar_words": ["additional", "extra", "further"],
       "syllable_division": "More",
-      "tags": [
-        "additional",
-        "extra",
-        "greater",
-        "most common 1000"
-      ]
+      "tags": ["additional", "extra", "greater", "most common 1000"]
     },
     {
       "word": "you",
@@ -351,18 +191,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[ju]",
       "example": "Are you going to the store?",
-      "similar_words": [
-        "thou",
-        "ye",
-        "yourself"
-      ],
+      "similar_words": ["thou", "ye", "yourself"],
       "syllable_division": "You",
-      "tags": [
-        "pronoun",
-        "second person",
-        "address",
-        "most common 1000"
-      ]
+      "tags": ["pronoun", "second person", "address", "most common 1000"]
     },
     {
       "word": "health",
@@ -415,18 +246,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[ˈsɪti]",
       "example": "New York is a bustling city.",
-      "similar_words": [
-        "metropolis",
-        "urban area",
-        "municipality"
-      ],
+      "similar_words": ["metropolis", "urban area", "municipality"],
       "syllable_division": "Cit·y",
-      "tags": [
-        "place",
-        "urban",
-        "population",
-        "most common 1000"
-      ]
+      "tags": ["place", "urban", "population", "most common 1000"]
     },
     {
       "word": "policy",
@@ -435,18 +257,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[ˈpɑləsi]",
       "example": "The company's privacy policy.",
-      "similar_words": [
-        "plan",
-        "strategy",
-        "guideline"
-      ],
+      "similar_words": ["plan", "strategy", "guideline"],
       "syllable_division": "Pol·i·cy",
-      "tags": [
-        "rules",
-        "guidelines",
-        "strategy",
-        "most common 1000"
-      ]
+      "tags": ["rules", "guidelines", "strategy", "most common 1000"]
     },
     {
       "word": "number",
@@ -455,18 +268,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[ˈnʌmbər]",
       "example": "The number of participants was high.",
-      "similar_words": [
-        "figure",
-        "digit",
-        "count"
-      ],
+      "similar_words": ["figure", "digit", "count"],
       "syllable_division": "Num·ber",
-      "tags": [
-        "mathematics",
-        "quantity",
-        "count",
-        "most common 1000"
-      ]
+      "tags": ["mathematics", "quantity", "count", "most common 1000"]
     },
     {
       "word": "copyright",
@@ -475,11 +279,7 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[ˈkɑp.i.raɪt]",
       "example": "The book is protected by copyright.",
-      "similar_words": [
-        "intellectual property",
-        "trademark",
-        "patent"
-      ],
+      "similar_words": ["intellectual property", "trademark", "patent"],
       "syllable_division": "Copy·right",
       "tags": [
         "legal",
@@ -495,18 +295,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[əˈveɪləbl]",
       "example": "The dress is available in several sizes.",
-      "similar_words": [
-        "accessible",
-        "obtainable",
-        "on hand"
-      ],
+      "similar_words": ["accessible", "obtainable", "on hand"],
       "syllable_division": "A·vail·a·ble",
-      "tags": [
-        "accessibility",
-        "disposal",
-        "obtainable",
-        "most common 1000"
-      ]
+      "tags": ["accessibility", "disposal", "obtainable", "most common 1000"]
     },
     {
       "word": "please",
@@ -515,18 +306,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[pliz]",
       "example": "It pleases me to hear you're doing well.",
-      "similar_words": [
-        "satisfy",
-        "delight",
-        "make happy"
-      ],
+      "similar_words": ["satisfy", "delight", "make happy"],
       "syllable_division": "Please",
-      "tags": [
-        "satisfaction",
-        "happiness",
-        "contentment",
-        "most common 1000"
-      ]
+      "tags": ["satisfaction", "happiness", "contentment", "most common 1000"]
     },
     {
       "word": "well",
@@ -535,18 +317,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[wɛl]",
       "example": "The project went well.",
-      "similar_words": [
-        "properly",
-        "suitably",
-        "effectively"
-      ],
+      "similar_words": ["properly", "suitably", "effectively"],
       "syllable_division": "Well",
-      "tags": [
-        "condition",
-        "health",
-        "satisfactorily",
-        "most common 1000"
-      ]
+      "tags": ["condition", "health", "satisfactorily", "most common 1000"]
     },
     {
       "word": "public",
@@ -555,18 +328,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[ˈpəblɪk]",
       "example": "Public opinion has turned against him.",
-      "similar_words": [
-        "common",
-        "general",
-        "open"
-      ],
+      "similar_words": ["common", "general", "open"],
       "syllable_division": "Pub-lic",
-      "tags": [
-        "common",
-        "general",
-        "public",
-        "most common 1000"
-      ]
+      "tags": ["common", "general", "public", "most common 1000"]
     },
     {
       "word": "video",
@@ -575,18 +339,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[ˈvɪdiˌoʊ]",
       "example": "We watched a video of the concert.",
-      "similar_words": [
-        "recording",
-        "film",
-        "clip"
-      ],
+      "similar_words": ["recording", "film", "clip"],
       "syllable_division": "Vid·eo",
-      "tags": [
-        "media",
-        "entertainment",
-        "recording",
-        "most common 1000"
-      ]
+      "tags": ["media", "entertainment", "recording", "most common 1000"]
     },
     {
       "word": "rights",
@@ -595,18 +350,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[raɪts]",
       "example": "They are fighting for their rights.",
-      "similar_words": [
-        "entitlements",
-        "privileges",
-        "freedoms"
-      ],
+      "similar_words": ["entitlements", "privileges", "freedoms"],
       "syllable_division": "Rights",
-      "tags": [
-        "law",
-        "justice",
-        "entitlement",
-        "most common 1000"
-      ]
+      "tags": ["law", "justice", "entitlement", "most common 1000"]
     },
     {
       "word": "through",
@@ -615,18 +361,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[θruː]",
       "example": "He walked through the door.",
-      "similar_words": [
-        "across",
-        "along",
-        "past"
-      ],
+      "similar_words": ["across", "along", "past"],
       "syllable_division": "Through",
-      "tags": [
-        "movement",
-        "direction",
-        "through",
-        "most common 1000"
-      ]
+      "tags": ["movement", "direction", "through", "most common 1000"]
     },
     {
       "word": "group",
@@ -635,18 +372,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[ɡruːp]",
       "example": "She presented the idea to the group.",
-      "similar_words": [
-        "team",
-        "club",
-        "crowd"
-      ],
+      "similar_words": ["team", "club", "crowd"],
       "syllable_division": "Group",
-      "tags": [
-        "collection",
-        "assembly",
-        "gathering",
-        "most common 1000"
-      ]
+      "tags": ["collection", "assembly", "gathering", "most common 1000"]
     },
     {
       "word": "does",
@@ -655,17 +383,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[dʌz]",
       "example": "What does this tool do?",
-      "similar_words": [
-        "performs",
-        "executes"
-      ],
+      "similar_words": ["performs", "executes"],
       "syllable_division": "Does",
-      "tags": [
-        "action",
-        "execution",
-        "performance",
-        "most common 1000"
-      ]
+      "tags": ["action", "execution", "performance", "most common 1000"]
     },
     {
       "word": "many",
@@ -674,17 +394,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[ˈmɛni]",
       "example": "Many people agreed with her.",
-      "similar_words": [
-        "numerous",
-        "various"
-      ],
+      "similar_words": ["numerous", "various"],
       "syllable_division": "Ma-ny",
-      "tags": [
-        "numerous",
-        "multiple",
-        "abundant",
-        "most common 1000"
-      ]
+      "tags": ["numerous", "multiple", "abundant", "most common 1000"]
     },
     {
       "word": "user",
@@ -693,17 +405,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[ˈjuːzər]",
       "example": "The user should press return.",
-      "similar_words": [
-        "consumer",
-        "operator"
-      ],
+      "similar_words": ["consumer", "operator"],
       "syllable_division": "Us-er",
-      "tags": [
-        "consumer",
-        "operator",
-        "utilizer",
-        "most common 1000"
-      ]
+      "tags": ["consumer", "operator", "utilizer", "most common 1000"]
     },
     {
       "word": "general",
@@ -778,17 +482,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[ˈmænɪdʒmənt]",
       "example": "Good management is key to the success of any business.",
-      "similar_words": [
-        "administration",
-        "control"
-      ],
+      "similar_words": ["administration", "control"],
       "syllable_division": "Man-age-ment",
-      "tags": [
-        "administration",
-        "control",
-        "supervision",
-        "most common 1000"
-      ]
+      "tags": ["administration", "control", "supervision", "most common 1000"]
     },
     {
       "word": "part",
@@ -797,17 +493,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[pɑrt]",
       "example": "She played a part in the school play.",
-      "similar_words": [
-        "portion",
-        "section"
-      ],
+      "similar_words": ["portion", "section"],
       "syllable_division": "Part",
-      "tags": [
-        "segment",
-        "piece",
-        "component",
-        "most common 1000"
-      ]
+      "tags": ["segment", "piece", "component", "most common 1000"]
     },
     {
       "word": "know",
@@ -816,17 +504,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[noʊ]",
       "example": "I know the answer to your question.",
-      "similar_words": [
-        "understand",
-        "recognize"
-      ],
+      "similar_words": ["understand", "recognize"],
       "syllable_division": "Know",
-      "tags": [
-        "knowledge",
-        "awareness",
-        "familiarity",
-        "most common 1000"
-      ]
+      "tags": ["knowledge", "awareness", "familiarity", "most common 1000"]
     },
     {
       "word": "games",
@@ -835,17 +515,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[ɡeɪmz]",
       "example": "The children played games at the party.",
-      "similar_words": [
-        "sports",
-        "competitions"
-      ],
+      "similar_words": ["sports", "competitions"],
       "syllable_division": "Games",
-      "tags": [
-        "entertainment",
-        "leisure",
-        "play",
-        "most common 1000"
-      ]
+      "tags": ["entertainment", "leisure", "play", "most common 1000"]
     },
     {
       "word": "program",
@@ -865,17 +537,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[kʊd]",
       "example": "I could go to the store if you need me to.",
-      "similar_words": [
-        "might",
-        "would"
-      ],
+      "similar_words": ["might", "would"],
       "syllable_division": "Could",
-      "tags": [
-        "possibility",
-        "ability",
-        "permission",
-        "most common 1000"
-      ]
+      "tags": ["possibility", "ability", "permission", "most common 1000"]
     },
     {
       "word": "united",
@@ -884,17 +548,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[juːˈnaɪtɪd]",
       "example": "The team stood united in their decision.",
-      "similar_words": [
-        "joined",
-        "merged"
-      ],
+      "similar_words": ["joined", "merged"],
       "syllable_division": "U-nit-ed",
-      "tags": [
-        "combined",
-        "together",
-        "cooperative",
-        "most common 1000"
-      ]
+      "tags": ["combined", "together", "cooperative", "most common 1000"]
     },
     {
       "word": "hotel",
@@ -903,17 +559,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[hoʊˈtɛl]",
       "example": "We booked a hotel for our vacation.",
-      "similar_words": [
-        "inn",
-        "motel"
-      ],
+      "similar_words": ["inn", "motel"],
       "syllable_division": "Ho-tel",
-      "tags": [
-        "accommodation",
-        "lodging",
-        "hospitality",
-        "most common 1000"
-      ]
+      "tags": ["accommodation", "lodging", "hospitality", "most common 1000"]
     },
     {
       "word": "real",
@@ -922,18 +570,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[riːl]",
       "example": "The documentary tells the story of real people affected by the war.",
-      "similar_words": [
-        "actual",
-        "authentic",
-        "tangible"
-      ],
+      "similar_words": ["actual", "authentic", "tangible"],
       "syllable_division": "Real",
-      "tags": [
-        "existence",
-        "authenticity",
-        "reality",
-        "most common 1000"
-      ]
+      "tags": ["existence", "authenticity", "reality", "most common 1000"]
     },
     {
       "word": "item",
@@ -942,18 +581,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[ˈaɪ.təm]",
       "example": "Each item on the list must be checked off.",
-      "similar_words": [
-        "article",
-        "object",
-        "element"
-      ],
+      "similar_words": ["article", "object", "element"],
       "syllable_division": "I-tem",
-      "tags": [
-        "component",
-        "piece",
-        "unit",
-        "most common 1000"
-      ]
+      "tags": ["component", "piece", "unit", "most common 1000"]
     },
     {
       "word": "great",
@@ -962,17 +592,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[ɡreɪt]",
       "example": "She achieved great success in her career.",
-      "similar_words": [
-        "considerable",
-        "significant"
-      ],
+      "similar_words": ["considerable", "significant"],
       "syllable_division": "Great",
-      "tags": [
-        "large",
-        "significant",
-        "important",
-        "most common 1000"
-      ]
+      "tags": ["large", "significant", "important", "most common 1000"]
     },
     {
       "word": "international",
@@ -981,18 +603,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[ˌɪn.tərˈnæʃ.ən.əl]",
       "example": "She works for an international organization that promotes environmental awareness.",
-      "similar_words": [
-        "global",
-        "worldwide",
-        "intercontinental"
-      ],
+      "similar_words": ["global", "worldwide", "intercontinental"],
       "syllable_division": "In-ter-na-tion-al",
-      "tags": [
-        "worldwide",
-        "multinational",
-        "cross-border",
-        "most common 1000"
-      ]
+      "tags": ["worldwide", "multinational", "cross-border", "most common 1000"]
     },
     {
       "word": "travel",
@@ -1001,18 +614,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[ˈtræv.əl]",
       "example": "She loves to travel and has visited over 20 countries.",
-      "similar_words": [
-        "journey",
-        "voyage",
-        "tour"
-      ],
+      "similar_words": ["journey", "voyage", "tour"],
       "syllable_division": "Trav-el",
-      "tags": [
-        "journey",
-        "voyage",
-        "expedition",
-        "most common 1000"
-      ]
+      "tags": ["journey", "voyage", "expedition", "most common 1000"]
     },
     {
       "word": "comments",
@@ -1021,18 +625,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[ˈkɑː.mɛnts]",
       "example": "The article received many positive comments from readers.",
-      "similar_words": [
-        "remarks",
-        "observations",
-        "statements"
-      ],
+      "similar_words": ["remarks", "observations", "statements"],
       "syllable_division": "Com-ments",
-      "tags": [
-        "feedback",
-        "reaction",
-        "response",
-        "most common 1000"
-      ]
+      "tags": ["feedback", "reaction", "response", "most common 1000"]
     },
     {
       "word": "center",
@@ -1041,18 +636,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[ˈsɛn.tər]",
       "example": "The town center was decorated for the holidays.",
-      "similar_words": [
-        "middle",
-        "core",
-        "heart"
-      ],
+      "similar_words": ["middle", "core", "heart"],
       "syllable_division": "Cen-ter",
-      "tags": [
-        "middle",
-        "hub",
-        "nucleus",
-        "most common 1000"
-      ]
+      "tags": ["middle", "hub", "nucleus", "most common 1000"]
     },
     {
       "word": "made",
@@ -1061,18 +647,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[meɪd]",
       "example": "The film was made in Hollywood.",
-      "similar_words": [
-        "created",
-        "constructed",
-        "fabricated"
-      ],
+      "similar_words": ["created", "constructed", "fabricated"],
       "syllable_division": "Made",
-      "tags": [
-        "constructed",
-        "manufactured",
-        "produced",
-        "most common 1000"
-      ]
+      "tags": ["constructed", "manufactured", "produced", "most common 1000"]
     },
     {
       "word": "ebay",
@@ -1081,18 +658,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[ˈiːbeɪ]",
       "example": "I sold my old camera on eBay.",
-      "similar_words": [
-        "auction",
-        "marketplace",
-        "commerce"
-      ],
+      "similar_words": ["auction", "marketplace", "commerce"],
       "syllable_division": "E-bay",
-      "tags": [
-        "e-commerce",
-        "online shopping",
-        "auctions",
-        "most common 1000"
-      ]
+      "tags": ["e-commerce", "online shopping", "auctions", "most common 1000"]
     },
     {
       "word": "development",
@@ -1101,18 +669,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[dɪˈvɛləpmənt]",
       "example": "The city's development included new parks.",
-      "similar_words": [
-        "growth",
-        "expansion",
-        "progress"
-      ],
+      "similar_words": ["growth", "expansion", "progress"],
       "syllable_division": "De·vel·op·ment",
-      "tags": [
-        "progress",
-        "growth",
-        "evolution",
-        "most common 1000"
-      ]
+      "tags": ["progress", "growth", "evolution", "most common 1000"]
     },
     {
       "word": "report",
@@ -1121,18 +680,9 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[rɪˈpɔrt]",
       "example": "She filed a report on the project's status.",
-      "similar_words": [
-        "account",
-        "statement",
-        "description"
-      ],
+      "similar_words": ["account", "statement", "description"],
       "syllable_division": "Re·port",
-      "tags": [
-        "account",
-        "description",
-        "statement",
-        "most common 1000"
-      ]
+      "tags": ["account", "description", "statement", "most common 1000"]
     },
     {
       "word": "store",
@@ -1141,18 +691,1058 @@
       "ipa_phonetic_transcription_us": "",
       "ipa_phonemic_transcription_us": "[stɔːr]",
       "example": "She picked up some groceries at the local store.",
-      "similar_words": [
-        "shop",
-        "outlet",
-        "emporium"
-      ],
+      "similar_words": ["shop", "outlet", "emporium"],
       "syllable_division": "Store",
-      "tags": [
-        "retail",
-        "commerce",
-        "outlet",
-        "most common 1000"
-      ]
+      "tags": ["retail", "commerce", "outlet", "most common 1000"]
+    },
+    {
+      "word": "reading",
+      "soundFile": "/data/sound/english/words/reading.mp3",
+      "definition": "The action or skill of reading written or printed matter silently or aloud",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈriːdɪŋ]",
+      "example": "Her favorite pastime is reading novels.",
+      "similar_words": ["perusal", "study", "literacy"],
+      "syllable_division": "Read-ing",
+      "tags": ["literacy", "study", "education", "most common 1000"]
+    },
+    {
+      "word": "europe",
+      "soundFile": "/data/sound/english/words/europe.mp3",
+      "definition": "A continent in the northern hemisphere, separated from Asia by the Ural Mountains",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈjʊrəp]",
+      "example": "Europe is known for its rich cultural heritage.",
+      "similar_words": ["continent", "region", "territory"],
+      "syllable_division": "Eu-rope",
+      "tags": ["continent", "region", "geography", "most common 1000"]
+    },
+    {
+      "word": "gifts",
+      "soundFile": "/data/sound/english/words/gifts.mp3",
+      "definition": "A thing given willingly to someone without payment; a present",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ɡɪfts]",
+      "example": "During the holidays, they exchanged gifts.",
+      "similar_words": ["presents", "offerings", "donations"],
+      "syllable_division": "Gifts",
+      "tags": ["present", "offering", "donation", "most common 1000"]
+    },
+    {
+      "word": "individual",
+      "soundFile": "/data/sound/english/words/individual.mp3",
+      "definition": "Single; separate",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˌɪndɪˈvɪdʒuəl]",
+      "example": "Each individual has unique talents.",
+      "similar_words": ["single", "particular", "separate"],
+      "syllable_division": "In-di-vid-u-al",
+      "tags": ["single", "separate", "unique", "most common 1000"]
+    },
+    {
+      "word": "plus",
+      "soundFile": "/data/sound/english/words/plus.mp3",
+      "definition": "With the addition of",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[plʌs]",
+      "example": "Four plus four equals eight.",
+      "similar_words": ["addition", "with", "and"],
+      "syllable_division": "Plus",
+      "tags": ["addition", "mathematics", "positive", "most common 1000"]
+    },
+    {
+      "word": "auto",
+      "soundFile": "/data/sound/english/words/auto.mp3",
+      "definition": "self-moving or self-controlling",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈɔː.toʊ]",
+      "example": "The auto industry is evolving rapidly with the advent of electric vehicles.",
+      "similar_words": ["car", "automobile", "motor"],
+      "syllable_division": "Au·to",
+      "tags": ["vehicle", "self-moving", "automated", "most common 1000"]
+    },
+    {
+      "word": "cover",
+      "soundFile": "/data/sound/english/words/cover.mp3",
+      "definition": "to place something over or upon, as for protection, concealment, or warmth",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈkʌv.ər]",
+      "example": "Please cover the food to keep it warm.",
+      "similar_words": ["conceal", "shield", "protect"],
+      "syllable_division": "Cov·er",
+      "tags": ["protect", "shield", "conceal", "most common 1000"]
+    },
+    {
+      "word": "percent",
+      "soundFile": "/data/sound/english/words/percent.mp3",
+      "definition": "one part in every hundred",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[pərˈsent]",
+      "example": "The company has seen a ten percent increase in sales this quarter.",
+      "similar_words": ["proportion", "fraction", "percentage"],
+      "syllable_division": "Per·cent",
+      "tags": ["proportion", "fraction", "percentage", "most common 1000"]
+    },
+    {
+      "word": "together",
+      "soundFile": "/data/sound/english/words/together.mp3",
+      "definition": "into or in one gathering, company, mass, place, or body",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[təˈɡeð.ər]",
+      "example": "Let's get together for dinner this weekend.",
+      "similar_words": ["collectively", "jointly", "unitedly"],
+      "syllable_division": "To·geth·er",
+      "tags": ["collectively", "jointly", "unitedly", "most common 1000"]
+    },
+    {
+      "word": "edit",
+      "soundFile": "/data/sound/english/words/edit.mp3",
+      "definition": "to prepare (text) for publication by checking and improving its accuracy, clarity, etc.",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈed.ɪt]",
+      "example": "The manuscript was edited carefully before submission.",
+      "similar_words": ["revise", "correct", "modify"],
+      "syllable_division": "Ed·it",
+      "tags": ["revise", "modify", "correct", "most common 1000"]
+    },
+    {
+      "word": "usually",
+      "soundFile": "/data/sound/english/words/usually.mp3",
+      "definition": "under normal conditions",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈjuː.ʒu.əl.i]",
+      "example": "She usually arrives at work at around 9 AM.",
+      "similar_words": ["normally", "typically", "commonly"],
+      "syllable_division": "Usu·al·ly",
+      "tags": ["commonly", "normally", "typically", "most common 1000"]
+    },
+    {
+      "word": "third",
+      "soundFile": "/data/sound/english/words/third.mp3",
+      "definition": "Constituting number three in a sequence; 3rd",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[θɜrd]",
+      "example": "She finished the race in third place.",
+      "similar_words": ["tertiary", "triplet", "triple"],
+      "syllable_division": "Third",
+      "tags": ["sequence", "position", "ordinal", "most common 1000"]
+    },
+    {
+      "word": "rock",
+      "soundFile": "/data/sound/english/words/rock.mp3",
+      "definition": "The solid mineral material forming part of the surface of the earth and other similar planets",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[rɑk]",
+      "example": "The mountain trail was covered with large rocks.",
+      "similar_words": ["stone", "boulder", "pebble"],
+      "syllable_division": "Rock",
+      "tags": ["geology", "mineral", "solid", "most common 1000"]
+    },
+    {
+      "word": "topics",
+      "soundFile": "/data/sound/english/words/topics.mp3",
+      "definition": "Subjects of conversation or discussion",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈtɑpɪks]",
+      "example": "The meeting covered a wide range of topics.",
+      "similar_words": ["subjects", "themes", "issues"],
+      "syllable_division": "Top-ics",
+      "tags": ["subject", "theme", "issue", "most common 1000"]
+    },
+    {
+      "word": "tickets",
+      "soundFile": "/data/sound/english/words/tickets.mp3",
+      "definition": "a piece of paper or card that gives the holder a certain right, especially to enter a place, travel by public transport, or participate in an event",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈtɪk.ɪts]",
+      "example": "She bought tickets for the concert next month.",
+      "similar_words": ["passes", "vouchers", "coupons"],
+      "syllable_division": "Tick·ets",
+      "tags": ["pass", "voucher", "coupon", "most common 1000"]
+    },
+    {
+      "word": "thing",
+      "soundFile": "/data/sound/english/words/thing.mp3",
+      "definition": "an object, fact, or situation that is not exactly known or stated",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[θɪŋ]",
+      "example": "The one thing I can't understand is why she left.",
+      "similar_words": ["item", "object", "entity"],
+      "syllable_division": "Thing",
+      "tags": ["item", "object", "entity", "most common 1000"]
+    },
+    {
+      "word": "centre",
+      "soundFile": "/data/sound/english/words/centre.mp3",
+      "definition": "the middle point or part of something",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈsɛn.tər]",
+      "example": "The vase was placed in the centre of the table.",
+      "similar_words": ["middle", "heart", "core"],
+      "syllable_division": "Cen·tre",
+      "tags": ["middle", "heart", "core", "most common 1000"]
+    },
+    {
+      "word": "hosting",
+      "soundFile": "/data/sound/english/words/hosting.mp3",
+      "definition": "the act of providing the technology and services needed for internet sites and data to be viewed on the internet",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈhoʊs.tɪŋ]",
+      "example": "The company is hosting the website on their servers.",
+      "similar_words": ["serving", "providing", "supporting"],
+      "syllable_division": "Host·ing",
+      "tags": ["internet", "server", "service", "most common 1000"]
+    },
+    {
+      "word": "federal",
+      "soundFile": "/data/sound/english/words/federal.mp3",
+      "definition": "relating to the central government, and not to the government of a region, of some countries such as the US",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈfed.ər.əl]",
+      "example": "The federal authorities are investigating the case.",
+      "similar_words": ["national", "governmental", "central"],
+      "syllable_division": "Fed·er·al",
+      "tags": ["government", "national", "central", "most common 1000"]
+    },
+    {
+      "word": "rules",
+      "soundFile": "/data/sound/english/words/rules.mp3",
+      "definition": "a set of explicit or understood regulations or principles governing conduct within a particular activity or sphere",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ruːlz]",
+      "example": "The rules of the game are simple to follow.",
+      "similar_words": ["regulations", "guidelines", "laws"],
+      "syllable_division": "Rules",
+      "tags": ["regulate", "guide", "law", "most common 1000"]
+    },
+    {
+      "word": "written",
+      "soundFile": "/data/sound/english/words/written.mp3",
+      "definition": "marked down as letters or words on a surface",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈrɪt̬.n̩]",
+      "example": "She had written a letter to her friend.",
+      "similar_words": ["inscribed", "scripted", "composed"],
+      "syllable_division": "Writ·ten",
+      "tags": ["compose", "scribe", "inscribe", "most common 1000"]
+    },
+    {
+      "word": "document",
+      "soundFile": "/data/sound/english/words/document.mp3",
+      "definition": "a piece of written, printed, or electronic matter that provides information or evidence or that serves as an official record",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈdɑkjumənt]",
+      "example": "Please sign the document where indicated.",
+      "similar_words": ["record", "paper", "file"],
+      "syllable_division": "Doc·u·ment",
+      "tags": ["record", "paperwork", "file", "most common 1000"]
+    },
+    {
+      "word": "applications",
+      "soundFile": "/data/sound/english/words/applications.mp3",
+      "definition": "formal requests to an authority for something",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˌæplɪˈkeɪʃənz]",
+      "example": "He submitted applications to several universities.",
+      "similar_words": ["requests", "submissions", "forms"],
+      "syllable_division": "Ap·pli·ca·tions",
+      "tags": ["software", "use", "request", "most common 1000"]
+    },
+    {
+      "word": "resource",
+      "soundFile": "/data/sound/english/words/resource.mp3",
+      "definition": "A stock or supply of money, materials, staff, and other assets that can be drawn on by a person or organization in order to function effectively",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈriːˌsɔrs]",
+      "example": "The library is an excellent resource for research.",
+      "similar_words": ["asset", "supply", "reserve"],
+      "syllable_division": "Re-source",
+      "tags": ["asset", "supply", "material", "most common 1000"]
+    },
+    {
+      "word": "miles",
+      "soundFile": "/data/sound/english/words/miles.mp3",
+      "definition": "A unit of linear measure equal to 5,280 feet (approximately 1.609 kilometers)",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[maɪlz]",
+      "example": "The next town is ten miles away.",
+      "similar_words": ["kilometers", "distance", "length"],
+      "syllable_division": "Miles",
+      "tags": ["distance", "measurement", "length", "most common 1000"]
+    },
+    {
+      "word": "downloads",
+      "soundFile": "/data/sound/english/words/downloads.mp3",
+      "definition": "Copy (data) from one computer system to another, typically over the Internet",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈdaʊnˌloʊdz]",
+      "example": "She downloads music from the online store.",
+      "similar_words": ["transfers", "copies", "saves"],
+      "syllable_division": "Down-loads",
+      "tags": ["transfer", "copy", "internet", "most common 1000"]
+    },
+    {
+      "word": "early",
+      "soundFile": "/data/sound/english/words/early.mp3",
+      "definition": "Happening or done before the usual or expected time",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈɜrli]",
+      "example": "We decided to leave early to avoid traffic.",
+      "similar_words": ["premature", "soon", "ahead"],
+      "syllable_division": "Ear-ly",
+      "tags": ["soon", "premature", "ahead", "most common 1000"]
+    },
+    {
+      "word": "statement",
+      "soundFile": "/data/sound/english/words/statement.mp3",
+      "definition": "A definite or clear expression of something in speech or writing",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈsteɪtmənt]",
+      "example": "She made an official statement to the press.",
+      "similar_words": ["declaration", "announcement", "proclamation"],
+      "syllable_division": "State-ment",
+      "tags": ["expression", "declaration", "announcement", "most common 1000"]
+    },
+    {
+      "word": "update",
+      "soundFile": "/data/sound/english/words/update.mp3",
+      "definition": "Make (something) more modern or up to date",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈʌpˌdeɪt]",
+      "example": "The software has been updated to include the latest features.",
+      "similar_words": ["upgrade", "refresh", "modernize"],
+      "syllable_division": "Up-date",
+      "tags": ["modernize", "upgrade", "refresh", "most common 1000"]
+    },
+    {
+      "word": "calendar",
+      "soundFile": "/data/sound/english/words/calendar.mp3",
+      "definition": "a chart or series of pages showing the days, weeks, and months of a particular year",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈkæləndər]",
+      "example": "She marked the date on her calendar.",
+      "similar_words": ["schedule", "datebook", "planner"],
+      "syllable_division": "Cal·en·dar",
+      "tags": ["schedule", "planner", "datebook", "most common 1000"]
+    },
+    {
+      "word": "district",
+      "soundFile": "/data/sound/english/words/district.mp3",
+      "definition": "an area of a country or city, especially one regarded as a distinct unit because of a particular characteristic",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈdɪstrɪkt]",
+      "example": "The shopping district is always busy on weekends.",
+      "similar_words": ["region", "zone", "sector"],
+      "syllable_division": "Dis·trict",
+      "tags": ["area", "region", "zone", "most common 1000"]
+    },
+    {
+      "word": "records",
+      "soundFile": "/data/sound/english/words/records.mp3",
+      "definition": "a thing constituting a piece of evidence about the past, especially an account kept in writing or some other permanent form",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈrɛkərdz]",
+      "example": "She went through the archives to find the old records.",
+      "similar_words": ["documents", "files", "archives"],
+      "syllable_division": "Rec·ords",
+      "tags": ["documentation", "history", "archives", "most common 1000"]
+    },
+    {
+      "word": "style",
+      "soundFile": "/data/sound/english/words/style.mp3",
+      "definition": "a manner of doing something",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[staɪl]",
+      "example": "The author's style is quite distinctive.",
+      "similar_words": ["fashion", "manner", "approach"],
+      "syllable_division": "Style",
+      "tags": ["fashion", "design", "manner", "most common 1000"]
+    },
+    {
+      "word": "front",
+      "soundFile": "/data/sound/english/words/front.mp3",
+      "definition": "the side or part of an object that presents itself to view or that is normally seen or used first",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[frʌnt]",
+      "example": "The front of the building was decorated with banners.",
+      "similar_words": ["forepart", "face", "fore"],
+      "syllable_division": "Front",
+      "tags": ["forefront", "lead", "vanguard", "most common 1000"]
+    },
+    {
+      "word": "environment",
+      "soundFile": "/data/sound/english/words/environment.mp3",
+      "definition": "the surroundings or conditions in which a person, animal, or plant lives or operates",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ɪnˈvaɪrənmənt]",
+      "example": "Protecting the environment is a top priority for many organizations.",
+      "similar_words": ["nature", "ecosystem", "habitat"],
+      "syllable_division": "En·vi·ron·ment",
+      "tags": ["ecology", "nature", "surroundings", "most common 1000"]
+    },
+    {
+      "word": "conference",
+      "soundFile": "/data/sound/english/words/conference.mp3",
+      "definition": "a formal meeting for discussion",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈkɑnfərəns]",
+      "example": "The international conference will be held in Geneva.",
+      "similar_words": ["convention", "summit", "forum"],
+      "syllable_division": "Con·fer·ence",
+      "tags": ["meeting", "symposium", "forum", "most common 1000"]
+    },
+    {
+      "word": "microsoft",
+      "soundFile": "/data/sound/english/words/microsoft.mp3",
+      "definition": "a multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈmaɪkrəˌsɔft]",
+      "example": "Microsoft is one of the world's leading software companies.",
+      "similar_words": ["tech giant", "corporation", "enterprise"],
+      "syllable_division": "Mi·cro·soft",
+      "tags": ["technology", "software", "corporation", "most common 1000"]
+    },
+    {
+      "word": "direct",
+      "soundFile": "/data/sound/english/words/direct.mp3",
+      "definition": "to manage or guide by advice, helpful information, instruction, etc.",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[dɪˈrɛkt]",
+      "example": "He directed the students to the assembly hall.",
+      "similar_words": ["guide", "lead", "steer"],
+      "syllable_division": "Di·rect",
+      "tags": ["guide", "manage", "command", "most common 1000"]
+    },
+    {
+      "word": "record",
+      "soundFile": "/data/sound/english/words/record.mp3",
+      "definition": "to set down in writing or the like, as for the purpose of preserving evidence",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[rɪˈkɔrd]",
+      "example": "The meeting was recorded for those who could not attend.",
+      "similar_words": ["document", "log", "register"],
+      "syllable_division": "Re·cord",
+      "tags": ["document", "log", "note", "most common 1000"]
+    },
+    {
+      "word": "window",
+      "soundFile": "/data/sound/english/words/window.mp3",
+      "definition": "an opening in the wall or roof of a building or vehicle that is fitted with glass",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈwɪndoʊ]",
+      "example": "She opened the window to let in fresh air.",
+      "similar_words": ["pane", "casement", "aperture"],
+      "syllable_division": "Win·dow",
+      "tags": ["opening", "glass", "pane", "most common 1000"]
+    },
+    {
+      "word": "average",
+      "soundFile": "/data/sound/english/words/average.mp3",
+      "definition": "A number expressing the central or typical value in a set of data",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈævərɪdʒ]",
+      "example": "The average of the three numbers is 15.",
+      "similar_words": ["mean", "median", "norm"],
+      "syllable_division": "Av-er-age",
+      "tags": ["mean", "standard", "normal", "most common 1000"]
+    },
+    {
+      "word": "region",
+      "soundFile": "/data/sound/english/words/region.mp3",
+      "definition": "an area, especially part of a country or the world having definable characteristics",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈriːdʒən]",
+      "example": "The region is known for its natural beauty.",
+      "similar_words": ["area", "zone", "district"],
+      "syllable_division": "Re·gion",
+      "tags": ["area", "zone", "sector", "most common 1000"]
+    },
+    {
+      "word": "island",
+      "soundFile": "/data/sound/english/words/island.mp3",
+      "definition": "a piece of land surrounded by water",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈaɪlənd]",
+      "example": "They traveled to a tropical island for vacation.",
+      "similar_words": ["isle", "atoll", "cay"],
+      "syllable_division": "Is·land",
+      "tags": ["isle", "atoll", "cay", "most common 1000"]
+    },
+    {
+      "word": "france",
+      "soundFile": "/data/sound/english/words/france.mp3",
+      "definition": "a country in Western Europe",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[fræns]",
+      "example": "France is famous for its wine and cuisine.",
+      "similar_words": ["country", "nation", "state"],
+      "syllable_division": "France",
+      "tags": ["country", "Europe", "nation", "most common 1000"]
+    },
+    {
+      "word": "land",
+      "soundFile": "/data/sound/english/words/land.mp3",
+      "definition": "The part of the earth's surface that is not covered by water",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[lænd]",
+      "example": "They plan to build a house on that piece of land.",
+      "similar_words": ["ground", "terrain", "soil"],
+      "syllable_division": "Land",
+      "tags": ["terrain", "ground", "earth", "most common 1000"]
+    },
+    {
+      "word": "database",
+      "soundFile": "/data/sound/english/words/database.mp3",
+      "definition": "A structured set of data held in a computer, especially one that is accessible in various ways",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈdeɪtəˌbeɪs]",
+      "example": "Customer information is stored in a secure database.",
+      "similar_words": ["data bank", "archive", "register"],
+      "syllable_division": "Da-ta-base",
+      "tags": ["information", "storage", "data", "most common 1000"]
+    },
+    {
+      "word": "planning",
+      "soundFile": "/data/sound/english/words/planning.mp3",
+      "definition": "The process of making plans for something",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈplænɪŋ]",
+      "example": "The team is involved in the planning of the project.",
+      "similar_words": ["organizing", "arranging", "preparing"],
+      "syllable_division": "Plan-ning",
+      "tags": ["preparation", "strategy", "design", "most common 1000"]
+    },
+    {
+      "word": "official",
+      "soundFile": "/data/sound/english/words/official.mp3",
+      "definition": "Relating to an authority or public body and its duties, actions, and responsibilities",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[əˈfɪʃəl]",
+      "example": "She holds an official position in the government.",
+      "similar_words": ["authorized", "formal", "executive"],
+      "syllable_division": "Of-fi-cial",
+      "tags": ["authorized", "formal", "government", "most common 1000"]
+    },
+    {
+      "word": "says",
+      "soundFile": "/data/sound/english/words/says.mp3",
+      "definition": "Third person present tense of say; to utter words so as to convey information, an opinion, a feeling or intention, or an instruction",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[sɛz]",
+      "example": "He says he will be there at eight.",
+      "similar_words": ["states", "speaks", "tells"],
+      "syllable_division": "Says",
+      "tags": ["speak", "utter", "state", "most common 1000"]
+    },
+    {
+      "word": "weather",
+      "soundFile": "/data/sound/english/words/weather.mp3",
+      "definition": "The state of the atmosphere at a place and time as regards heat, dryness, sunshine, wind, rain, etc.",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈwɛðər]",
+      "example": "The weather today is sunny with a slight chance of rain.",
+      "similar_words": ["climate", "conditions", "temperature"],
+      "syllable_division": "Weath-er",
+      "tags": ["climate", "forecast", "conditions", "most common 1000"]
+    },
+    {
+      "word": "period",
+      "soundFile": "/data/sound/english/words/period.mp3",
+      "definition": "A length or portion of time",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈpɪriəd]",
+      "example": "He lived in Paris for a period of six years.",
+      "similar_words": ["duration", "time", "span"],
+      "syllable_division": "Pe-ri-od",
+      "tags": ["time", "interval", "era", "most common 1000"]
+    },
+    {
+      "word": "electronics",
+      "soundFile": "/data/sound/english/words/electronics.mp3",
+      "definition": "the branch of physics that deals with the emission, behavior, and effects of electrons",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ɪˌlɛkˈtrɑnɪks]",
+      "example": "He has a keen interest in electronics and gadgetry.",
+      "similar_words": ["electrical", "circuitry", "wiring"],
+      "syllable_division": "E·lec·tron·ics",
+      "tags": ["technology", "circuitry", "devices", "most common 1000"]
+    },
+    {
+      "word": "whether",
+      "soundFile": "/data/sound/english/words/whether.mp3",
+      "definition": "expressing a doubt or choice between alternatives",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈwɛðər]",
+      "example": "He seemed undecided whether to go or stay.",
+      "similar_words": ["if", "either", "or"],
+      "syllable_division": "Wheth·er",
+      "tags": ["doubt", "choice", "decision", "most common 1000"]
+    },
+    {
+      "word": "means",
+      "soundFile": "/data/sound/english/words/means.mp3",
+      "definition": "An action or system by which a result is brought about; a method",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[miːnz]",
+      "example": "Education is a means to an end.",
+      "similar_words": ["method", "way", "mechanism"],
+      "syllable_division": "Means",
+      "tags": ["method", "way", "mechanism", "most common 1000"]
+    },
+    {
+      "word": "solutions",
+      "soundFile": "/data/sound/english/words/solutions.mp3",
+      "definition": "Means of solving a problem or dealing with a difficult situation",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[səˈluʃənz]",
+      "example": "We are exploring different solutions to the challenge.",
+      "similar_words": ["answers", "resolutions", "remedies"],
+      "syllable_division": "So-lu-tions",
+      "tags": ["answers", "resolutions", "remedies", "most common 1000"]
+    },
+    {
+      "word": "powered",
+      "soundFile": "/data/sound/english/words/powered.mp3",
+      "definition": "Supplied with mechanical or electrical energy",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈpaʊərd]",
+      "example": "The vehicle is powered by a hybrid engine.",
+      "similar_words": ["energized", "operated", "driven"],
+      "syllable_division": "Pow-ered",
+      "tags": ["energized", "mechanical", "electrical", "most common 1000"]
+    },
+    {
+      "word": "daily",
+      "soundFile": "/data/sound/english/words/daily.mp3",
+      "definition": "done, produced, or occurring every day or every weekday",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈdeɪli]",
+      "example": "She reads the daily newspaper to catch up on current events.",
+      "similar_words": ["everyday", "day-to-day", "diurnal"],
+      "syllable_division": "Dai·ly",
+      "tags": ["routine", "regular", "day-to-day", "most common 1000"]
+    },
+    {
+      "word": "director",
+      "soundFile": "/data/sound/english/words/director.mp3",
+      "definition": "a person who is in charge of an activity, department, or organization",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[dɪˈrɛktər]",
+      "example": "The director of the company decided to implement new policies.",
+      "similar_words": ["manager", "supervisor", "administrator"],
+      "syllable_division": "Di·rec·tor",
+      "tags": ["leader", "executive", "head", "most common 1000"]
+    },
+    {
+      "word": "limited",
+      "soundFile": "/data/sound/english/words/limited.mp3",
+      "definition": "Restricted in size, amount, or extent",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈlɪmɪtɪd]",
+      "example": "We have a limited amount of time to finish this project.",
+      "similar_words": ["restricted", "finite", "bounded"],
+      "syllable_division": "Lim-it-ed",
+      "tags": ["restricted", "finite", "bounded", "most common 1000"]
+    },
+    {
+      "word": "display",
+      "soundFile": "/data/sound/english/words/display.mp3",
+      "definition": "Make a prominent exhibition of (something) in a place where it can be easily seen",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[dɪˈspleɪ]",
+      "example": "The museum displays artifacts from ancient times.",
+      "similar_words": ["exhibit", "show", "present"],
+      "syllable_division": "Dis-play",
+      "tags": ["exhibit", "show", "presentation", "most common 1000"]
+    },
+    {
+      "word": "license",
+      "soundFile": "/data/sound/english/words/license.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "annual",
+      "soundFile": "/data/sound/english/words/annual.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "published",
+      "soundFile": "/data/sound/english/words/published.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "corporate",
+      "soundFile": "/data/sound/english/words/corporate.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "google",
+      "soundFile": "/data/sound/english/words/google.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "customers",
+      "soundFile": "/data/sound/english/words/customers.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "hardware",
+      "soundFile": "/data/sound/english/words/hardware.mp3",
+      "definition": "The machines, wiring, and other physical components of a computer or other electronic system.",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈhɑrdˌwɛr]",
+      "example": "Upgrading the hardware can significantly improve a computer's performance.",
+      "similar_words": ["equipment", "machinery", "components"],
+      "syllable_division": "Hard·ware",
+      "tags": ""
+    },
+    {
+      "word": "purchase",
+      "soundFile": "/data/sound/english/words/purchase.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "active",
+      "soundFile": "/data/sound/english/words/active.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "materials",
+      "soundFile": "/data/sound/english/words/materials.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "figure",
+      "soundFile": "/data/sound/english/words/figure.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "holiday",
+      "soundFile": "/data/sound/english/words/holiday.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "fire",
+      "soundFile": "/data/sound/english/words/fire.mp3",
+      "definition": "Combustion or burning, in which substances combine chemically with oxygen from the air and typically give out bright light, heat, and smoke.",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[ˈfaɪər]",
+      "example": "The campers gathered around the fire to keep warm.",
+      "similar_words": ["flame", "burn", "heat"],
+      "syllable_division": "Fire",
+      "tags": ["combustion", "warmth", "light"]
+    },
+    {
+      "word": "practice",
+      "soundFile": "/data/sound/english/words/practice.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "response",
+      "soundFile": "/data/sound/english/words/response.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "method",
+      "soundFile": "/data/sound/english/words/method.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "church",
+      "soundFile": "/data/sound/english/words/church.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "basic",
+      "soundFile": "/data/sound/english/words/basic.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "sony",
+      "soundFile": "/data/sound/english/words/sony.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "later",
+      "soundFile": "/data/sound/english/words/later.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "chat",
+      "soundFile": "/data/sound/english/words/chat.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "death",
+      "soundFile": "/data/sound/english/words/death.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "writing",
+      "soundFile": "/data/sound/english/words/writing.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "speed",
+      "soundFile": "/data/sound/english/words/speed.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "html",
+      "soundFile": "/data/sound/english/words/html.mp3",
+      "definition": "The standard markup language for documents designed to be displayed in a web browser.",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "[eɪtʃ tiː ɛm ɛl]",
+      "example": "HTML tags are used to create and structure online content.",
+      "similar_words": [
+        "markup language",
+        "HyperText Markup Language",
+        "web structure"
+      ],
+      "syllable_division": "H·T·M·L",
+      "tags": ["markup", "web development", "structure"]
+    },
+    {
+      "word": "along",
+      "soundFile": "/data/sound/english/words/along.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "countries",
+      "soundFile": "/data/sound/english/words/countries.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "among",
+      "soundFile": "/data/sound/english/words/among.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "designed",
+      "soundFile": "/data/sound/english/words/designed.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "enough",
+      "soundFile": "/data/sound/english/words/enough.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "loss",
+      "soundFile": "/data/sound/english/words/loss.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "face",
+      "soundFile": "/data/sound/english/words/face.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "brand",
+      "soundFile": "/data/sound/english/words/brand.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "discount",
+      "soundFile": "/data/sound/english/words/discount.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
+    },
+    {
+      "word": "higher",
+      "soundFile": "/data/sound/english/words/higher.mp3",
+      "definition": "",
+      "ipa_phonetic_transcription_us": "",
+      "ipa_phonemic_transcription_us": "",
+      "example": "",
+      "similar_words": "",
+      "syllable_division": "",
+      "tags": ""
     }
   ]
 }
