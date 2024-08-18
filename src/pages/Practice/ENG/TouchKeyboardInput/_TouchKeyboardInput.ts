@@ -40,8 +40,8 @@ function keyboardBtn(character: string) {
 
   key.addEventListener("click", typeToInputField);
   function typeToInputField() {
-    const input = key.parentElement.parentElement.firstElementChild
-      .nextElementSibling.nextElementSibling
+    const input = key.parentElement.parentElement.parentElement
+      .firstElementChild.nextElementSibling.nextElementSibling
       .firstElementChild as HTMLInputElement;
     console.log("input:", input);
     input.value += character;
