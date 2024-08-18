@@ -38,37 +38,51 @@ export default function SoundToSpellExerciseComponent(
   const ECID = `practice--${section}--${exerciseName}`;
   ExerciseComponent.setAttribute("id", ECID);
 
-  // const questionOrderType = "random";
-  const questionOrderType = "indexOrder";
+  const questionOrderType = "random";
+  // const questionOrderType = "indexOrder";
 
   //* ******
-  function render(data: VocabularyData) {
-    const metadate = data.metadate;
-    const wordsArr = data.words;
+  function render(data: string[]) {
+    // const metadate = data.metadate;
+    // const wordsArr = data.words;
+    const wordsArr = data;
 
-    const firstQuestion = getNextQuestion(questionOrderType, wordsArr);
-    console.log("firstQuestion:", firstQuestion);
-    console.log(
-      "ipa_phonemic_transcription_us:",
-      firstQuestion.ipa_phonemic_transcription_us
-    );
-    console.log(
-      "ipa_phonetic_transcription_us:",
-      firstQuestion.ipa_phonetic_transcription_us
-    );
+    const firstQuestionWord = getNextQuestion(questionOrderType, wordsArr);
+    console.log("Next Question Word:", firstQuestionWord);
+    // console.log(
+    //   "ipa_phonemic_transcription_us:",
+    //   firstQuestion.ipa_phonemic_transcription_us
+    // );
+    // console.log(
+    //   "ipa_phonetic_transcription_us:",
+    //   firstQuestion.ipa_phonetic_transcription_us
+    // );
 
-    answerType === "word"
-      ? (ExerciseComponent.dataset.correctAnswer = firstQuestion.word)
-      : answerType === "syllableDivision"
-        ? (ExerciseComponent.dataset.correctAnswer =
-            firstQuestion.syllable_division.toLowerCase())
-        : answerType === "ipa_phonemic_transcription_us"
-          ? (ExerciseComponent.dataset.correctAnswer =
-              firstQuestion.ipa_phonemic_transcription_us)
-          : (ExerciseComponent.dataset.correctAnswer =
-              firstQuestion.ipa_phonetic_transcription_us);
+    window.api
+      .fetchMetadata(
+        `https://raw.githubusercontent.com/AlexEG/NihongoBridgeDB/main/english/all_vocabulary/${firstQuestionWord}.json`
+      )
+      .then((nextWordInfo: WordInfo) => {
+        console.log("From GitHub, nextWordInfo:", nextWordInfo);
+        // **** //
+        answerType === "word"
+          ? (ExerciseComponent.dataset.correctAnswer = firstQuestionWord)
+          : answerType === "syllableDivision"
+            ? (ExerciseComponent.dataset.correctAnswer =
+                nextWordInfo.syllable_division.toLowerCase())
+            : answerType === "ipa_phonemic_transcription_us"
+              ? (ExerciseComponent.dataset.correctAnswer =
+                  nextWordInfo.ipa_phonemic_transcription_us)
+              : (ExerciseComponent.dataset.correctAnswer =
+                  nextWordInfo.ipa_phonetic_transcription_us);
+        console.log("Word:", firstQuestionWord);
+        // **** //
+      })
+      .catch((error) => {
+        console.error("Error fetching metadata:", error);
+      });
 
-    ExerciseComponent.dataset.soundFilePath = firstQuestion.soundFile;
+    ExerciseComponent.dataset.soundFilePath = `https://raw.githubusercontent.com/AlexEG/NihongoBridgeDB/main/english/vocabulary-audio-files/${firstQuestionWord}.mp3`;
     ExerciseComponent.dataset.questionOrderType = questionOrderType;
 
     // auto play
@@ -139,24 +153,37 @@ export default function SoundToSpellExerciseComponent(
         checkBtn.textContent = "Check";
         input.removeAttribute("disabled");
 
-        // get next question data
+        // *** get next question data *** //
         const questionOrderType = ExerciseComponent.dataset.questionOrderType;
-        const nextQuestion = getNextQuestion(questionOrderType, wordsArr);
+        const nextQuestionWord = getNextQuestion(questionOrderType, wordsArr);
 
-        answerType === "word"
-          ? (ExerciseComponent.dataset.correctAnswer = nextQuestion.word)
-          : answerType === "syllableDivision"
-            ? (ExerciseComponent.dataset.correctAnswer =
-                nextQuestion.syllable_division.toLowerCase())
-            : answerType === "ipa_phonemic_transcription_us"
-              ? (ExerciseComponent.dataset.correctAnswer =
-                  nextQuestion.ipa_phonemic_transcription_us)
-              : (ExerciseComponent.dataset.correctAnswer =
-                  nextQuestion.ipa_phonetic_transcription_us);
+        window.api
+          .fetchMetadata(
+            `https://raw.githubusercontent.com/AlexEG/NihongoBridgeDB/main/english/all_vocabulary/${nextQuestionWord}.json`
+          )
+          .then((nextWordInfo: WordInfo) => {
+            console.log("From GitHub, nextWordInfo:", nextWordInfo);
+            // **** //
+            answerType === "word"
+              ? (ExerciseComponent.dataset.correctAnswer = nextQuestionWord)
+              : answerType === "syllableDivision"
+                ? (ExerciseComponent.dataset.correctAnswer =
+                    nextWordInfo.syllable_division.toLowerCase())
+                : answerType === "ipa_phonemic_transcription_us"
+                  ? (ExerciseComponent.dataset.correctAnswer =
+                      nextWordInfo.ipa_phonemic_transcription_us)
+                  : (ExerciseComponent.dataset.correctAnswer =
+                      nextWordInfo.ipa_phonetic_transcription_us);
+            console.log("Word:", firstQuestionWord);
+            // **** //
+          })
+          .catch((error) => {
+            console.error("Error fetching metadata:", error);
+          });
 
-        ExerciseComponent.dataset.soundFilePath = nextQuestion.soundFile;
+        ExerciseComponent.dataset.soundFilePath = `https://raw.githubusercontent.com/AlexEG/NihongoBridgeDB/main/english/vocabulary-audio-files/${nextQuestionWord}.mp3`;
         // auto play
-        const audio = new Audio(nextQuestion.soundFile);
+        const audio = new Audio(ExerciseComponent.dataset.soundFilePath);
         audio.autoplay = true;
         input.focus();
       }
@@ -226,7 +253,7 @@ export default function SoundToSpellExerciseComponent(
 
   //* ******
   function hideIndicatorCorrectWrongMessage() {
-    console.log("hide");
+    // console.log("hide");
     const correct =
       ExerciseComponent.firstElementChild.nextElementSibling.firstElementChild;
     const wrong =
@@ -242,15 +269,41 @@ export default function SoundToSpellExerciseComponent(
   //
 
   // *************** //
+  // window.api
+  //   .readJsonFile(`vocabulary-bank/${section}.json`)
+  //   .then((data: VocabularyData) => {
+  //     render(data);
+  //   })
+  //   .catch((error: Error) => {
+  //     console.error("Failed to read the JSON file:", error);
+  //   });
+  //
+  //
+  const folderFileName = "most_1000_common";
+  // type FolderData = {
+  //   [key: string]: WordInfo;
+  // };
+  // type WordInfo = {
+  //   is_audio_file_available: boolean;
+  //   definition: string;
+  // };
   window.api
-    .readJsonFile(`vocabulary-bank/${section}.json`)
-    .then((data: VocabularyData) => {
-      render(data);
+    .fetchMetadata(
+      `https://raw.githubusercontent.com/AlexEG/NihongoBridgeDB/main/english/folders/${folderFileName}.json`
+    )
+    .then((folderData: string[]) => {
+      console.log("From GitHub", folderData);
+
+      // const foldersMetadata = metadata.folders_metadata;
+      render(folderData);
+
+      // renderFolderCards(foldersMetadata);
     })
-    .catch((error: Error) => {
-      console.error("Failed to read the JSON file:", error);
+    .catch((error) => {
+      console.error("Error fetching metadata:", error);
     });
   // *************** //
+
   return ExerciseComponent;
 }
 

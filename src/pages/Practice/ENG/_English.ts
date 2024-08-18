@@ -61,7 +61,7 @@ export default function English() {
       () =>
         SoundToSpellExerciseComponent(
           "english",
-          "word-to-syllable-division",
+          "listen-and-spell",
           "word",
           qwertyLayout
         )
@@ -76,26 +76,25 @@ export default function English() {
           "syllableDivision",
           qwertyLayoutWithSymbols
         )
-    ),
-    ipcc("Sound => Phonemes", "", () =>
-      SoundToSpellExerciseComponent(
-        "english",
-        "word-to-syllable-division",
-        "ipa_phonemic_transcription_us",
-        GeneralAmericanEnglishPhonemes
-      )
-    ),
-    ipcc("Sound => Phonetic", "", () =>
-      SoundToSpellExerciseComponent(
-        "english",
-        "word-to-syllable-division",
-        "ipa_phonetic_transcription_us",
-        EnglishPhoneticIPASymbols
-      )
-    ),
-    ipcc("Word => Syllable Division", "", () =>
-      ExerciseComponent("english", "word-to-syllable-division", "soundToSpell")
     )
+    // ipcc("Sound => Phonemes", "", () =>
+    //   SoundToSpellExerciseComponent(
+    //     "english",
+    //     "word-to-syllable-division",
+    //     "ipa_phonemic_transcription_us",
+    //     GeneralAmericanEnglishPhonemes
+    //   )
+    // ),
+    // ipcc("Sound => Phonetic", "", () =>
+    //   SoundToSpellExerciseComponent(
+    //     "english",
+    //     "word-to-syllable-division",
+    //     "ipa_phonetic_transcription_us",
+    //     EnglishPhoneticIPASymbols
+    //   )
+    // ),
+    // ipcc("Word => Syllable Division", "", () =>
+    //   ExerciseComponent("english", "word-to-syllable-division", "soundToSpell")
   );
 
   return English;

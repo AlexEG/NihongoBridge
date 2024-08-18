@@ -1,5 +1,5 @@
 import LocalNav from "../../../src/common/LocalNav/_LocalNav";
-import LexiconTypist from "./ENG/LexiconTypist/_LexiconTypist";
+// import LexiconTypist from "./ENG/LexiconTypist/_LexiconTypist";
 import English from "./ENG/_English";
 import Japanese from "./JP/_Japanese";
 
