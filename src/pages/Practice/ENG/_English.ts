@@ -8,6 +8,7 @@ import {
   qwertyLayout,
   qwertyLayoutWithSymbols,
 } from "./TouchKeyboardInput/KeyboardLayouts";
+import WordFoldersSelectBar from "./WordFoldersSelectBar/_WordFoldersSelectBar";
 
 interface VocabularyData {
   metadate: { number_of_words: number };
@@ -29,8 +30,7 @@ interface WordInfo {
 
 export default function English() {
   const English = document.createElement("div");
-  const className =
-    "relative grid grid-cols-[256px,256px,256px] place-content-center pt-20 gap-6";
+  const className = "border0 px-4 border-red-6000 ";
   English.setAttribute("class", className);
 
   // const precisionOfMeaning = ipcc(
@@ -51,10 +51,14 @@ export default function English() {
   // );
 
   /*
-  
-   */
+        
+        */
 
-  English.append(
+  const exercisesCardsWrapper = document.createElement("div");
+  const className2 =
+    "relative grid grid-cols-[256px,256px,256px] place-content-center pt-16 gap-6";
+  exercisesCardsWrapper.setAttribute("class", className2);
+  exercisesCardsWrapper.append(
     ipcc(
       "Listen & Spell",
       "listen to the pronunciation of a word and then type it out to practice spelling",
@@ -97,6 +101,7 @@ export default function English() {
     //   ExerciseComponent("english", "word-to-syllable-division", "soundToSpell")
   );
 
+  English.append(WordFoldersSelectBar(), exercisesCardsWrapper);
   return English;
 }
 
@@ -109,12 +114,12 @@ function ipcc(
 ) {
   const ipcc = document.createElement("div");
   const className2 =
-    "group border border-[hsl(212,12%,21%)] w-full h-80 cursor-pointer p-4";
+    "group border border-[hsl(212,12%,21%)] w-full h-72 cursor-pointer p-4";
   ipcc.setAttribute("class", className2);
 
   // icon
   const icon = document.createElement("div");
-  const className3 = "flex justify-center items-center h-40";
+  const className3 = "flex justify-center items-center h-32";
   icon.setAttribute("class", className3);
 
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
