@@ -149,15 +149,18 @@ ipcMain.handle("open-file-dialog", async (event) => {
   }
 });
 
-ipcMain.handle("read-json-files", async (event, directoryPath) => {
-  try {
-    const data = await readJsonFiles(directoryPath);
-    // console.log("from Main", data);
-    return data;
-  } catch (error) {
-    console.error("Failed to read JSON files:", error);
+ipcMain.handle(
+  "read-json-files",
+  async (event, directoryPath: string): Promise<object | string> => {
+    try {
+      const data = await readJsonFiles(directoryPath);
+      return data;
+    } catch (error) {
+      console.error("Failed to read JSON files:", error);
+      return "Failed to read JSON files";
+    }
   }
-});
+);
 
 ipcMain.handle("fetch-metadata", async (event, url) => {
   return fetchMetadata(url);
@@ -208,3 +211,6 @@ ipcMain.handle("download-audio-file", async (event, audioFileURL) => {
     console.error("Failed to read JSON files:", error);
   }
 });
+
+// TTS / Enable Speech Dispatcher
+app.commandLine.appendSwitch("enable-speech-dispatcher");

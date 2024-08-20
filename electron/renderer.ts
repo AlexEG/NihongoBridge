@@ -50,3 +50,100 @@ ROOT.append(Practice());
 // ROOT.append(VocabularyShop());
 
 // renderWords();
+
+// const synth = window.speechSynthesis;
+// const utterThis = new SpeechSynthesisUtterance("Hello, world!");
+// synth.speak(utterThis);
+
+// const synth = window.speechSynthesis;
+// const utterThis = new SpeechSynthesisUtterance("English");
+
+// // Set the voice (optional)
+// const voices = synth.getVoices();
+// utterThis.voice = voices.find(
+//   (voice) => voice.name === "Microsoft Zira - English (United States)"
+// );
+// // utterThis.voice = voices.find((voice) => voice.name === "Google US English"); // Change to desired voice name
+
+// // Set the rate (speed) and pitch (optional)
+// utterThis.rate = 2; // Speed (0.1 to 10)
+// utterThis.pitch = 0.7; // Pitch (0 to 2)
+
+// synth.speak(utterThis);
+
+// // function listVoices() {
+// //   const voices = synth.getVoices();
+// //   voices.forEach((voice, index) => {
+// //     console.log(`${index + 1}: ${voice.name} (${voice.lang})`);
+// //   });
+// //   console.log("from renderer.ts");
+// // }
+
+// // listVoices();
+
+// // const synth = window.speechSynthesis;
+
+// function listVoices() {
+//   const voices = synth.getVoices();
+//   if (voices.length === 0) {
+//     console.log("No voices available. Please try again.");
+//   } else {
+//     voices.forEach((voice, index) => {
+//       console.log(`${index + 1}: ${voice.name} (${voice.lang})`);
+//     });
+//   }
+// }
+
+// // Ensure voices are loaded before listing them
+// if (synth.onvoiceschanged !== undefined) {
+//   synth.onvoiceschanged = listVoices;
+// } else {
+//   listVoices();
+// }
+
+////////////////////////////
+
+const synth = window.speechSynthesis;
+
+function speak(
+  text: string,
+  voiceName: string,
+  rate: number = 1,
+  pitch: number = 1
+) {
+  const utterThis = new SpeechSynthesisUtterance(text);
+  const voices = synth.getVoices();
+  const selectedVoice = voices.find((voice) => voice.name === voiceName);
+
+  if (selectedVoice) {
+    utterThis.voice = selectedVoice;
+  } else {
+    console.warn(`Voice "${voiceName}" not found.`);
+  }
+
+  utterThis.rate = rate;
+  utterThis.pitch = pitch;
+  synth.speak(utterThis);
+}
+
+function listVoices() {
+  const voices = synth.getVoices();
+  if (voices.length === 0) {
+    console.log("No voices available. Please try again.");
+  } else {
+    voices.forEach((voice, index) => {
+      console.log(`${index + 1}: ${voice.name} (${voice.lang})`);
+    });
+  }
+}
+
+// // Ensure voices are loaded before listing them and speaking
+// if (synth.onvoiceschanged !== undefined) {
+//   synth.onvoiceschanged = () => {
+//     listVoices();
+//     speak("Hello, world!", "Microsoft Ayumi - Japanese (Japan)", 1.2, 1);
+//   };
+// } else {
+//   listVoices();
+//   speak("Hello, world!", "Microsoft Zira - English (United States)", 1.2, 1);
+// }

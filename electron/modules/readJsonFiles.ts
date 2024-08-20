@@ -8,17 +8,21 @@ async function readJsonFiles(directoryPath: string): Promise<object> {
 
   try {
     const files = await fsPromises.readdir(jsonDirectory);
-    for (const file of files) {
-      if (path.extname(file) === ".json") {
-        const filePath = path.join(jsonDirectory, file);
-        const fileContents = await fsPromises.readFile(filePath, "utf8");
-        dataObject[file] = JSON.parse(fileContents);
-      }
-    }
+    const jsonFiles = files.filter((file) => path.extname(file) === ".json");
+
+    // Read files concurrently
+    const readPromises = jsonFiles.map(async (file) => {
+      const filePath = path.join(jsonDirectory, file);
+      const fileContents = await fsPromises.readFile(filePath, "utf8");
+      const key = path.basename(file, ".json");
+      dataObject[key] = JSON.parse(fileContents);
+    });
+
+    await Promise.all(readPromises);
   } catch (error) {
     console.error("Error reading JSON files:", error);
   }
-  console.log("dataObject:", dataObject);
+  // console.log("dataObject:", dataObject);
 
   return dataObject;
 }
